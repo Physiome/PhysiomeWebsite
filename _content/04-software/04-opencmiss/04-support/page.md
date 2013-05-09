@@ -6,7 +6,7 @@ title: Get support for OpenCMISS
 ---
 ### Wiki
 
-The OpenCMISS Wiki is collaboratively edited by the project participants, with lot of useful detailed information about the project.
+The [OpenCMISS Wiki](http://sourceforge.net/apps/mediawiki/opencmiss/index.php?title=Main_Page) is collaboratively edited by the project participants, with lot of useful detailed information about the project.
 
 ### Mailing list for users and developers
 
