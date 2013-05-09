@@ -1,12 +1,16 @@
 ---
 _layout: support
 title: Getting started with PyZinc
-categories:
-  - users guide
 intro: >
-  PyZinc is an extension library to the Zinc Library, enabling development of applications using the Zinc visulalisation library. Find out how to get started.
+  PyZinc is an extension library to the
+  Zinc Library, enabling development of
+  applications using the Zinc
+  visulalisation library. Find out how to
+  get started.
 description:
 navtitle: Getting started with PyZinc
+categories:
+  - users guide
 ---
 PyZinc is the Python bindings for the Zinc library. The Zinc library is an advanced OpenGL visualisation library. It’s main use is for visualising Finite Element Models.
 
