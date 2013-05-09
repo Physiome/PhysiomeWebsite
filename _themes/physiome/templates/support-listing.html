@@ -24,7 +24,7 @@
 
 {{ if segment_4 == "users" }}
 
-	{{ entries:listing folder="/software/{ segment_2 }/support" conditions="categories:users guide" }}
+	{{ entries:listing folder="/software/{ segment_2 }/support" conditions="categories:users guide" sort_by="date" sort_dir="desc" }}
 	    {{ if no_results }}
 	      {{ no_results_text }}
 	    {{ else }}
@@ -38,7 +38,7 @@
 
 {{ if segment_4 == "developers" }}
 
-	{{ entries:listing folder="/software/zincplugin/support" conditions="categories:developers guide" }}
+	{{ entries:listing folder="/software/zincplugin/support" conditions="categories:developers guide" sort_by="date" sort_dir="desc" }}
 	    {{ if no_results }}
 	      {{ no_results_text }}
 	    {{ else }}
