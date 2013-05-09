@@ -1,0 +1,98 @@
+<header id="header" class="container clearfix">
+
+	<a href="/" id="logo">
+		<img src="{{ theme:img src="logo.png"}}" alt="Physiome Project logo." title="Return to the Physiome Project homepage.">
+	</a>
+	
+	<!-- #main-nav -->
+	
+	<nav id="main-nav">
+		
+		<ul>
+
+			{{ if segment_1  == "about" }}
+			<li class="current">
+			{{ else }}
+			<li>
+			{{ endif }}
+				<a href="/about/">About</a>
+				<ul>
+					<li><a href="/about/a-brief-history">A brief history of the Physiome Project</a></li>
+					<li><a href="/about/molecules-to-humankind">From molecules to humankind</a></li>
+					<li><a href="/about/the-virtual-physiological-human">The Virtual Physiological Human</a></li>
+					<li><a href="/about/modelling-framework">Developing a modelling framework</a></li>
+					<li><a href="/about/open-source-policy">Open source policy</a></li>
+					<li><a href="/about/publication-policy">Publication policy</a></li>
+					<li><a href="/about/sponsorship">Sponsorship</a></li>
+				</ul>
+			</li>
+
+			{{ if segment_1  == "meetings" }}
+			<li class="current">
+			{{ else }}
+			<li>
+			{{ endif }}
+				<a href="/meetings/">Meetings</a>
+			</li>
+
+			{{ if segment_1  == "research" }}
+			<li class="current">
+			{{ else }}
+			<li>
+			{{ endif }}
+				<a href="/research/">Research</a>
+				<ul>
+	                <li><a href="/research/cardiovascular">Cardiovascular system</a></li>
+	                <li><a href="/research/urinary-kidney">Urinary system and kidney</a></li>
+	                <li><a href="/research/respiratory">Respiratory system</a></li>	   
+	                <li><a href="/research/musculo-skeletal">Musculo-skeletal system</a></li>
+	                <li><a href="/research/integumentary">Integumentary system</a></li>
+	                <li><a href="/research/digestive">Digestive system</a></li>
+	                <li><a href="/research/nervous-system">Nervous system</a></li>
+	                <li><a href="/research/endocrine">Endocrine system</a></li>
+	                <li><a href="/research/immune">Immune system</a></li>
+	                <li><a href="/research/female-reproduction">Female reproductive system</a></li>
+	                <li><a href="/research/male-reproduction">Male reproductive system</a></li>
+	                <li><a href="/research/special-sense-organs">Special sense organs</a></li>
+	                <li><a href="/research/related-projects">Related projects</a></li>
+				</ul>
+			</li>
+
+			{{ if segment_1  == "software" }}
+			<li class="current">
+			{{ else }}
+			<li>
+			{{ endif }}
+				<a href="/software/">Software</a>
+				<ul>                	                   
+                    <li><a href="/software/zinclibrary/">Zinc Library</a></li>
+                    <li><a href="/software/zincplugin/">Zinc Plugin</a></li>
+                    <li><a href="/software/cmgui/">Cmgui</a></li> 
+                    <li><a href="/software/opencmiss/">OpenCMISS</a></li>
+                    <li><a href="/software/cellml/">CellML</a></li>
+                    <li><a href="/software/fieldml/">FieldML</a></li>
+                    <li><a href="/software/opencell/">OpenCell</a></li> 
+                    <li><a href="/software/cm/">CM</a></li>
+                    <li><a href="/software/pyzinc/">PyZinc</a></li>	    
+				</ul>
+			</li>
+
+			{{ if segment_1  == "data-repositories" }}
+			<li class="current">
+			{{ else }}
+			<li>
+			{{ endif }}
+				<a href="/data-repositories/">Data repositories</a>
+				<ul>
+					<li><a href="/data-repositories/about">About repositories</a></li>
+					<li><a href="/data-repositories/physiome-model-repository">Physiome Model Repository</a></li>
+					<li><a href="/data-repositories/related">Related data repositories</a></li>
+				</ul>
+			</li>
+
+		</ul>
+	</nav>
+
+	<!-- end #main-nav -->
+	
+</header><!-- end #header -->

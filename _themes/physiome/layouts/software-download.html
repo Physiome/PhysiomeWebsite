@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<!--[if IE 7]>                  <html class="ie7 no-js" lang="en">     <![endif]-->
+<!--[if lte IE 8]>              <html class="ie8 no-js" lang="en">     <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="not-ie no-js" lang="en">  <!--<![endif]-->
+
+{{ theme:partial src="head"}} 
+
+<body>
+
+{{ theme:partial src="header"}} 
+
+<section id="content" class="container clearfix">
+
+	<article>
+
+		<header class="page-header clearfix">
+		
+			{{ theme:partial src="software-download-section-title" project="{ segment_2 }" }}
+			
+			<a href="/software/" class="button no-bg medium align-right">
+				All software projects <img src="/_themes/physiome/img/icon-grid.png" alt="" class="icon">
+			</a>
+
+		</header><!-- end .page-header -->
+
+		<div id="main">
+		
+			<!-- Content -->
+            
+			{{ layout_content }}              
+		
+		</div><!-- end #main -->
+
+		<div id="sidebar">
+    
+			<div class="widget">
+
+				{{ theme:partial src="software-project-peernav-title" project="{ segment_2 }" }}
+				
+				{{ theme:partial src="software-project-peernav" project="{ segment_2 }" }}
+
+			</div><!-- end .widget -->
+
+		</div><!-- end #sidebar -->
+		
+	</article><!-- end .single-project -->
+	
+</section><!-- end #content -->
+
+{{ theme:partial src="footer"}} 
+
+{{ theme:partial src="footer-scripts-all"}} 
+
+</body>
+</html>

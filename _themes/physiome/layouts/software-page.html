@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<!--[if IE 7]>                  <html class="ie7 no-js" lang="en">     <![endif]-->
+<!--[if lte IE 8]>              <html class="ie8 no-js" lang="en">     <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="not-ie no-js" lang="en">  <!--<![endif]-->
+
+{{ theme:partial src="head"}} 
+
+<body>
+
+{{ theme:partial src="header"}} 
+
+<section id="content" class="container clearfix">
+
+	<article>
+
+		<header class="page-header clearfix">
+			{{ nav from="software" }}
+				{{if (is_current || is_parent) }}
+			<h1 class="page-title align-left"><a href="{{ url }}">{{ title }}</a></h1>
+				{{ endif }}
+			{{ /nav }}
+			
+			<a href="/software/" class="button no-bg medium align-right">
+				All software projects <img src="/_themes/physiome/img/icon-grid.png" alt="" class="icon">
+			</a>
+
+		</header><!-- end .page-header -->
+
+		<div id="main">
+		
+			<!-- Content -->
+            
+			{{ layout_content }}              
+		
+		</div><!-- end #main -->
+
+		<div id="sidebar">
+    
+			<div class="widget">
+
+				{{ nav from="software" max_depth="1" }}
+					{{if (is_current || is_parent) }}
+						<h6 class="widget-title">Find out about {{ title }}</h6>
+					{{ endif }}
+				{{ /nav }}
+
+				{{ nav from="{segment_1}" max_depth="2" }}
+					{{if (is_current || is_parent) && children }}
+					<ul class="peernav">
+						{{ children }}
+						<li><a href="{{ url }}" {{ if is_current }} class="current" {{ endif }}>{{ title }}</a></li>
+						{{ /children }}
+					</ul>
+					{{ endif }}
+				{{ /nav }}
+
+			</div><!-- end .widget -->
+
+			{{ nav from="software" max_depth="1" exclude="/software/opencmiss|/software/fieldml" }}
+				{{if (is_current || is_parent) }}
+					{{ theme:partial src="software-download-promo" project="{ url }" softwaretitle="{ title }" }}
+				{{ endif }}
+			{{ /nav }}
+
+		</div><!-- end #sidebar -->
+		
+	</article><!-- end .single-project -->
+	
+</section><!-- end #content -->
+
+{{ theme:partial src="footer"}} 
+
+{{ theme:partial src="footer-scripts-all"}} 
+
+</body>
+</html>

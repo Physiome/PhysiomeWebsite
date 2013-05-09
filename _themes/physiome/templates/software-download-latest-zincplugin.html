@@ -1,0 +1,21 @@
+{{ entries:listing from="software/zincplugin/download" sort_dir="desc" limit="1" }}
+{{ theme:partial src="software-download-title" project="{ segment_2 }" }}
+<h2>{{ title }}</h2>
+<p>{{ intro }}</p>
+<div class="clearfix">
+	{{ downloadlinks }} 
+	<h4 class="acc-trigger">
+	      <a href="#">{{ distrib_platform }}</a>
+	</h4>
+	<div class="acc-container">
+	      <div class="content"><a href="{{ distrib_link }}">{{ distrib_linktext }}</a>.</div>
+	</div>
+	{{ /downloadlinks }}
+</div>
+<h2>Release notes</h2>
+{{ content }}
+<hr />
+{{ theme:partial src="software-zincplugin-installation"}} 
+<hr />
+{{ theme:partial src="software-zincplugin-old-versions"}}
+{{ /entries:listing }}

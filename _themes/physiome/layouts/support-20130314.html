@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<!--[if IE 7]>                  <html class="ie7 no-js" lang="en">     <![endif]-->
+<!--[if lte IE 8]>              <html class="ie8 no-js" lang="en">     <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="not-ie no-js" lang="en">  <!--<![endif]-->
+
+{{ theme:partial src="head"}} 
+
+<body>
+
+{{ theme:partial src="header-software"}}
+
+<section id="content" class="container clearfix">
+
+	<article class="single-project">
+
+		<header class="page-header clearfix">
+			<h1 class="page-title align-left"><a href="/software/zincplugin/">Zinc plugin</a></h1>
+			<a href="/software/" class="button no-bg medium align-right">
+				All software projects <img src="/_themes/physiome/img/icon-grid.png" alt="" class="icon">
+			</a>			
+		</header><!-- end .page-header -->
+
+		<div id="main">
+
+			<div class="one-fourth">
+				{{ theme:partial src="support-category-list"}}
+			</div><!-- end .ancillary -->
+
+			<div class="three-fourth last"><!-- Content -->              
+
+				{{ layout_content }} 
+
+			</div><!-- End Content --> 
+
+			<div class="clear"></div>
+
+		</div><!-- end #main -->
+
+		<div id="sidebar">
+
+			<div class="widget">
+
+				{{ get_content from="{segment_1}" }}
+				<h6 class="widget-title">{{ title }}</h6>
+				{{ /get_content }}
+
+				<ul class="peernav">
+					{{ nav from="{page_url}" }}
+					<li>
+						<a href="{{ url }}" {{ if is_current }} class="current"{{ endif }}>{{ title }}</a>
+					</li>
+					{{ /nav }}
+				</ul>
+
+			</div><!-- end .widget -->
+{{segment_2}}
+			{{ nav from="software" max_depth="1" }}
+			
+			{{ theme:partial src="software-download-promo" project="{ url }" softwaretitle="{ title }" }}
+			
+			{{ /nav }}
+			
+		</div><!-- end #sidebar -->
+		
+	</article><!-- end .single-project -->
+	
+</section><!-- end #content -->
+
+{{ theme:partial src="footer"}} 
+
+{{ theme:partial src="footer-scripts-all"}}
+
+</body>
+</html>

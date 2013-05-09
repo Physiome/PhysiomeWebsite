@@ -1,0 +1,5 @@
+				<ul class="peernav">
+				{{ nav from="software/{ project }" max_depth="2" }}
+					<li><a href="{{ url }}" {{ if is_current }} class="current" {{ endif }}>{{ title }}</a></li>
+				{{ /nav }}
+				</ul>

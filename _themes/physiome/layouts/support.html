@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<!--[if IE 7]>                  <html class="ie7 no-js" lang="en">     <![endif]-->
+<!--[if lte IE 8]>              <html class="ie8 no-js" lang="en">     <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="not-ie no-js" lang="en">  <!--<![endif]-->
+
+{{ theme:partial src="head"}} 
+
+<body>
+
+{{ theme:partial src="header"}}
+
+<section id="content" class="container clearfix">
+
+	<article class="single-project">
+
+		<header class="page-header clearfix">
+			{{ if segment_2 == "zinclibrary" }}
+			<h1 class="page-title align-left"><a href="/software/zinclibrary/">Zinc library</a></h1>
+			{{ elseif segment_2 == "zincplugin" }}
+			<h1 class="page-title align-left"><a href="/software/zincplugin/">Zinc plugin</a></h1>
+			{{ elseif segment_2 == "cmgui" }}
+			<h1 class="page-title align-left"><a href="/software/cmgui/">Cmgui</a></h1>
+			{{ elseif segment_2 == "opencmiss" }}
+			<h1 class="page-title align-left"><a href="/software/opencmiss/">OpenCMISS</a></h1>
+
+			{{ elseif segment_2 == "cellml" }}
+			<h1 class="page-title align-left"><a href="/software/cellml/">CellML</a></h1>
+
+			{{ elseif segment_2 == "fieldml" }}
+			<h1 class="page-title align-left"><a href="/software/fieldml/">FieldML</a></h1>
+
+			{{ elseif segment_2 == "opencell" }}
+			<h1 class="page-title align-left"><a href="/software/opencell/">OpenCell</a></h1>
+
+			{{ elseif segment_2 == "cm" }}
+			<h1 class="page-title align-left"><a href="/software/cm/">CM</a></h1>
+
+			{{ elseif segment_2 == "pyzinc" }}
+			<h1 class="page-title align-left"><a href="/software/pyzinc/">PyZinc</a></h1>
+
+			{{ endif }}
+			<a href="/software/" class="button no-bg medium align-right">
+				All software projects <img src="/_themes/physiome/img/icon-grid.png" alt="" class="icon">
+			</a>			
+		</header><!-- end .page-header -->
+
+		<div id="main">
+
+			<div class="one-fourth">
+			{{ if segment_2 == "zincplugin" }}
+				{{ theme:partial src="support-category-list-zincplugin"}}
+			{{ elseif segment_2 == "cmgui" }}
+				{{ theme:partial src="support-category-list-cmgui"}}
+			{{ elseif segment_2 == "cm" }}
+				{{ theme:partial src="support-category-list-cm"}}
+			{{ elseif segment_2 == "pyzinc" }}
+				{{ theme:partial src="support-category-list-pyzinc"}}
+			{{ endif }}
+			</div><!-- end .ancillary -->
+
+			<div class="three-fourth last"><!-- Content -->              
+
+				{{ layout_content }} 
+
+			</div><!-- End Content --> 
+
+			<div class="clear"></div>
+
+		</div><!-- end #main -->
+
+		<div id="sidebar">
+    
+			<div class="widget">
+
+				{{ theme:partial src="software-project-peernav-title" project="{ segment_2 }" }}
+				
+				{{ theme:partial src="software-project-peernav" project="{ segment_2 }" }}
+
+				{{ nav from="software" max_depth="1" exclude="/software/opencmiss|/software/fieldml" }}
+					{{if (is_current || is_parent) }}
+						{{ theme:partial src="software-download-promo" project="{ url }" softwaretitle="{ title }" }}
+					{{ endif }}
+				{{ /nav }}
+
+			</div><!-- end .widget -->
+
+		</div><!-- end #sidebar -->
+		
+	</article><!-- end .single-project -->
+	
+</section><!-- end #content -->
+
+{{ theme:partial src="footer"}} 
+
+{{ theme:partial src="footer-scripts-all"}}
+
+</body>
+</html>

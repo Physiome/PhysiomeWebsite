@@ -1,0 +1,9 @@
+			<div class="widget">
+				{{if ( segment_2 == "cellml") }}
+				<p><a href="{{ project }}/download" class="button">Download {{ softwaretitle }} DOM API</a></p>
+				{{elseif ( segment_2 == "zincplugin") }}
+				<p><a href="{{ project }}/download" class="button">Download the {{ softwaretitle }}</a></p>
+				{{ else }}
+				<p><a href="{{ project }}/download" class="button">Download {{ softwaretitle }}</a></p>
+				{{ endif }}
+			</div><!-- end .widget -->

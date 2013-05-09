@@ -1,0 +1,26 @@
+{{ entries:listing from="software/cm/download" sort_dir="desc" limit="1" }}
+{{ theme:partial src="software-download-title" project="{ segment_2 }" }}
+<h2>{{ title }}</h2>
+<p>{{ intro }}</p>
+<div class="clearfix">
+	{{ downloadlinks }} 
+	<h4 class="acc-trigger">
+	      <a href="#">{{ distrib_platform }}</a>
+	</h4>
+	<div class="acc-container">
+	      <div class="content"><a href="{{ distrib_link }}">{{ distrib_linktext }}</a>.</div>
+	</div>
+	{{ /downloadlinks }}
+</div>
+<h2>Release notes</h2>
+{{ content }}
+<hr />
+<h3>Installation instructions</h3>
+<ol>
+	<li>Make a copy of or link to man/man1/cm.1 in a subdirectory man1/ under a directory in your MANPATH, or include man/man1 in your MANPATH.</li>
+	<li>Make a copy of or link to bin/cm in a directory in your PATH, or include the bin directory in your PATH.</li>
+</ol>
+<hr />
+<h2>Looking for older verisons of Example project?</h2>
+<p>Older versions of CM are no longer supported or available.</p>
+{{ /entries:listing }}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<!--[if IE 7]>                  <html class="ie7 no-js" lang="en">     <![endif]-->
+<!--[if lte IE 8]>              <html class="ie8 no-js" lang="en">     <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="not-ie no-js" lang="en">  <!--<![endif]-->
+
+{{ theme:partial src="head"}} 
+
+<body>
+
+{{ theme:partial src="header"}} 
+
+<section id="content" class="container clearfix">
+
+	<article>
+
+		<header class="page-header">
+			<h1 class="topic-title"><a href="/about/">The IUPS Physiome Project</a></h1>
+		</header><!-- end .page-header -->
+
+		<div id="main">
+		
+			<!-- Content -->
+            
+			{{ layout_content }}              
+		
+		</div><!-- end #main -->
+
+		<div id="sidebar">
+    
+			<div class="widget">
+
+				<h6 class="widget-title">Here's what's popular</h6>
+
+				<ul class="peernav" id="popular-pages">
+					<li>
+						<a href="/software/opencmiss" title="A mathematical modelling environment for complex bioengineering problems.">OpenCMISS</a>
+					</li>
+					
+					<li>
+						<a href="/software/fieldml" title="A framework for modelling software development and model interchange for the bioengineering and engineering communities.">FieldML</a>
+					</li>
+					
+					<li>
+						<a href="/about/the-virtual-physiological-human" title="A worldwide effort to develop next-generation computer technologies to integrate all information available for each patient.">The Virtual Physiological Human</a>
+					</li>
+
+					<li>
+						<a href="/software/zincplugin" title="The browser plugin that brings the cmgui visualisation engine to your browser.">The Zinc plugin</a>
+					</li>
+
+					
+				</ul>
+
+			</div><!-- end .widget -->
+
+		</div><!-- end #sidebar -->
+		
+	</article><!-- end .single-project -->
+	
+</section><!-- end #content -->
+
+{{ theme:partial src="footer"}} 
+
+{{ theme:partial src="footer-scripts-all"}} 
+
+</body>
+</html>

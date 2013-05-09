@@ -1,0 +1,56 @@
+<h1 class="page-title article-title">{{ title }}</h1>
+
+<!--
+
+{{ taxonomy:listing type="categories" }}
+  {{ if no_results }}
+    <p>{{ no_results_text }}</p>
+  {{ else }}
+  <div class="block">
+    <h3>{{ name|title }}</h3>
+    {{entries:listing folder="/software/zincplugin/support" conditions="categories:{name}"}}
+
+      {{ if no_results }}
+        {{ no_results_text }}
+      {{ else }}
+        <p><a href="{{ url }}">{{ title }}</a></p>
+      {{ endif }}
+    {{ /entries:listing }}
+  </div>
+  {{ endif }}
+{{ /taxonomy:listing }}
+
+-->
+
+{{ if segment_4 == "users" }}
+
+	{{ entries:listing folder="/software/{ segment_2 }/support" conditions="categories:users guide" }}
+	    {{ if no_results }}
+	      {{ no_results_text }}
+	    {{ else }}
+		<h4><a href="{{ url }}">{{ title }}</a></h4>
+		<p>{{ intro }}</p>
+		<hr />
+		{{ endif }}
+	{{ /entries:listing }}
+
+{{ endif }}
+
+{{ if segment_4 == "developers" }}
+
+	{{ entries:listing folder="/software/zincplugin/support" conditions="categories:developers guide" }}
+	    {{ if no_results }}
+	      {{ no_results_text }}
+	    {{ else }}
+		<h4><a href="{{ url }}">{{ title }}</a></h4>
+		<p>{{ intro }}</p>
+		<hr />
+		{{ endif }}
+	{{ /entries:listing }}
+
+{{ endif }}
+
+
+
+
+
