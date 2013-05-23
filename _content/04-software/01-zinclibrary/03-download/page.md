@@ -15,9 +15,9 @@ The Zinc library has yet to make an official release. The Zinc library source ma
 
 #### Ubuntu
 
-{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest" releasefilter="pyzinc-dev" osfilter="ubuntu" limit="3" }}
+{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="pyzinc-dev" osfilter="ubuntu" limit="3" }}
 
 #### OS X
 
-{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest" releasefilter="pyzinc-dev" osfilter="mac" limit="3" }}
+{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="pyzinc-dev" osfilter="mac" limit="3" }}
 
