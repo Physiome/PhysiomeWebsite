@@ -3,7 +3,7 @@ class Plugin_filelist extends Plugin {
 	
 	var $meta = array(
 		'name'       => 'File list',
-		'version'    => '0.2',
+		'version'    => '0.3',
 		'author'     => 'Gareth de Walters',
 		'author_url' => 'http://www.abi.auckland.ac.nz/'
 	);
@@ -19,7 +19,7 @@ class Plugin_filelist extends Plugin {
 
 		// Filter values of $scanned_directory based on parameter 
 		// input (partial filename) into new array -> $result.
-		$result = array_filter($scanned_directory, function ($item) use ($releasefilter) {
+		$resultreleasefilter = array_filter($scanned_directory, function ($item) use ($releasefilter) {
 		    if (stripos($item, $releasefilter) !== false) {
 		        return true;
 		    }
@@ -27,20 +27,20 @@ class Plugin_filelist extends Plugin {
 		});
 
 		// Filter result array based on parameter input (OS) 
-		$result = array_filter($result, function ($item) use ($osfilter) {
+		$resultosfilter = array_filter($resultreleasefilter, function ($item) use ($osfilter) {
 		    if (stripos($item, $osfilter) !== false) {
 		        return true;
 		    }
 		    return false;
 		});
-		
+
 		// Sort the filtered array to ensure latest developer releases appear first.
-		sort($result, SORT_NUMERIC); 
+		rsort($resultosfilter);
 
 		// Output list filtered by file name and OS to HTML and apply limit
 		$i = 1;
 		$out="<ul class=\"arrow\">";
-		foreach($result as $file){
+		foreach($resultosfilter as $file){
 			$out=$out.'<li><a href="'.$url.$file.'">'.$file.'</a></li>';
 			if ($i++ == $limit) break;
 		}
