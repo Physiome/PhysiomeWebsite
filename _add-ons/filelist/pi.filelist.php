@@ -3,7 +3,7 @@ class Plugin_filelist extends Plugin {
 	
 	var $meta = array(
 		'name'       => 'File list',
-		'version'    => '0.1',
+		'version'    => '0.2',
 		'author'     => 'Gareth de Walters',
 		'author_url' => 'http://www.abi.auckland.ac.nz/'
 	);
@@ -49,21 +49,3 @@ class Plugin_filelist extends Plugin {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
