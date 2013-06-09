@@ -22,14 +22,126 @@ The National Institutes of Health's definition states that systems biology is an
 
 ### Symposium programme
 
-The symposium programme is in the process of being finalised, and will be published on this site shortly. Presentations at the symposium will cover these topics:
+#### Day 1: Sunday, 28 July
 
-- Systems Biology approaches to cell signalling
-- Systems Biology of immunology and infection
-- Systems Biology approaches to drug discovery and pharmacogenomics
-- Systems Biology in neuroscience and multi-scale modelling of behaviour
-- Physiome approaches to personalised medicine and therapy
-- Systems modelling in population biology
+<table class="table table-bordered table-striped">
+  <tr>
+    <th scope="row" class="col-1-5">9 - 9.30am</th>
+    <td><strong>Welcome</strong> Andrew McCulloch and Peter Hunter<br>
+    Title: Introduction and goals for the meeting.</td>
+  </tr>
+  <tr>
+    <th scope="row">9.30-10am</th>
+    <td><strong>Session 1</strong> Denis Noble (IUPS President)<br>
+    Title: Physiology from an evolutionary perspective</td>
+  </tr>
+  <tr>
+    <th scope="row">10-10.30am</th>
+    <td><strong>Session 2</strong> Hiroaki Kitano <br>
+    Title: The Japanese physiome project</td>
+  </tr>
+  <tr>
+    <th scope="row">10.30-11am</th>
+    <td>Session 3         Adriano Henney <br>
+    Title: The Virtual Liver: A multidisciplinary, multiscale challenge for systems biology</td>
+  </tr>
+  <tr>
+    <th scope="row">11-12noon</th>
+    <td><strong>Discussion</strong></td>
+  </tr>
+  <tr>
+    <th scope="row">12-1pm</th>
+    <td><strong>Lunch</strong></td>
+  </tr>
+  <tr>
+    <th scope="row">1-1.30pm</th>
+    <td><strong>Session 4</strong> Janet Thorton (EBI)<br>
+    Title: Bioinformatics at EBI : Fulfilling the Work of Systems Biology</td>
+  </tr>
+  <tr>
+    <th scope="row">1.30-2pm</th>
+    <td><strong>Session 5</strong> Bernard de Bono <br>
+    Title: Linking the Physiome with medical informatics</td>
+  </tr>
+  <tr>
+    <th scope="row">2-2.30pm</th>
+    <td><strong>Session 6</strong> Stig Omholt <br>
+    Title: The Genotype-Phenotype map</td>
+  </tr>
+  <tr>
+    <th scope="row">2.30-3pm</th>
+    <td><strong>Session 7</strong> Charlie Hodgman <br>
+    Title: A plant physiome</td>
+  </tr>
+  <tr>
+    <th scope="row">3-4pm</th>
+    <td><strong>Discussion</strong></td>
+  </tr>
+  <tr>
+    <th scope="row">4-6.30pm</th>
+    <td><strong>Poster Presentations</strong></td>
+  </tr>
+  <tr>
+    <th scope="row">6.30pm</th>
+    <td><strong>Dinner</strong></td>
+  </tr>
+</table>
+
+#### Day 2: Monday, 29 July
+
+<table class="table table-bordered table-striped">
+  <tr>
+    <th scope="row" class="col-1-5">9 - 9.30am</th>
+    <td><strong>Session 1</strong> Hans Westerhoff (IUBMB)<br>
+    Title: Mapping metabolic systems biology.</td>
+  </tr>
+  <tr>
+    <th scope="row">9.30-10am</th>
+    <td><strong>Session 2</strong>: To be announced</td>
+  </tr>
+  <tr>
+    <th scope="row">10-10.30am</th>
+    <td><strong>Session 3</strong> Pingfan Rao (IUFoST)<br>
+    Title: A hidden system for superoxide disposal and its interaction with food.</td>
+  </tr>
+  <tr>
+    <th scope="row">10.30-11am</th>
+    <td><strong>Session 4</strong> Ibrahim Elmadfa (IUNS President) <br>
+    Title: The role of antioxidants in the immune function</td>
+  </tr>
+  <tr>
+    <th scope="row">11-12noon</th>
+    <td><strong>Discussion</strong></td>
+  </tr>
+  <tr>
+    <th scope="row">12-1pm</th>
+    <td><strong>Lunch</strong></td>
+  </tr>
+  <tr>
+    <th scope="row">1-1.30pm</th>
+    <td><strong>Session 5</strong> Malcolm Gordon (IUPS) <br>
+    Title: Comparative and evolutionary systems biology: examples from an endless frontier.</td>
+  </tr>
+  <tr>
+    <th scope="row">1.30-2pm</th>
+    <td><strong>Session 6</strong> Elhanan Borenstein (IUMS)<br>
+    Title: The microbiome</td>
+  </tr>
+  <tr>
+    <th scope="row">2-2.30pm</th>
+    <td><strong>Session 7</strong> Nils Christian Stenseth (IUBS President)<br>
+Title: The interplay between ecology and evolution in host-vector-pathogen systems: Yersinia pestis as an example</td>
+  </tr>
+  <tr>
+    <th scope="row">2.30-3pm</th>
+    <td><strong>Session 8</strong> Prof Kono (Tsumura)<br>
+    Title: Systems biology for herbal medicine</td>
+  </tr>
+  <tr>
+    <th scope="row">3-4pm</th>
+    <td><strong>Discussion</strong></td>
+  </tr>
+</table>
 
 ### Poster Submission
 
