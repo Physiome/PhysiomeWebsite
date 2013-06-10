@@ -15,6 +15,14 @@ The Zinc library has yet to make an official release. The Zinc library source ma
 
 #### Developer releases
 
+##### Windows
+
+{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="zinc" osfilter="windows" limit="2" }}
+
+##### OS X
+
+{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="zinc" osfilter="mac" limit="2" }}
+
 ##### Linux
 
 {{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="zinc" osfilter="ubuntu" limit="2" }}

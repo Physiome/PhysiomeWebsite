@@ -14,10 +14,15 @@ The PyZinc has yet to make an official release. The PyZinc source code may be do
 
 #### Developer releases
 
-##### Linux
+##### Windows
 
-{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="pyzinc" osfilter="ubuntu" limit="10" }}
+{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="pyzinc" osfilter="windows" limit="10" }}
 
 ##### OS X
 
 {{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="pyzinc" osfilter="mac" limit="10" }}
+
+
+##### Linux
+
+{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="pyzinc" osfilter="ubuntu" limit="10" }}
