@@ -134,8 +134,7 @@ Title: The interplay between ecology and evolution in host-vector-pathogen syste
   </tr>
   <tr>
     <th scope="row">2.30-3pm</th>
-    <td><strong>Session 8</strong> Prof Kono (Tsumura)<br>
-    Title: Systems biology for herbal medicine</td>
+	<td><strong>Session 8</strong>: To be announced</td>
   </tr>
   <tr>
     <th scope="row">3-4pm</th>
