@@ -24,120 +24,128 @@ The National Institutes of Health's definition states that systems biology is an
 
 #### Day 1: Sunday, 28 July
 
-<table class="table table-bordered table-striped">
+<table class="table">
   <tr>
-    <th scope="row" class="col-1-5">9 - 9.30am</th>
-    <td><strong>Welcome</strong> Andrew McCulloch and Peter Hunter<br>
-    Title: Introduction and goals for the meeting.</td>
+    <th scope="col" class="col-1-5">Time</th>
+    <th scope="col">Speaker</th>
   </tr>
   <tr>
-    <th scope="row">9.30-10am</th>
-    <td><strong>Session 1</strong> Denis Noble (IUPS President)<br>
-    Title: Physiology from an evolutionary perspective</td>
+    <td>9 - 9.30am</th>
+    <td><strong>Welcome: Introduction and goals for the meeting</strong><br>
+    </strong>Andrew McCulloch and Peter Hunter </td>
   </tr>
   <tr>
-    <th scope="row">10-10.30am</th>
-    <td><strong>Session 2</strong> Hiroaki Kitano <br>
-    Title: The Japanese physiome project</td>
+    <td>9.30-10am</th>
+    <td><strong>Physiology from an evolutionary perspective</strong><br> 
+    Denis Noble (IUPS President)<br></td>
   </tr>
   <tr>
-    <th scope="row">10.30-11am</th>
-    <td>Session 3         Adriano Henney <br>
-    Title: The Virtual Liver: A multidisciplinary, multiscale challenge for systems biology</td>
+    <td>10-10.30am</th>
+    <td><strong>The Japanese Physiome Project<br>
+    </strong>Hiroaki Kitano <br></td>
   </tr>
   <tr>
-    <th scope="row">11-12noon</th>
+    <td>10.30-11am</th>
+    <td><strong>The Virtual Liver: A multidisciplinary, multiscale challenge for systems biology</strong><br>
+    Adriano Henney <br></td>
+  </tr>
+  <tr>
+    <td>11-12noon</th>
     <td><strong>Discussion</strong></td>
   </tr>
   <tr>
-    <th scope="row">12-1pm</th>
+    <td>12-1pm</th>
     <td><strong>Lunch</strong></td>
   </tr>
   <tr>
-    <th scope="row">1-1.30pm</th>
-    <td><strong>Session 4</strong> Janet Thorton (EBI)<br>
-    Title: Bioinformatics at EBI : Fulfilling the Work of Systems Biology</td>
+    <td>1-1.30pm</th>
+    <td><strong>Bioinformatics at EBI : Fulfilling the Work of Systems Biology</strong> <br>
+      Janet Thorton (EBI) </td>
   </tr>
   <tr>
-    <th scope="row">1.30-2pm</th>
-    <td><strong>Session 5</strong> Bernard de Bono <br>
-    Title: Linking the Physiome with medical informatics</td>
+    <td>1.30-2pm</th>
+    <td><strong>Linking the Physiome with medical informatics<br>
+    </strong> Bernard de Bono </td>
   </tr>
   <tr>
-    <th scope="row">2-2.30pm</th>
-    <td><strong>Session 6</strong> Stig Omholt <br>
-    Title: The Genotype-Phenotype map</td>
+    <td>2-2.30pm</th>
+    <td><strong>The Genotype-Phenotype map<br>
+    </strong>Stig Omholt <br></td>
   </tr>
   <tr>
-    <th scope="row">2.30-3pm</th>
-    <td><strong>Session 7</strong> Charlie Hodgman <br>
-    Title: A plant physiome</td>
+    <td>2.30-3pm</th>
+    <td><strong>Recent advances in plant physiomics</strong><br>
+    Charlie Hodgman <br></td>
   </tr>
   <tr>
-    <th scope="row">3-4pm</th>
+    <td>3-4pm</th>
     <td><strong>Discussion</strong></td>
   </tr>
   <tr>
-    <th scope="row">4-6.30pm</th>
+    <td>4-6.30pm</th>
     <td><strong>Poster Presentations</strong></td>
   </tr>
   <tr>
-    <th scope="row">6.30pm</th>
+    <td>6.30pm</th>
     <td><strong>Dinner</strong></td>
   </tr>
 </table>
 
 #### Day 2: Monday, 29 July
 
-<table class="table table-bordered table-striped">
+<table class="table">
   <tr>
-    <th scope="row" class="col-1-5">9 - 9.30am</th>
-    <td><strong>Session 1</strong> Hans Westerhoff (IUBMB)<br>
-    Title: Mapping metabolic systems biology.</td>
+    <th scope="col" class="col-1-5">Time</th>
+    <th scope="col">Speaker</th>
   </tr>
   <tr>
-    <th scope="row">9.30-10am</th>
+    <td>9 - 9.30am</th>
+    <td><strong>Mapping metabolic systems biology</strong><br>
+    Hans Westerhoff (IUBMB)<br></td>
+  </tr>
+  <tr>
+    <td>9.30-10am</th>
     <td><strong>Session 2</strong>: To be announced</td>
   </tr>
   <tr>
-    <th scope="row">10-10.30am</th>
-    <td><strong>Session 3</strong> Pingfan Rao (IUFoST)<br>
-    Title: A hidden system for superoxide disposal and its interaction with food.</td>
+    <td>10-10.30am</th>
+    <td><strong>A hidden system for superoxide disposal and its interaction with food</strong><br>
+    Pingfan Rao (IUFoST)<br></td>
   </tr>
   <tr>
-    <th scope="row">10.30-11am</th>
-    <td><strong>Session 4</strong> Ibrahim Elmadfa (IUNS President) <br>
-    Title: The role of antioxidants in the immune function</td>
+    <td>10.30-11am</th>
+    <td><strong>The role of antioxidants in the immune function</strong><br>
+    Ibrahim Elmadfa (IUNS President) <br></td>
   </tr>
   <tr>
-    <th scope="row">11-12noon</th>
+    <td>11-12noon</th>
     <td><strong>Discussion</strong></td>
   </tr>
   <tr>
-    <th scope="row">12-1pm</th>
+    <td>12-1pm</th>
     <td><strong>Lunch</strong></td>
   </tr>
   <tr>
-    <th scope="row">1-1.30pm</th>
-    <td><strong>Session 5</strong> Malcolm Gordon (IUPS) <br>
-    Title: Comparative and evolutionary systems biology: examples from an endless frontier.</td>
+    <td>1-1.30pm</th>
+    <td><strong>Comparative and evolutionary systems biology: examples from an endless frontier</strong> <br>
+    Malcolm Gordon (IUPS) <br></td>
   </tr>
   <tr>
-    <th scope="row">1.30-2pm</th>
-    <td><strong>Session 6</strong> Elhanan Borenstein (IUMS)<br>
-    Title: The microbiome</td>
+    <td>1.30-2pm</th>
+    <td><strong>Towards a Predictive Systems-Level Model of the Human Microbiome<br>
+    </strong>Elhanan Borenstein (IUMS)</td>
   </tr>
   <tr>
-    <th scope="row">2-2.30pm</th>
-    <td><strong>Session 7</strong> Nils Christian Stenseth (IUBS President)<br>
-Title: The interplay between ecology and evolution in host-vector-pathogen systems: Yersinia pestis as an example</td>
+    <td>2-2.30pm</th>
+    <td><strong>The interplay between ecology and evolution in host-vector-pathogen systems: Yersinia pestis as an example<br>
+    </strong>Nils Christian Stenseth (IUBS President)<br></td>
   </tr>
   <tr>
-    <th scope="row">2.30-3pm</th>
+    <td>2.30-3pm</th>
 	<td><strong>Session 8</strong>: To be announced</td>
   </tr>
   <tr>
-    <th scope="row">3-4pm</th>
+    <td>3-4pm</th>
     <td><strong>Discussion</strong></td>
   </tr>
 </table>
