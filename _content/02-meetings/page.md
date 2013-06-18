@@ -1,5 +1,5 @@
 ---
-_layout: meetings-page
+_layout: meetings-index
 _template: page
 _fieldset: page
 title: ICSU bio-unions satellite symposium
@@ -22,14 +22,133 @@ The National Institutes of Health's definition states that systems biology is an
 
 ### Symposium programme
 
-The symposium programme is in the process of being finalised, and will be published on this site shortly. Presentations at the symposium will cover these topics:
+#### Day 1: Sunday, 28 July
 
-- Systems Biology approaches to cell signalling
-- Systems Biology of immunology and infection
-- Systems Biology approaches to drug discovery and pharmacogenomics
-- Systems Biology in neuroscience and multi-scale modelling of behaviour
-- Physiome approaches to personalised medicine and therapy
-- Systems modelling in population biology
+<table class="table">
+  <tr>
+    <th scope="col" class="col-1-5">Time</th>
+    <th scope="col">Speaker</th>
+  </tr>
+  <tr>
+    <td>9 - 9.30am</th>
+    <td><strong>Welcome: Introduction and goals for the meeting</strong><br />
+    Andrew McCulloch and Peter Hunter </td>
+  </tr>
+  <tr>
+    <td>9.30-10am</th>
+    <td><strong>Physiology from an evolutionary perspective</strong><br />
+    Denis Noble (IUPS President)<br></td>
+  </tr>
+  <tr>
+    <td>10-10.30am</th>
+    <td><strong>The Japanese Physiome Project</strong><br />
+    <a href="hiroaki-kitano">Hiroaki Kitano</a></td>
+  </tr>
+  <tr>
+    <td>10.30-11am</th>
+    <td><strong>The Virtual Liver: A multidisciplinary, multiscale challenge for systems biology</strong><br>
+    <a href="adriano-henney">Adriano Henney</a></td>
+  </tr>
+  <tr>
+    <td>11-12noon</th>
+    <td><strong>Discussion</strong></td>
+  </tr>
+  <tr>
+    <td>12-1pm</th>
+    <td><strong>Lunch</strong></td>
+  </tr>
+  <tr>
+    <td>1-1.30pm</th>
+    <td><strong>Bioinformatics at EBI : Fulfilling the Work of Systems Biology</strong><br />
+    <a href="janet-thornton">Janet Thornton</a> (EBI)</td>
+  </tr>
+  <tr>
+    <td>1.30-2pm</th>
+    <td><strong>Linking the Physiome with medical informatics</strong><br />
+    <a href="bernard-de-bono">Bernard de Bono</a></td>
+  </tr>
+  <tr>
+    <td>2-2.30pm</th>
+    <td><strong>The Genotype-Phenotype map</strong><br />
+    <a href="stig-omholt">Stig Omholt</a></td>
+  </tr>
+  <tr>
+    <td>2.30-3pm</th>
+    <td><strong>Recent advances in plant physiomics</strong><br>
+    <a href="charlie-hodgman">Charlie Hodgman</a></td>
+  </tr>
+  <tr>
+    <td>3-4pm</th>
+    <td><strong>Discussion</strong></td>
+  </tr>
+  <tr>
+    <td>4-6.30pm</th>
+    <td><strong>Poster Presentations</strong></td>
+  </tr>
+  <tr>
+    <td>6.30pm</th>
+    <td><strong>Dinner</strong></td>
+  </tr>
+</table>
+
+#### Day 2: Monday, 29 July
+
+<table class="table">
+  <tr>
+    <th scope="col" class="col-1-5">Time</th>
+    <th scope="col">Speaker</th>
+  </tr>
+  <tr>
+    <td>9 - 9.30am</th>
+    <td><strong>Mapping metabolic systems biology</strong><br>
+    Hans Westerhoff (IUBMB)<br></td>
+  </tr>
+  <tr>
+    <td>9.30-10am</th>
+    <td><strong>Session 2</strong>: To be announced</td>
+  </tr>
+  <tr>
+    <td>10-10.30am</th>
+    <td><strong>A hidden system for superoxide disposal and its interaction with food</strong><br>
+    <a href="pingfan-rao">Pingfan Rao</a> (IUFoST)</td>
+  </tr>
+  <tr>
+    <td>10.30-11am</th>
+    <td><strong>The role of antioxidants in the immune function</strong><br>
+    <a href="ibrahim-elmadfa">Ibrahim Elmadfa (IUNS President)<a/></td>
+  </tr>
+  <tr>
+    <td>11-12noon</th>
+    <td><strong>Discussion</strong></td>
+  </tr>
+  <tr>
+    <td>12-1pm</th>
+    <td><strong>Lunch</strong></td>
+  </tr>
+  <tr>
+    <td>1-1.30pm</th>
+    <td><strong>Comparative and evolutionary systems biology: examples from an endless frontier</strong><br />
+    <a href="malcolm-gordon">Malcolm Gordon (IUPS)</a></td>
+  </tr>
+  <tr>
+    <td>1.30-2pm</th>
+    <td><strong>Towards a Predictive Systems-Level Model of the Human Microbiome</strong><br />
+	<a href="elhanan-borenstein">Elhanan Borenstein (IUMS)</a></td>
+  </tr>
+  <tr>
+    <td>2-2.30pm</th>
+    <td><strong>The interplay between ecology and evolution in host-vector-pathogen systems: Yersinia pestis as an example</strong><br />
+	<a href="nils-christian-stenseth">Nils Christian Stenseth (IUBS President)</a></td>
+  </tr>
+  <tr>
+    <td>2.30-3pm</th>
+	<td><strong>Session 8</strong>: To be announced</td>
+  </tr>
+  <tr>
+    <td>3-4pm</th>
+    <td><strong>Discussion</strong></td>
+  </tr>
+</table>
 
 ### Poster Submission
 
