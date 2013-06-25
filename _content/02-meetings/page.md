@@ -36,13 +36,12 @@ The National Institutes of Health's definition states that systems biology is an
   </tr>
   <tr>
     <td>9.30-10am</th>
-    <td><strong>Physiology from an evolutionary perspective</strong><br />
-    Denis Noble (IUPS President)<br></td>
+    <td><strong>A systems biological view of Evolutionary Biology: all in the interactions</strong><br />
+    Denis Noble (IUPS President)</td>
   </tr>
   <tr>
     <td>10-10.30am</th>
-    <td><strong>The Japanese Physiome Project</strong><br />
-    <a href="hiroaki-kitano">Hiroaki Kitano</a></td>
+    <td><strong>To be announced</strong></td>
   </tr>
   <tr>
     <td>10.30-11am</th>
@@ -50,7 +49,7 @@ The National Institutes of Health's definition states that systems biology is an
     <a href="adriano-henney">Adriano Henney</a></td>
   </tr>
   <tr>
-    <td>11-12noon</th>
+    <td>11-12pm</th>
     <td><strong>Discussion</strong></td>
   </tr>
   <tr>
@@ -59,17 +58,16 @@ The National Institutes of Health's definition states that systems biology is an
   </tr>
   <tr>
     <td>1-1.30pm</th>
-    <td><strong>Bioinformatics at EBI : Fulfilling the Work of Systems Biology</strong><br />
-    <a href="janet-thornton">Janet Thornton</a> (EBI)</td>
+    <td><strong>To be announced</strong></td>
   </tr>
   <tr>
     <td>1.30-2pm</th>
-    <td><strong>Linking the Physiome with medical informatics</strong><br />
+    <td><strong>Articulating physiology knowledge about tissues for drug discovery</strong><br />
     <a href="bernard-de-bono">Bernard de Bono</a></td>
   </tr>
   <tr>
     <td>2-2.30pm</th>
-    <td><strong>The Genotype-Phenotype map</strong><br />
+    <td><strong>Bridging the genotype-phenotype gap: what does it take?</strong><br />
     <a href="stig-omholt">Stig Omholt</a></td>
   </tr>
   <tr>
@@ -105,11 +103,12 @@ The National Institutes of Health's definition states that systems biology is an
   </tr>
   <tr>
     <td>9.30-10am</th>
-    <td><strong>Session 2</strong>: To be announced</td>
+    <td><strong>HD-Physiology Project -A Japanese Flagship Physiological Modeling Project</strong><br />
+    <a href="hiroaki-kitano">Hiroaki Kitano</a></td>
   </tr>
   <tr>
     <td>10-10.30am</th>
-    <td><strong>A hidden system for superoxide disposal and its interaction with food</strong><br>
+    <td><strong>A hidden system for superoxide disposal</strong><br>
     <a href="pingfan-rao">Pingfan Rao</a> (IUFoST)</td>
   </tr>
   <tr>
@@ -118,7 +117,7 @@ The National Institutes of Health's definition states that systems biology is an
     <a href="ibrahim-elmadfa">Ibrahim Elmadfa (IUNS President)<a/></td>
   </tr>
   <tr>
-    <td>11-12noon</th>
+    <td>11-12pm</th>
     <td><strong>Discussion</strong></td>
   </tr>
   <tr>
@@ -142,7 +141,8 @@ The National Institutes of Health's definition states that systems biology is an
   </tr>
   <tr>
     <td>2.30-3pm</th>
-	<td><strong>Session 8</strong>: To be announced</td>
+    <td><strong>Bioinformatics at EBI: fulfilling the work of Systems Biology</strong><br />
+    <a href="janet-thornton">Janet Thornton</a> (EBI)</td>
   </tr>
   <tr>
     <td>3-4pm</th>
