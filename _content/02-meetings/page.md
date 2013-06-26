@@ -198,4 +198,4 @@ Send your queries about registration and accommodation for the symposium to [Kat
 
 Registration for the ICSU bio-unions satellite symposium is now open. Please make your selection from the two registration options provided below. You will then be redirected to the [Eventbrite website](http://bio-unions-symposium-2013.eventbrite.com) to finalise your registration. Registration prices are quoted in US dollars.
 
-<iframe src="http://www.eventbrite.com/tickets-external?eid=6182797915&ref=etckt" frameborder="0" height="425" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+<iframe src="http://www.eventbrite.com/tickets-external?eid=6182797915&ref=etckt" frameborder="0" height="350" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
