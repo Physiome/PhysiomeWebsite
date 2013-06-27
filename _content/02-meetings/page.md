@@ -37,7 +37,7 @@ The National Institutes of Health's definition states that systems biology is an
   <tr>
     <td>9.30-10am</th>
     <td><strong>A systems biological view of Evolutionary Biology: all in the interactions</strong><br />
-    Denis Noble (IUPS President)</td>
+    <a href="denis-noble">Denis Noble</a> (IUPS President)</td>
   </tr>
   <tr>
     <td>10-10.30am</th>
