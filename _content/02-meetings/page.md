@@ -41,7 +41,8 @@ The National Institutes of Health's definition states that systems biology is an
   </tr>
   <tr>
     <td>10-10.30am</th>
-    <td><strong>To be announced</strong></td>
+    <td><strong>An overview of VPH/Physiome activities</strong><br />
+	<a href="peter-hunter">Peter Hunter</a></td>
   </tr>
   <tr>
     <td>10.30-11am</th>
