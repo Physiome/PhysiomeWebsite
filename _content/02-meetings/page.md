@@ -54,12 +54,8 @@ The National Institutes of Health's definition states that systems biology is an
     <td><strong>Discussion</strong></td>
   </tr>
   <tr>
-    <td>12-1pm</th>
+    <td>12-1.30pm</th>
     <td><strong>Lunch</strong></td>
-  </tr>
-  <tr>
-    <td>1-1.30pm</th>
-    <td><strong>To be announced</strong></td>
   </tr>
   <tr>
     <td>1.30-2pm</th>
