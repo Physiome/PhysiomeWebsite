@@ -20,7 +20,9 @@ The meeting will bring together representatives of the ICSU Bio-Unions to develo
 
 The National Institutes of Health's definition states that systems biology is an approach in biomedical research to understand the larger picture — be it at the level of the organism, tissue, or cell — by putting its pieces together. It’s in stark contrast to decades of reductionist biology, which involves taking the pieces apart.
 
-### Symposium programme
+### Symposium programme 
+
+Click [here](/assets/pdf/ICSU bio-unions symposium programme July 2013) to download Programme
 
 #### Day 1: Sunday, 28 July
 
@@ -54,12 +56,8 @@ The National Institutes of Health's definition states that systems biology is an
     <td><strong>Discussion</strong></td>
   </tr>
   <tr>
-    <td>12-1pm</th>
+    <td>12-1.30pm</th>
     <td><strong>Lunch</strong></td>
-  </tr>
-  <tr>
-    <td>1-1.30pm</th>
-    <td><strong>To be announced</strong></td>
   </tr>
   <tr>
     <td>1.30-2pm</th>
