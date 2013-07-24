@@ -130,8 +130,8 @@ Click <a href="/assets/pdf/ICSU bio-unions symposium programme July 2013.pdf">he
   </tr>
   <tr>
     <td>1.30-2pm</th>
-    <td><strong>Towards a Predictive Systems-Level Model of the Human Microbiome</strong><br />
-	<a href="elhanan-borenstein">Elhanan Borenstein (IUMS)</a></td>
+    <td><strong>Multiscale regulatory networks in the brainstem</strong><br />
+	<a href="rajanikanth-vadigepalli">Rajanikanth Vadigepalli</a></td>
   </tr>
   <tr>
     <td>2-2.30pm</th>
