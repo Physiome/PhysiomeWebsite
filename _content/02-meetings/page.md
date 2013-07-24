@@ -131,7 +131,7 @@ Click <a href="/assets/pdf/ICSU bio-unions symposium programme July 2013.pdf">he
   <tr>
     <td>1.30-2pm</th>
     <td><strong>Multiscale regulatory networks in the brainstem</strong><br />
-	<a href="rajanikanth-vadigepalli">Rajanikanth Vadigepalli</a></td>
+	Rajanikanth Vadigepalli</td>
   </tr>
   <tr>
     <td>2-2.30pm</th>
