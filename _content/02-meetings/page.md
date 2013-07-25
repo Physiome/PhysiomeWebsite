@@ -22,7 +22,7 @@ The National Institutes of Health's definition states that systems biology is an
 
 ### Symposium programme 
 
-Click <a href="/assets/pdf/ICSU bio-unions symposium programme July 2013.pdf">here</a> to download Programme
+Click <a href="https://www.dropbox.com/s/480s78ig9qsw8n8/ICSU%20bio-unions%20symposium%20programme%20July%202013.pdf">here</a> to download Programme
 
 #### Day 1: Sunday, 28 July
 
