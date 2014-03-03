@@ -6,4 +6,4 @@ title: Related software
 ---
 ### Cmgui
 
-The Zinc library is derived from [Cmgui](/software/cmgui/), and future versions of Cmgui will be built using the Zinc library.
+The Zinc library is derived from [Cmgui](/software/opencmiss/cmgui/), and future versions of Cmgui will be built using the Zinc library.
