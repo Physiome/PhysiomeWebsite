@@ -2,7 +2,7 @@
 _layout: software-page
 _template: page
 _fieldset: page
-title: Get support for the Zinc library
+title: Documentation for the Zinc library
 description:
 intro: >
   Find out more about how to use the Zinc
@@ -10,7 +10,7 @@ intro: >
   advanced 3D visualisation capabilities,
   and how to get involved with development
   of the Zinc library itself.
-navtitle: Get support
+navtitle: Documentation
 ---
 ### Physiome Project tracker
 

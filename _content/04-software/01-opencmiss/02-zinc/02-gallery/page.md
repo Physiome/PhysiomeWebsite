@@ -2,14 +2,14 @@
 _layout: software-page
 _template: page
 _fieldset: page
-title: Features
+title: Gallery
 description:
 intro: >
   The Zinc library includes the advanced
   visualisation capabilities of Cmgui,
   accessed via a complete API with C++ and
   Python bindings.
-navtitle: Features
+navtitle: Gallery
 ---
 ### The power of Cmgui visualisations
 
