@@ -2,7 +2,7 @@
 _layout: software-index
 _template: software-project-index
 _fieldset: page
-title: Zinc
+title: OpenCMISS-Zinc
 intro: >
   A library that provides advanced 3D
   visualisation for complex models
