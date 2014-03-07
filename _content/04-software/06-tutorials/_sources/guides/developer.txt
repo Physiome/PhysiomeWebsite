@@ -1,7 +1,0 @@
-
-Developers should know this
-===========================
-
-Zinc is awesome.
-
-
