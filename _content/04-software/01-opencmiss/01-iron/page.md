@@ -2,7 +2,7 @@
 _layout: software-index
 _template: software-project-index
 _fieldset: page
-title: Iron
+title: OpenCMISS-Iron
 intro: >
   A mathematical modelling environment for
   complex bioengineering problems

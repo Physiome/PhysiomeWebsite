@@ -24,3 +24,6 @@ Models can be built up from any number of separate CellML models or components w
 
 For more information regarding the capabilities and competencies of CellML, the reader is referred to the publication "CellML and associated tools and techniques" by Garny et al.
  <ul class="arrow-2 dotted"><li><a href="http://www.cellml.org/" title="Link to an external site.">www.cellml.org</a></li></ul>
+ 
+ 
+And that my friends is all you need to know.

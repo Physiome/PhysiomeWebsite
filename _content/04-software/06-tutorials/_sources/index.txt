@@ -1,0 +1,64 @@
+.. PyZinc documentation master file, created by
+   sphinx-quickstart2 on Wed Dec  5 22:51:14 2012.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+
+The PyZinc tutorials are arranged so that you can get know the Zinc library on a number of different levels.  First and foremost are the installation and 
+getting started documents.  Once you have installed Zinc and have seen it working you can move on to the interaction tutorials.  The interaction tutorials
+are split into three levels with the first level on understanding how the Zinc library can respond to user events.  The second level covers a particular feature
+or module of the Zinc library and utilises the helper ZincWidget class and the third level is based around zlab a collection of high level classes and functions
+that can quickly produce visualisations in Zinc.
+
+Introduction
+------------
+These examples cover the installation and a first look at using Zinc that are non-graphical 
+that may for instances be used for batch processing purposes.
+
+.. toctree::
+   :maxdepth: 2
+
+   guides/installation.rst
+   guides/getting-started.rst
+   image_reader/tutorial.rst
+  
+User Events
+-----------
+These examples contain all the basic code to interact with the Qt GUI toolkit
+and respond to user events that show basic Zinc visualisations.
+
+.. toctree::
+   :maxdepth: 2
+
+   axis_viewer/tutorial.rst
+   selection/tutorial.rst
+
+Interaction Utilising the ZincWidget
+------------------------------------
+These examples make use of the ZincWidget to handle common user interactions with the Sceneviewer and
+explore the features of Zinc.
+
+.. toctree::
+   :maxdepth: 2
+
+   finite_element_creation/tutorial.rst
+   read_mesh/tutorial.rst
+   materials/tutorial.rst
+
+Interaction Utilising zlab
+--------------------------
+These examples show how to use zlab to create visualisations.
+
+.. toctree::
+   :maxdepth: 2
+
+   view_mesh/tutorial.rst
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+

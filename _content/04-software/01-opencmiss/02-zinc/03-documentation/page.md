@@ -1,18 +1,26 @@
 ---
-_layout: software-page
-_template: page
+_layout: software-index
+_template: software-project-index
 _fieldset: page
-title: Documentation for the Zinc library
-description:
-intro: >
-  Find out more about how to use the Zinc
-  library to develop software with
-  advanced 3D visualisation capabilities,
-  and how to get involved with development
-  of the Zinc library itself.
-navtitle: Documentation
+title: Documentation
+intro: 
+description: 
+navtitle: 
 ---
-### Physiome Project tracker
-
-We invite contributions, questions and feedback on the Zinc library via the Physiome Project tracker
-<ul class="arrow dotted"><li><a href="https://tracker.physiomeproject.org/">tracker.physiomeproject.org</a></li></ul>
+<p>The introduction covers the concepts and design of the Zinc library and information on the API.  The API documentation covers all the API functions, their input parameters and return values.  The Tutorials cover a range of topics on using the Zinc library.  The tutorials are designed to cover just one component of the API at a time making it clear what content is contained within each module.  The examples are provided for more complex applications which use multiple components of the Zinc API.</p>
+<div class="one-fourth">
+<h5><a href="/software/opencmiss/zinc/documentation/introduction/">Introduction</a></h5>
+<p>An introduction to the Zinc library it's concepts and design.</p>
+</div><!-- end .one-fourth -->
+<div class="one-fourth">
+<h5><a href="/software/api/">API Docs</a></h5>
+<p>The documentation for the API of the Zinc library.</p>
+</div><!-- end .one-fourth -->
+<div class="one-fourth">
+<h5><a href="/software/tutorials/">Tutorials</a></h5>
+<p>Find out how to get started and learn some of the technologies available.</p>
+</div><!-- end .one-fourth -->
+<div class="one-fourth last">
+<h5><a href="/software/opencmiss/zinc/documentation/examples/">Examples</a></h5>
+<p>See some more advanced examples of using the Zinc library.</p>
+</div><!-- end .one-fourth last -->

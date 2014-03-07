@@ -1,0 +1,160 @@
+
+########################
+Tutorial 1 - Axis Viewer
+########################
+
+The Axis Viewer is a very simple application designed to illustrate the fundamentals of using PyZinc.  The application illustrates how to
+
+* Set up a Context
+* Create a scene
+* Visualise some graphics
+* Handle mouse input.
+
+This tutorial also discusses issues that are related to using PySide or PyQt4 with PyZinc.  The souce code used in this tutorial is available from the `physiome
+project svn server <https://svn.physiomeproject.org/svn/cmiss/zinc/bindings/examples/trunk/python/simple_axis_viewer/>`_.
+
+.. figure::  axis_viewer.png
+  :align: center
+  :width: 636px
+  :height: 471px
+
+Overview
+========
+
+The axis viewer uses PySide or PyQt4 to create a simple application that consists of an OpenGL enabled widget and a quit button.
+The OpenGL widget is used by the Zinc library to render a basic scene consisting of a single point graphic.
+The Zinc library has a standard input handling routine that is used to show how the scene viewport can be manipulated.
+In order to visualise the effects of mouse movement the point graphic is defined to use the inbuilt glyph type 'axes_solid'.
+
+**Note:**
+ 
+ This example uses either PySide or PyQt4 depending on which one it successfully imports.  These two different Python bindings for the Qt libraries are,
+ for this simple example, interchangeable.  However this is not always the case for more complicated applications.  This web page shows the differences 
+ between the two http://qt-project.org/wiki/Differences_Between_PySide_and_PyQt
+
+The Entry Point
+===============
+    
+In this first tutorial we start at the entry point to the application which is in the axis_viewer.py file.  When we 
+call this file directly (and not imported as a module) the __name__ variable is set to __main__ and we can setup and
+initialise the application.  We do this so that we can mimic C/C++ and call our 'main()' function as the entry point of the 
+application.  In the 'main' function the program initialises the application-wide resources and starts the event loop.  Here is the code.
+
+.. literalinclude:: axis_viewer.py
+  :linenos:
+  :start-after: # main start
+  :end-before: # main end
+
+On line 7 we create a QApplication object which controls the main flow of the program.  Among other things
+it also contains the main event loop.  An application has **precisely** one QApplication object.  After this we create 
+an instance of the AxisViewerDlg (line 9).  The AxisViewerDlg is the visual element in the GUI and defines the main 
+window of the application.  Next we show the main window (line 10) and then start the execution of the main event loop (line 12).
+The event loop handles the events that are generated when the program is running.  Examples of events are mouse presses and 
+key strokes.
+
+Something to Look At
+====================
+
+The AxisViewerDlg class subclasses QWidget and uses composition to include
+the ui part of the application.  The ui part is created using qt-designer and
+converted to a python module using a Python Qt ui compiler.::
+
+   # PySide
+   pyside-uic -o axis_viewer_ui_pyside.py axis_viewer.ui
+   # PyQt4
+   pyuic4 -o axis_viewer_ui_pyqt4.py axis_viewer.ui
+   
+add '--from-imports' if targeting Python 3.0 or later in the above command.
+
+We also set an application icon here which is defined in a resource file
+using qt-designer and compiled into a python resource using a Python Qt resource compiler.::
+
+   # PySide
+   pyside-rcc -py3 -o icons_rc.py icons.qrc
+   # PyQt4
+   pyrcc4 -py3 -o icons_rc.py icons.qrc
+   
+The AxisViewerDlg uses qt-designer to promote a widget to a ZincWidget which we define in 
+zincwidget.py.  For more information on promoting widgets in qt-designer read the document 
+at this location http://qt-project.org/doc/qt-4.8/designer-using-custom-widgets.html.
+
+Setting the Scene
+=================
+
+The ZincWidget class is sub-classed from QGLWidget.  QGLWidget is a widget for rendering OpenGL graphics.
+The QGLWidget sets up the OpenGL context that is required for the Zinc library to draw into.  The ZincWidget
+will be the view widget into our Zinc library scene.
+
+In the initialisation of the class we call __init__ of the super class QGLWidget.  Then we create a Zinc context,
+we keep a handle to this context until we are no longer using objects obtained from it (either directly or indirectly).  
+If we don't all the resources associated with the context will be released and any new actions performed on objects from 
+the context will be invalid resulting in undefined behaviour.  This means that the Zinc context handle should be the last 
+handle we let go of.
+
+note::
+
+  We use the context to create all other Zinc objects either directly or indirectly.
+
+In the initialisation of the class we also create a class member for a handle to the scene viewer.  It is advisable
+to keep a handle to the scene viewer, from this handle we can (obviously) access all the objects required to render (view) our scene.
+
+.. literalinclude:: zinc_widget.py
+  :linenos:
+  :start-after: # init start
+  :end-before: # init end
+
+We implement the initializeGL() function to set up the scene we want to show.  Here is the code:
+
+.. literalinclude:: zinc_widget.py
+  :linenos:
+  :start-after: # initializeGL start
+  :end-before: # initializeGL end
+  
+This function is called once before resizeGL() or paintGL() is called.  At this point the scene consisting of a single point
+shown using the axes solid glyph has been created.  There are other default glyphs that exist and can be used for representing graphic
+points and these can be found in the Glyph class.  For this tutorial though we use the axes solid glyph to show the effect of mouse interaction
+with the Zinc scene.  The resizeGL() and paintGL() are very simple functions and are given here:
+
+.. literalinclude:: zinc_widget.py
+  :linenos:
+  :start-after: # paintGL start
+  :end-before: # paintGL end
+  
+We can see here in paintGL(), on line 8, that we simply need to tell the scene viewer to render the scene.
+
+.. literalinclude:: zinc_widget.py
+  :linenos:
+  :start-after: # resizeGL start
+  :end-before: # resizeGL end
+  
+Line 5 shows how a resize event is passed through to the scene viewer, here we tell the scene viewer the new viewport size.
+
+Handling Interaction
+====================
+
+In visualising a 3D scene it is helpful to be able to change the view point to see objects that are hidden or occluded.  It is also
+helpful to be able to change the view point to understand how objects relate to each other in the scene.  The Zinc library scene viewer
+has a default handler for manipulating the view point of the scene which we can utilise. The default input handler allows the user to 
+rotate, translate, magnify, and miniaturise the scene. 
+
+To use the built-in handler we must create a scene viewer input object and set the event position,
+input type, mouse button and event modifiers.  We need to convert the widget specific mouse button identifier to
+the scene viewer input mouse button identifier.  An efficient way of doing this is to create a map from the widget
+set mouse buttons to the scene viewer input mouse buttons.  We also need to create a map from the widget set event 
+modifiers to the scene viewer input modifiers.  For PySide and PyQt4 we can use the following code.
+
+.. literalinclude:: zinc_widget.py
+  :linenos:
+  :start-after: # mapping from qt to zinc start
+  :end-before: # mapping from qt to zinc end
+
+For the default input handler the left mouse button will rotate the scene, the middle mouse button will translate the scene, the 
+right mouse button will magnify and miniaturise the scene (much like a camera zoom lens) and the shift key plus the right mouse button
+will move towards or away from the current interest point in the scene.
+
+The mousePressEvent(), mouseReleaseEvent(), and mouseMoveEvent() functions utilise the default input handler by calling the scene viewer 
+processInput() API function.  Because the mouseMoveEvent() function has possibly triggered a change in the scene viewer we must call updateGL() to 
+get the scene rendered again to reflect any changes.
+
+
+
