@@ -1,0 +1,85 @@
+---
+_layout: default
+_template: 
+_fieldset: 
+title: 
+description:
+intro:
+---
+
+
+<!--#include virtual="/inc/header-software.txt" -->
+
+<section id="content" class="container clearfix">
+
+	<article class="single-project">
+
+		<header class="page-header clearfix">
+			<h1 class="page-title align-left"><a href=index.shtml>PyZinc library tutorials</a></h1>		
+			<a href="/software/" class="button no-bg medium align-right">
+				All software projects <img src="/img/icon-grid.png" alt="" class="icon">
+			</a>			
+		</header><!-- end .page-header --><!-- end .page-header -->
+
+		<div id="main">
+		
+			<!-- Content -->
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body">
+            
+  <div class="section" id="tutorial-2-selection">
+<h1>Tutorial 2 - Selection<a class="headerlink" href="#tutorial-2-selection" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>This tutorial covers one way in which selection could be implemented for a Zinc application.</p>
+</div>
+<div class="section" id="rubber-band">
+<h2>Rubber Band<a class="headerlink" href="#rubber-band" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="group-fields">
+<h2>Group Fields<a class="headerlink" href="#group-fields" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+      </div>
+    </div>
+      <div class="botnav">
+      
+        <p>
+        «&#160;&#160;<a href="../../axis_viewer/tutorial/">Tutorial 1 - Axis Viewer</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="../../finite_element_creation/tutorial/">Tutorial 1 - Finite Element Creation</a>&#160;&#160;»
+        </p>
+
+      </div>
+            
+		</div><!-- end #main -->
+
+		<div id="sidebar">
+<!--#include virtual="/software/zinclibrary/utility-peer-nav.txt" -->    
+         <div id="toc">
+          <h6><a href="../../"><span>PyZinc v3.0.0 tutorials</span></a></h6>
+          <ul>
+<li><a class="reference internal" href="#">Tutorial 2 - Selection</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#rubber-band">Rubber Band</a></li>
+<li><a class="reference internal" href="#group-fields">Group Fields</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+            <!--#include virtual="utility-download.txt" -->
+
+		</div><!-- end #sidebar -->
+		
+	</article><!-- end .single-project -->
+	
+</section><!-- end #content -->
+
+<!--#include virtual="/inc/footer.txt" -->

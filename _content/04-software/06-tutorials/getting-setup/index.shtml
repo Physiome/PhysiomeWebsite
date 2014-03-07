@@ -1,0 +1,96 @@
+---
+_layout: default
+_template: 
+_fieldset: 
+title: 
+description:
+intro:
+---
+
+
+<!--#include virtual="/inc/header-software.txt" -->
+
+<section id="content" class="container clearfix">
+
+	<article class="single-project">
+
+		<header class="page-header clearfix">
+			<h1 class="page-title align-left"><a href=index.shtml>PyZinc library tutorials</a></h1>		
+			<a href="/software/" class="button no-bg medium align-right">
+				All software projects <img src="/img/icon-grid.png" alt="" class="icon">
+			</a>			
+		</header><!-- end .page-header --><!-- end .page-header -->
+
+		<div id="main">
+		
+			<!-- Content -->
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body">
+            
+  <div class="section" id="getting-started-with-pyzinc">
+<h1>Getting Started with PyZinc<a class="headerlink" href="#getting-started-with-pyzinc" title="Permalink to this headline">¶</a></h1>
+<p>PyZinc is the Python bindings for the Zinc library.  The Zinc library is an advanced OpenGL visualisation library.  It&#8217;s main use is for visualising Finite Element Models.</p>
+<div class="section" id="what-you-need">
+<h2>What You Need<a class="headerlink" href="#what-you-need" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>The Zinc C/C++ shared object library</li>
+<li>The PyZinc python bindings</li>
+</ul>
+<p>The Zinc C/C++ library can be found in the downloads section <a class="reference external" href="http://physiomeproject.org/software/zinclibrary/download">here</a> for most OSs.  The PyZinc Python bindings for the zinc library can be found <a class="reference external" href="http://physiomeproject.org/software/pyzinc/download">here</a>.  PyZinc will work with either version 2 or version 3 of Python.</p>
+<p>Developer releases of both these libraries are available from
+Installing
+==========</p>
+<p>To install the Zinc library on Ubuntu:</p>
+<div class="highlight-python"><div class="highlight"><pre>sudo dpkg -i zinc-X.X.X-x86_64.deb
+</pre></div>
+</div>
+<p>To install the PyZinc extension module on Ubuntu do:</p>
+<div class="highlight-python"><div class="highlight"><pre>tar -xzf PyZinc-X.X.X-Python-Y.Y.tar.gz
+cd PyZinc-X.X.X-Python-Y.Y
+python setup.py build
+sudo python setup.py install
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+      </div>
+    </div>
+      <div class="botnav">
+      
+        <p>
+        «&#160;&#160;<a href="../">Table of Contents:</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="../simple_axis_viewer/tutorial/">Tutorial 1 - Simple Axis Viewer</a>&#160;&#160;»
+        </p>
+
+      </div>
+            
+		</div><!-- end #main -->
+
+		<div id="sidebar">
+<!--#include virtual="/software/zinclibrary/utility-peer-nav.txt" -->    
+         <div id="toc">
+          <h6><a href="../"><span>PyZinc v3.0.0 tutorials</span></a></h6>
+          <ul>
+<li><a class="reference internal" href="#">Getting Started with PyZinc</a><ul>
+<li><a class="reference internal" href="#what-you-need">What You Need</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+            <!--#include virtual="utility-download.txt" -->
+
+		</div><!-- end #sidebar -->
+		
+	</article><!-- end .single-project -->
+	
+</section><!-- end #content -->
+
+<!--#include virtual="/inc/footer.txt" -->
