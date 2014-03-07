@@ -1,0 +1,82 @@
+---
+_layout: default
+_template: 
+_fieldset: 
+title: 
+description:
+intro:
+---
+
+
+<!--#include virtual="/inc/header-software.txt" -->
+
+<section id="content" class="container clearfix">
+
+	<article class="single-project">
+
+		<header class="page-header clearfix">
+			<h1 class="page-title align-left"><a href=index.shtml>PyZinc library tutorials</a></h1>		
+			<a href="/software/" class="button no-bg medium align-right">
+				All software projects <img src="/img/icon-grid.png" alt="" class="icon">
+			</a>			
+		</header><!-- end .page-header --><!-- end .page-header -->
+
+		<div id="main">
+		
+			<!-- Content -->
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body">
+            
+  <div class="section" id="tutorial-1-view-mesh">
+<h1>Tutorial 1 - View Mesh<a class="headerlink" href="#tutorial-1-view-mesh" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="mesh-definition">
+<h2>Mesh Definition<a class="headerlink" href="#mesh-definition" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="visualise">
+<h2>Visualise<a class="headerlink" href="#visualise" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+      </div>
+    </div>
+      <div class="botnav">
+      
+        <p>
+        «&#160;&#160;<a href="../../materials/tutorial/">Tutorial 3 - Materials</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../../">Contents</a>
+        </p>
+
+      </div>
+            
+		</div><!-- end #main -->
+
+		<div id="sidebar">
+<!--#include virtual="/software/zinclibrary/utility-peer-nav.txt" -->    
+         <div id="toc">
+          <h6><a href="../../"><span>PyZinc v3.0.0 tutorials</span></a></h6>
+          <ul>
+<li><a class="reference internal" href="#">Tutorial 1 - View Mesh</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#mesh-definition">Mesh Definition</a></li>
+<li><a class="reference internal" href="#visualise">Visualise</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+            <!--#include virtual="utility-download.txt" -->
+
+		</div><!-- end #sidebar -->
+		
+	</article><!-- end .single-project -->
+	
+</section><!-- end #content -->
+
+<!--#include virtual="/inc/footer.txt" -->

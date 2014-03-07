@@ -1,0 +1,82 @@
+---
+_layout: default
+_template: 
+_fieldset: 
+title: 
+description:
+intro:
+---
+
+
+<!--#include virtual="/inc/header-software.txt" -->
+
+<section id="content" class="container clearfix">
+
+	<article class="single-project">
+
+		<header class="page-header clearfix">
+			<h1 class="page-title align-left"><a href=index.shtml>PyZinc library tutorials</a></h1>		
+			<a href="/software/" class="button no-bg medium align-right">
+				All software projects <img src="/img/icon-grid.png" alt="" class="icon">
+			</a>			
+		</header><!-- end .page-header --><!-- end .page-header -->
+
+		<div id="main">
+		
+			<!-- Content -->
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body">
+            
+  <h1 id="search-documentation">Search</h1>
+  <div id="fallback" class="admonition warning">
+  <script type="text/javascript">$('#fallback').hide();</script>
+  <p>
+    Please activate JavaScript to enable the search
+    functionality.
+  </p>
+  </div>
+  <p>
+    From here you can search these documents. Enter your search
+    words into the box below and click "search". Note that the search
+    function will automatically search for all of the words. Pages
+    containing fewer words won't appear in the result list.
+  </p>
+  <form action="" method="get">
+    <input type="text" name="q" value="" />
+    <input type="submit" value="search" />
+    <span id="search-progress" style="padding-left: 10px"></span>
+  </form>
+  
+  <div id="search-results">
+  
+  </div>
+
+          </div>
+      </div>
+    </div>
+      <div class="botnav">
+      
+        <p>
+        <a class="uplink" href="../">Contents</a>
+        </p>
+
+      </div>
+            
+		</div><!-- end #main -->
+
+		<div id="sidebar">
+<!--#include virtual="/software/zinclibrary/utility-peer-nav.txt" -->    
+         <div id="toc">
+          <h6><a href="../"><span>PyZinc v3.0.0 tutorials</span></a></h6>
+          
+        </div>
+            <!--#include virtual="utility-download.txt" -->
+
+		</div><!-- end #sidebar -->
+		
+	</article><!-- end .single-project -->
+	
+</section><!-- end #content -->
+
+<!--#include virtual="/inc/footer.txt" -->

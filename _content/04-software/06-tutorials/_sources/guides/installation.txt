@@ -1,0 +1,62 @@
+===================
+Installation Guide:
+===================
+
+Windows
+=======
+
+OpenCMISS-Zinc library:
+-----------------------
+1. Download from http://physiomeproject.org/software/opencmiss/zinc/download
+2. Run the exe, an install wizard will pop up, follow the steps and select Add OpenCMISS-Zinc to the system PATH for current user.
+
+PyZinc:
+-------
+Prerequisite: OpenCMISS-Zinc library (please see the installation guide above for more informations)
+
+1. Download and install Python 2.7/3.3, PyZinc on Windows is currently available for these two version of Python only.
+2. You may have to add the Python installation directory onto your system PATH.
+3. Download PyZinc under the Windows section from http://physiomeproject.org/software/opencmiss/zinc/download
+4. Unzip the zip package.
+5. Open the command prompt, cd into the unzip directory, you should be able to run "python setup.py install" which will install PyZinc as a python library.
+6. Install PyQt/PySide. PySide can be found here http://qt-project.org/wiki/PySide_Binaries_Windows
+7. Microsoft Visual C++ Redistributable is also required. It can be download and install from the following Microsoft page: http://search.microsoft.com/en-us/DownloadResults.aspx?q=Microsoft+Visual+C%2b%2b+2010+SP1+Redistributable+Package
+8. After installing Pyside and Qt, the PyZinc examples should run without problem. Examples of PyZinc with Qt GUI can be found in https://svn.physiomeproject.org/svn/cmiss/zinc/bindings/examples/trunk/python/
+
+Mac OS X
+========
+
+OpenCMISS-Zinc library:
+-----------------------
+1. Download under OS X section from http://physiomeproject.org/software/opencmiss/zinc/download
+2. The dmg package will install the libZinc binaries into /usr/local/lib and the system should now be able to locate the libZinc library.
+
+PyZinc:
+-------
+Prerequisite: OpenCMISS-Zinc library (please see the installation guide above for more informations)
+
+1. Download and install Python 2.6/2.7, PyZinc on Mac OS X is currently available for these two version of Python only.
+2. Download under OS X section from http://physiomeproject.org/software/opencmiss/zinc/download
+3. The dmg package will install the PyZinc binaries into appropriate python location.
+4. PyQt/PySide and Qt must be installed before the examples can be run by the system. PySide and Qt for Mavericks and Python2.7 can be found here: http://qt-project.org/wiki/PySide_Binaries_MacOSX
+5. After installing Pyside and Qt, the PyZinc examples should run without problem. Examples of PyZinc with Qt GUI can be found in https://svn.physiomeproject.org/svn/cmiss/zinc/bindings/examples/trunk/python/
+
+Linux:
+======
+OpenCMISS-Zinc library:
+-----------------------
+1. Download under the Linux section from http://physiomeproject.org/software/opencmiss/zinc/download
+2. The debian package can be installed with the following command line: sudo dpkg -i zinc*.deb
+3. After installation, run "sudo ldconfig" to update the libraries database
+
+PyZinc:
+-------
+Prerequisite: OpenCMISS-Zinc library (please see the installation guide above for more informations)
+
+1. Download and install Python 2.6/2.7, PyZinc on Linux is currently available for these two version of Python only.
+2. Download PyZinc under the Linux section from http://physiomeproject.org/software/opencmiss/zinc/download
+3. Untar the tar.gz package.
+4. Open the Terminal, cd into the untar directory and you should be able to run "python setup.py install" which will install PyZinc as a python module.
+5. Install PyQt/PySide
+6. After installing Pyside, the PyZinc examples should run without problem. Examples of PyZinc with Qt GUI can be found in https://svn.physiomeproject.org/svn/cmiss/zinc/bindings/examples/trunk/python/
+
