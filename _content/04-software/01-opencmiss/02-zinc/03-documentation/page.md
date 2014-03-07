@@ -13,11 +13,11 @@ navtitle:
 <p>An introduction to the Zinc library it's concepts and design.</p>
 </div><!-- end .one-fourth -->
 <div class="one-fourth">
-<h5><a href="/software/api/">API Docs</a></h5>
+<h5><a href="/software/opencmiss/zinc/documentation/api/">API Docs</a></h5>
 <p>The documentation for the API of the Zinc library.</p>
 </div><!-- end .one-fourth -->
 <div class="one-fourth">
-<h5><a href="/software/tutorials/">Tutorials</a></h5>
+<h5><a href="/software/opencmiss/zinc/documentation/tutorials/">Tutorials</a></h5>
 <p>Find out how to get started and learn some of the technologies available.</p>
 </div><!-- end .one-fourth -->
 <div class="one-fourth last">

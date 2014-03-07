@@ -1,8 +1,0 @@
-
-Building from Source
-====================
-
-For developers who need to build the Zinc library from source here's how
-
-DON'T
-
