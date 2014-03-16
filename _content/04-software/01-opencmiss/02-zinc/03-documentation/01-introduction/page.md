@@ -8,13 +8,17 @@ intro: >
   The Zinc library provides a complete API
   for creating software to interact with
   and visualise complex models.
-navtitle:
+navtitle: Introduction to OpenCMISS-Zinc
 ---
-###Overview
+The following document gives an introduction to the OpenCMISS-Zinc library including the concepts behind its API, suitable for most levels of users:
 
-The Zinc library is intended to provide the advanced visualisation capabilites of Cmgui in the form of a library on which to build new applications.
+<a href="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/release/Introduction to OpenCMISS-Zinc v3.0.pdf">Introduction to OpenCMISS-Zinc v3.0.pdf</a>
 
-###The Zinc library API
+Its contents cover:
 
-All of the functions of Cmgui are now available via the Zinc library API. This will allow researchers and students to build their own applications to perform their modelling and visualisation tasks without having to rely on scripts for Cmgui.
-
+ *       An overview of what the library offers.
+ *       The object-method style of the API.
+ *       Patterns of API use and best practices.
+ *       Differences between using Zinc from C, C++ and Python.
+ *       A simple example in each language, and links to more examples.
+ *       Plain language descriptions of the main Zinc object types.

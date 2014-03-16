@@ -1,7 +1,7 @@
 ---
-_layout: software-page
-_template: page
-_fieldset: page
+_layout: software-download
+_template: software-download-latest-zinc
+_fieldset: download
 title: Download the Zinc library
 description:
 intro: >
