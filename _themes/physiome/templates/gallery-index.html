@@ -2,28 +2,22 @@
 	<h1 class="page-title">{{ title }}</h1>
 </header><!-- end .page-header -->
 
+<h4>{{ intro }}</h4>
 
-<div class="one-third"> <a href="http://get-documentation.readthedocs.org/en/latest/PhysiomeModeller/index.html">
+{{ gallerylinks }}
 
-	<img src="/assets/img/software/zinclibrary/physiomemodeller.png" width="260" height="207" alt=""></a>
-	<h5><a href="http://get-documentation.readthedocs.org/en/latest/PhysiomeModeller/index.html">Physiome Modeller</a></h5>
-    <p>A Qt based application using WebKit and PyZinc.</p>
-
-</div><!-- end .one-third -->
-
-<div class="one-third"> <a href="/software/opencmiss/zinc">
-
-	<img src="/assets/img/software/zinclibrary/lungz.png" width="260" height="207" alt=""></a>
-	<h5><a href="/software/opencmiss/zinc">luNgZ</a></h5>
-    <p>A Qt based application using PyZinc for investigating lung conditions.</p>
-    
-</div><!-- end .one-third -->
-
+{{ if last }}
 <div class="one-third last">
+{{ else }}
+<div class="one-third">
+{{ endif }}
 
-    <a href="/software/cmgui/"><img src="/assets/img/software/zinclibrary/sfflcm.png" alt="" width="260" height="207"></a>
-	<h5><a href="/software/cmgui/">SFFLCM</a></h5>
-    <p>A Qt based application using PyZinc for visualising lamb carcasses..</p>
+  <a href="{{ image_link }}">
+    <img src="{{ image_loc }}" width="260" height="207" alt="">
+  </a>
+	<h5><a href="{{ image_link }}">{{ image_title }}</a></h5>
+  <p>{{ image_caption }}</p>
 
-</div><!-- end .one-third last-->
+</div><!-- end .one-third -->
 
+{{ /gallerylinks }}
