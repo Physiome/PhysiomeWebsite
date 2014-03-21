@@ -1,54 +1,19 @@
 ---
 _layout: software-download
-_template: software-download-latest-zinc
+_template: software-platform-download
 _fieldset: download
-title: Download the Zinc library
-description:
+title: Download OpenCMISS-Zinc v3.0.0
 intro: >
-  Get access to the Zinc library packages
-  and source code.
+  This is the official release of OpenCMISS-Zinc Library v3.0 and PyZinc Python bindings. 
+description: >
+  Choose the download for the appropriate platform (and Python version if installing PyZinc).
 navtitle: Download
 ---
-### Zinc 3.0.0
 
-The Zinc library has yet to make an official release. The Zinc library source may be obtained from the [SVN repository](https://svn.physiomeproject.org/svn/cmiss/zinc/library/), or you can download the latest Zinc developer release for Windows, Mac or Linux.
+## Alternative Download Site
 
-#### Developer releases
+An alternative download site is on [SourceForge](http://sourceforge.net/projects/cmiss/).
 
-##### Windows
+## Developer Versions
 
-{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="OpenCMISS-Zinc" osfilter="windows" limit="6" }}
-
-##### OS X
-
-{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="OpenCMISS-Zinc" osfilter="mac" limit="6" }}
-
-##### Linux
-
-After installing the Zinc library you must run 'ldconfig' to update the ld library database.
-  
-{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="OpenCMISS-Zinc" osfilter="ubuntu" limit="6" }}
-
-### Get the source code
-
-The PyZinc has yet to make an official release. The PyZinc source code may be downloaded from the [SVN repository](https://svn.physiomeproject.org/svn/cmiss/zinc/bindings/), or you can download the latest PyZinc developer release for Linux and Mac OS X.
-
-
-### PyZinc 3.0.0
-
-The Python bindings of the Zinc library are available for a number of platforms and Python versions.  Select the download that best reflects your own system.
-
-#### Developer releases
-
-##### Windows
-
-{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="pyzinc" osfilter="windows" limit="10" }}
-
-##### OS X
-
-{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="pyzinc" osfilter="mac" limit="10" }}
-
-
-##### Linux
-
-{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="pyzinc" osfilter="ubuntu" limit="10" }}
+To try new Zinc features in development, you can download the [Developer Versions](/software/opencmiss/zinc/download/developer).
