@@ -4,9 +4,7 @@ _template: software-project-index
 _fieldset: page
 title: Cmgui
 intro: >
-  The standalone application for building
-  interactive, graphical interfaces to
-  mathematical field models
+  Standalone application for visualising and interacting with mathematical field models.
 description:
 navtitle:
 ---
