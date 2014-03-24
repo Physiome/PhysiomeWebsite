@@ -9,7 +9,10 @@
 	<div class="acc-container">
 <p>{{ intro }}</p>
 	{{ downloadlinks }}
-	      <div class="content"><a href="{{ distrib_link }}">{{ distrib_linktext }}</a>{{ if distrib_file_size }} ({{ distrib_file_size }}){{ endif }}</div>
+	      <div class="content"><a href="{{ distrib_link }}">{{ distrib_linktext }}</a>
+	      {{ if distrib_file_size }} ({{ distrib_file_size }}){{ endif }}
+	      {{ if distrib_altlink }}[<a href="{{ distrib_altlink }}"><em>Alt</em></a>]{{ endif }}
+	      </div>
 	{{ /downloadlinks }}
 {{ content }}
 	</div>

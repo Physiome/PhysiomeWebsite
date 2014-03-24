@@ -10,10 +10,6 @@ description: >
 navtitle: Download
 ---
 
-## Alternative Download Site
-
-An alternative download site is on [SourceForge](http://sourceforge.net/projects/cmiss/).
-
 ## Developer Versions
 
 To try new Zinc features in development, you can download the [Developer Versions](/software/opencmiss/zinc/download/developer).
