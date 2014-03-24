@@ -39,10 +39,7 @@ that can quickly produce visualisations in Zinc.</p>
 that may for instances be used for batch processing purposes.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="guides/installation/">Installation Guide:</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="guides/installation/#windows">Windows</a></li>
-<li class="toctree-l2"><a class="reference internal" href="guides/installation/#mac-os-x">Mac OS X</a></li>
-<li class="toctree-l2"><a class="reference internal" href="guides/installation/#linux">Linux:</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../download">Download and Installation Guide</a><ul>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="guides/getting-started/">Getting Started with PyZinc</a><ul>

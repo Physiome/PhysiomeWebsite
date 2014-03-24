@@ -23,9 +23,11 @@ Most of the documentation on using Cmgui is contained either in the examples or 
 
 ### Contacting another Cmgui user or a Cmgui developer
 
-If you can not find the information you require then try contacting an existing Cmgui user, or a Cmgui developer. Auckland Bioengineering Institute staff currently involved with the development of Cmgui are:
+If you can not find the information you require then try contacting an existing Cmgui user, or a Cmgui developer. Auckland Bioengineering Institute staff currently developing Cmgui are:
 
-<ul class="arrow dotted"> <li><a href="http://www.abi.auckland.ac.nz/uoa/randall-britten">Randall Britten</a></li> <li> <a href="http://www.abi.auckland.ac.nz/uoa/richard-christie">Richard Christie</a></li> <li> <a href="http://www.abi.auckland.ac.nz/uoa/alan-wu">Alan Wu</a></li> </ul>
+- [Richard Christie]( http://www.abi.auckland.ac.nz/en/about/our-people/researchers/richard-christie.html)
+- [Alan Wu]( http://www.abi.auckland.ac.nz/en/about/our-people/researchers/alan-wu.html)
+- [Hugh Sorby]( http://www.abi.auckland.ac.nz/en/about/our-people/researchers/hugh-sorby.html)
 
 ### Browse the issue tracker
 
