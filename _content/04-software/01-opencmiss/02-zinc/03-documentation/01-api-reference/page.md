@@ -27,6 +27,8 @@ Its contents cover:
  *       A simple example in each language, and links to more examples.
  *       Plain language descriptions of the main Zinc object types.
 
+Documentation of the [EX file format](http://www.cmiss.org/cmgui/wiki/TheCmguiEXFormatGuideExnodeAndExelemFiles) and descriptions of graphics attributes relevent to Zinc can be found on the [Cmgui wiki](http://www.cmiss.org/cmgui/wiki/UsingCmgui).
+
 ### C++ and Python API Documentation
 
 We will soon offer full C++ API documentation here, applicable also to Python (PyZinc) with the few differences, mainly in passing arrays, noted in the above Introduction document.

@@ -12,4 +12,4 @@ navtitle: Download
 
 ## Developer Versions
 
-To try new Zinc features in development, you can download the [Developer Versions](/software/opencmiss/zinc/download/developer).
+To try new Zinc features in development, you can download the [Developer Versions](download/developer).
