@@ -23,7 +23,7 @@ softwarelinks:
   -
     software_title: Cmgui
     image_loc: /assets/img/software/cmgui/220x140/cmgui-fitting.png
-    image_width: 220
+    image_dimensions: width="220"
     software_link: /software/opencmiss/cmgui/
     software_caption: >
       Standalone application for visualising and interacting with mathematical field models.
@@ -43,7 +43,7 @@ softwarelinks:
     software_title: OpenCOR
     image_loc: /assets/img/software/opencor/220x140/opencor-ui-graph.png
     software_link: http://opencor.ws/
-    image_width: 220
+    image_dimensions: width="220"
     software_caption: >
       A cross-platform modelling environment used to organise, edit, simulate and analyse CellML files.
   -

@@ -10,7 +10,7 @@ description:
 navtitle:
 ---
 <div class="one-fourth">
-<h5><a href="/software/opencmiss/iron/about">About</a></h5> <p>Iron is a mathematical modelling environment that enables the application of finite element analysis techniques to a variety of complex bioengineering problems.</p>
+<h5><a href="/software/opencmiss/iron/about">About</a></h5> <p>OpenCMISS-Iron is a mathematical modelling environment that enables the application of finite element analysis techniques to a variety of complex bioengineering problems.</p>
 </div><!-- end .one-fourth -->
 <div class="one-fourth">
 <h5><a href="/software/opencmiss/iron/what-can-Iron-do">What can Iron do?</a></h5> <p>Iron takes advantage of modern programming languages, data structures, and today's range of available high performance hardware.</p>

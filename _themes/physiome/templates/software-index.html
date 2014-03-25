@@ -10,21 +10,21 @@
 <hr>
 {{ endif }}
 
-{{ if (index%4)==0 }}
+{{ if (index % 4)==0 }}
 <div class="one-fourth last">
 {{ else }}
 <div class="one-fourth">
 {{ endif }}
 
   <a href="{{ software_link }}">
-    <img src="{{ image_loc }}">
+    <img src="{{ image_loc }}" {{ image_dimensions }}>
   </a>
 	<h5><a href="{{ software_link }}">{{ software_title }}</a></h5>
   <p>{{ software_caption }}</p>
 
 </div>
 
-{{ if (index%4)==0 }}
+{{ if (index % 4)==0 }}
 </hr>
 {{ endif }}
 
