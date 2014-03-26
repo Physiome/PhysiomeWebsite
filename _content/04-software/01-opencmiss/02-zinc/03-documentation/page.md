@@ -2,25 +2,27 @@
 _layout: software-index
 _template: software-project-index
 _fieldset: page
-title: Documentation
-intro: 
+title: OpenCMISS-Zinc Documentation
+intro: >
+  Zinc API Documentation, Examples and Support.
 description: 
 navtitle: 
 ---
-<p>The introduction covers the concepts and design of the Zinc library and information on the API.  The API documentation covers all the API functions, their input parameters and return values.  The Tutorials cover a range of topics on using the Zinc library.  The tutorials are designed to cover just one component of the API at a time making it clear what content is contained within each module.  The examples are provided for more complex applications which use multiple components of the Zinc API.</p>
+<p>The best way to learn Zinc is to work through examples that achieve a similar objective to what you need. The tutorials are designed to get you started and provide detailed explanations of concepts and how Zinc works. At any stage users can get an overview of the library and its concepts from the introduction in the API reference, and look up the detailed descriptions of API methods in that section.
+</p>
 <div class="one-fourth">
-<h5><a href="/software/opencmiss/zinc/documentation/introduction/">Introduction</a></h5>
-<p>An introduction to the Zinc library it's concepts and design.</p>
-</div><!-- end .one-fourth -->
-<div class="one-fourth">
-<h5><a href="/software/opencmiss/zinc/documentation/api/">API Docs</a></h5>
-<p>The documentation for the API of the Zinc library.</p>
+<h5><a href="/software/opencmiss/zinc/documentation/api-reference/">API Reference</a></h5>
+<p>An introduction to the Zinc library and the objects and concepts behind its API, and API reference documentation including all methods, arguments and return values.</p>
 </div><!-- end .one-fourth -->
 <div class="one-fourth">
 <h5><a href="/software/opencmiss/zinc/documentation/tutorials/">Tutorials</a></h5>
-<p>Find out how to get started and learn some of the technologies available.</p>
+<p>Walk-through tutorials for getting started with Zinc, introducing concepts and techniques in small steps, with thorough explanations.</p>
+</div><!-- end .one-fourth -->
+<div class="one-fourth">
+<h5><a href="/software/opencmiss/zinc/documentation/examples/">Examples</a></h5>
+<p>A collection of objective-based and advanced examples using the Zinc library that may be copied to integrate into your code.</p>
 </div><!-- end .one-fourth -->
 <div class="one-fourth last">
-<h5><a href="/software/opencmiss/zinc/documentation/examples/">Examples</a></h5>
-<p>See some more advanced examples of using the Zinc library.</p>
+<h5><a href="/software/opencmiss/zinc/documentation/support/">Support</a></h5>
+<p>Where to get additional support, provide feedback and request features.</p>
 </div><!-- end .one-fourth last -->

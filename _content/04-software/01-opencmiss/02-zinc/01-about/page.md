@@ -18,6 +18,6 @@ Zinc graphics are rendered using OpenGL into the client window or canvas, and bu
 
 Zinc was created from the core engine of the [Cmgui visualisation application](/software/opencmiss/cmgui), now a client of the library, and sharing more than 20 years development. Zinc v3.0 is the first release of the library with a full API for controlling its functionality without legacy Cmgui commands. Zinc and Cmgui are co-developed with the distributed parallel solver [OpenCMISS-Iron](/software/opencmiss/iron) and used to interact with and visualise models and solutions from it.
 
-Zinc is available for Windows, Max OS X and Linux, with APIs offered in C, C++ and Python. Its source code is released under the Open Source Initiative approved Mozilla Public License 2.0.
+Zinc is available for Windows, Max OS X and Linux, with APIs offered in C, C++ and Python. Its source code is released under the Open Source Initiative approved [Mozilla Public License v2.0](http://www.mozilla.org/MPL/2.0/).
 
- 
+To learn more, read the Introduction in the [API Reference Section](documentation/api-reference).

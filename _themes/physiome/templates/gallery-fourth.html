@@ -1,0 +1,33 @@
+<header class="page-header">
+	<h1 class="page-title">{{ title }}</h1>
+</header><!-- end .page-header -->
+
+<h2>{{ description }}</h2>
+<h4>{{ intro }}</h4>
+
+{{ gallerylinks }}
+
+{{ if (index % 4)==1 }}
+<hr>
+{{ endif }}
+
+{{ if (index % 4)==0 }}
+<div class="one-fourth last">
+{{ else }}
+<div class="one-fourth">
+{{ endif }}
+
+  <a href="{{ image_link }}">
+    <img src="{{ image_loc }}" {{ image_dimensions }}>
+  </a>
+	<h5><a href="{{ image_link }}">{{ image_title }}</a></h5>
+  <p>{{ image_caption }}</p>
+
+</div><!-- end .one-fourth -->
+
+{{ if (index % 4)==0 }}
+</hr>
+{{ endif }}
+
+{{ /gallerylinks }}
+{{ content }}

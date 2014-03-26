@@ -1,0 +1,21 @@
+<p><h1>{{ title }}</h1></p>
+<p>{{ intro }}</p>
+<p>{{ description }}</p>
+{{ entries:listing sort_dir="desc" }}
+<div class="clearfix">
+	<h4 class="acc-trigger">
+	      <a href="#">{{ title }}</a>
+	</h4>
+	<div class="acc-container">
+<p>{{ intro }}</p>
+	{{ downloadlinks }}
+	      <div class="content"><a href="{{ distrib_link }}">{{ distrib_linktext }}</a>
+	      {{ if distrib_file_size }} ({{ distrib_file_size }}){{ endif }}
+	      {{ if distrib_altlink }}[<a href="{{ distrib_altlink }}"><em>Alt</em></a>]{{ endif }}
+	      </div>
+	{{ /downloadlinks }}
+{{ content }}
+	</div>
+</div>
+{{ /entries:listing }}
+{{ content }}

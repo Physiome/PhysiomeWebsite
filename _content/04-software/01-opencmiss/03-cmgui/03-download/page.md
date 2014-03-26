@@ -1,10 +1,15 @@
 ---
 _layout: software-download
-_template: software-download-latest-cmgui
+_template: software-version-download
 _fieldset: download
 title: Download Cmgui
-description: The official release page for Cmgui.
+description:
 intro: >
-  The standalone application for building interactive, graphical interfaces to mathematical field models.
-navtitle: Download the Zinc plugin
+  Download Cmgui, the standalone application for 3-D visualisation and manipulation of mathematical field models.
+navtitle: Download Cmgui
+max_software_versions: "1"
 ---
+
+## Developer Versions
+
+To try new Cmgui features in development, you can download the [Developer Versions](download/developer).

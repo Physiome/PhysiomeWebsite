@@ -19,13 +19,16 @@ Cmgui is a generic open-source modelling and visualisation package developed at 
 
 ### Browse the documentation
 
-Most of the documentation on using Cmgui is contained either in the examples or on the Cmgui wiki. Browsing the wiki for a few minutes is a good way of getting a feel for what information is available and where it is located. Users are encouraged to use the search function in the upper right hand corner to search the wiki pages for content relevant to their questions. If you can not find the answer to your question on the wiki and then receive an answer from an existing user, please add this answer to the wiki so that others can benefit. The wiki is a collaborative project!
+Most of the documentation on using Cmgui is contained either in the examples or on the [Cmgui wiki](http://www.cmiss.org/cmgui/wiki/UsingCmgui). Browsing the wiki for a few minutes is a good way of getting a feel for what information is available and where it is located. Users are encouraged to use the search function in the upper right hand corner to search the wiki pages for content relevant to their questions. If you can not find the answer to your question on the wiki and then receive an answer from an existing user, please add this answer to the wiki so that others can benefit. The wiki is a collaborative project!
 
 ### Contacting another Cmgui user or a Cmgui developer
 
-If you can not find the information you require then try contacting an existing Cmgui user, or a Cmgui developer. Auckland Bioengineering Institute staff currently involved with the development of Cmgui are:
+If you can not find the information you require then try contacting an existing Cmgui user, or a Cmgui developer. Auckland Bioengineering Institute staff currently developing Cmgui or able to provide support are:
 
-<ul class="arrow dotted"> <li><a href="http://www.abi.auckland.ac.nz/uoa/randall-britten">Randall Britten</a></li> <li> <a href="http://www.abi.auckland.ac.nz/uoa/richard-christie">Richard Christie</a></li> <li> <a href="http://www.abi.auckland.ac.nz/uoa/alan-wu">Alan Wu</a></li> </ul>
+- [Richard Christie]( http://www.abi.auckland.ac.nz/en/about/our-people/researchers/richard-christie.html)
+- [Alan Wu]( http://www.abi.auckland.ac.nz/en/about/our-people/researchers/alan-wu.html)
+- [Hugh Sorby]( http://www.abi.auckland.ac.nz/en/about/our-people/researchers/hugh-sorby.html)
+- [Randall Britten]( http://www.abi.auckland.ac.nz/en/about/our-people/researchers/randall-britten.html)
 
 ### Browse the issue tracker
 
