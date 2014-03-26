@@ -62,4 +62,4 @@ This step will not be required in the final release version.
 ### Installation
 
 1. Download the installer package for your platform (preferred) or the zip/tar.gz archive.
-2. In Windows, run the .exe and follow the installer wizard. On the Mac the dmg package should be automatically installed. In Linux, install the debian package with the following command line: `sudo dpkg -i cmgui-3*.deb`. The zip/tar.gz archives merely need to be uncompressed into the desired installation location and for paths or shortcuts to the cmgui application binary to be set up.
+2. In Windows, run the .exe and follow the installer wizard. On the Mac the dmg package should be automatically installed. In Linux, install the debian package with the following command line: `sudo dpkg -i cmgui-3*.deb`. The zip/tar.gz archives merely need to be uncompressed into the desired installation location and for paths and/or shortcuts to the cmgui application binary to be set up.

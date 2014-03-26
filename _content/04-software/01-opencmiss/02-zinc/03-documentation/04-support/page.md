@@ -9,11 +9,11 @@ intro: >
 navtitle: OpenCMISS-Zinc Support
 ---
 
-If you cannot find the information you need from the [Zinc Documentation](..), you encounter bugs or wish to request new features, please use the following links.
+If you cannot find the information you need from the [Zinc Documentation](..), or you encounter bugs or you wish to request new features, please use the following links.
 
 ### Mailing List
 
-We are establishing a mailing list for users of OpenCMISS software, to be the first call for getting help. Until this is set up please use one of the following avenues for support.
+We are establishing a mailing list for users of OpenCMISS software to be the first place to request help from the OpenCMISS user and development community. Until this is set up please use one of the following avenues for support.
 
 ### Tracker
 

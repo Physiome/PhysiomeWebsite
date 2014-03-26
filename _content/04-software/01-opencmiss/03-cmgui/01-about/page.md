@@ -7,7 +7,7 @@ title: About Cmgui
 <img src="/assets/img/software/cmgui/680x280/cmgui-demo.jpg" alt="A software developer demonsrates the Cmgui software." />
 ### Overview
 
-Cmgui is a generic open-source modelling and visualisation package developed at the ABI with significant external contributions from industry. It is commonly used to enable researchers to visualise biomedical images alongside the dynamic geometry fields from computer models of cells, tissues and organs. Cmgui is coded in C/C++ and consists of data structures for describing hierarchical models built from mathematical fields.
+Cmgui is a generic open-source modelling and visualisation package developed at the ABI with significant external contributions from industry. It is commonly used by researchers to visualise dynamic spatially-varying fields from computer models of organs, tissues and cells -- often combined with biomedical images. Cmgui is coded in C/C++ and consists of data structures for describing hierarchical models built from mathematical fields.
 
 ### Visualising data
 
@@ -20,7 +20,7 @@ A major part of the cmgui project has been the development of a unique web brows
 
 ### Developers and Contributors
 
-Cmgui is currently developed at the [ABI](http://www.abi.auckland.ac.nz/) by Richard Christie (Technical lead) along with Alan Wu and Hugh Sorby. Currnet and past developers and contributors include:
+Cmgui is currently developed at the [ABI](http://www.abi.auckland.ac.nz/) by Richard Christie (Technical lead) along with Alan Wu and Hugh Sorby. Current and past developers and contributors include:
 
 - Dr Richard Christie
 - Alan Wu

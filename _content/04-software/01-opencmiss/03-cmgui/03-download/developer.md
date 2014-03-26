@@ -10,7 +10,7 @@ navtitle: Download
 
 # Cmgui Developer Version Downloads
 
-The following links are to development versions of Cmgui for Windows, Mac and Linux, plus source code. Be aware that development versions may have errors or incomplete features, and new features are subject to change. The latest official releases are available [here](/software/opencmiss/cmgui/download/) and include installation instructions relevent to these developer versions.
+The following links are to development versions of Cmgui for Windows, Mac and Linux, plus source code. Be aware that development versions may have errors or incomplete features, and new features are subject to change. The latest official releases are available [here](/software/opencmiss/cmgui/download/) and include installation instructions relevant to these developer versions.
 
 ### Windows 64-bit
 

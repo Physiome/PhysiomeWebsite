@@ -31,7 +31,7 @@ Documentation of the [EX file format](http://www.cmiss.org/cmgui/wiki/TheCmguiEX
 
 ### C++ and Python API Documentation
 
-We will soon offer full C++ API documentation here, applicable also to Python (PyZinc) with the few differences, mainly in passing arrays, noted in the above Introduction document.
+We will soon offer full C++ API documentation here, applicable also to Python (PyZinc) with the few differences noted in the above *Introduction to OpenCMISS-Zinc v3.0* document. (The biggest difference between the Python and C++ APIs is in how arrays are passed in and out of methods.)
 
 In the interim one may figure out the C++ API from either by the systematic differences to the C API (see below), or by inspecting the methods in the C++ classes in the .hpp headers in the installed zinc API folder, which can also be browsed in the [Zinc SVN repository](https://svn.physiomeproject.org/svn/cmiss/zinc/library/trunk/core/source/api/zinc/).
 
