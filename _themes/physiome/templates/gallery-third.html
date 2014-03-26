@@ -4,6 +4,7 @@
 
 <h2>{{ description }}</h2>
 <h4>{{ intro }}</h4>
+
 {{ gallerylinks }}
 
 {{ if (index % 3)==1 }}
@@ -17,7 +18,7 @@
 {{ endif }}
 
   <a href="{{ image_link }}">
-    <img src="{{ image_loc }}" {{ image_dimensions }} alt="">
+    <img src="{{ image_loc }}" {{ image_dimensions }}>
   </a>
 	<h5><a href="{{ image_link }}">{{ image_title }}</a></h5>
   <p>{{ image_caption }}</p>

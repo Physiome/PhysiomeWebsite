@@ -1,6 +1,6 @@
 ---
 _layout: index-level-one
-_template: gallery-index
+_template: gallery-third
 _fieldset: page
 title: Gallery
 description:

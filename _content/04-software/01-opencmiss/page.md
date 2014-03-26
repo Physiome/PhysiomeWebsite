@@ -1,6 +1,6 @@
 ---
 _layout: index-level-one
-_template: gallery-index
+_template: gallery-third
 _fieldset: page
 title: OpenCMISS
 description: Solution for Computation and Visualisation.
