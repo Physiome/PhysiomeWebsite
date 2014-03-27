@@ -16,7 +16,7 @@ Cmgui also contains graphics conversion operations for making field visualisatio
 ### The Zinc plugin
 
 A major part of the cmgui project has been the development of a unique web browser extension or plug-in called ZINC for viewing and interacting with cmgui scenes on the web. While cmgui began as a standalone programme, the focus is now on further developing the cmgui library for independent software developers wishing to describe their models and visualise graphics.
-<ul class="arrow-2 dotted"><li><a href="/software/zincplugin/">Find out more about the Zinc plugin</a></li></ul>
+<ul class="arrow-2 dotted"><li><a href="/software/zincplugin">Find out more about the Zinc plugin</a></li></ul>
 
 ### Developers and Contributors
 

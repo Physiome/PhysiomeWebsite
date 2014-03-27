@@ -5,7 +5,7 @@ _fieldset: page
 title: Related software
 ---
 There are three major Physiome Project software packages that are closely related to Cmgui. These software packages are focused on the following areas:
-<ul class="arrow dotted"><li><a href="/software/cm/">CM</a> is used for computational modelling </li><li><a href="http://www.cmiss.org/cmgui/wiki/Unemap" title="" style="background-color:;">Unemap</a> is used for signal acquisition and processing</li><li>Cmgui is used for model visualisation and manipulation</li></ul>
+<ul class="arrow dotted"><li><a href="/software/cm">CM</a> is used for computational modelling </li><li><a href="http://www.cmiss.org/cmgui/wiki/Unemap" title="" style="background-color:;">Unemap</a> is used for signal acquisition and processing</li><li>Cmgui is used for model visualisation and manipulation</li></ul>
 
 ###Solving complex bioengineering problems 
 
@@ -23,4 +23,4 @@ Cmgui is also used as part of the Zinc pugin to Mozilla Firefox. The Zinc extens
 <ul class="check dotted"><li>Interactively explore colon endoscopy</li><li>Explore the Physiome eye model</li><li>Create data points to give a digital description of a geometry based on medical images</li></ul>
 
 Note that the Zinc plugin is compiled as a separate application from Cmgui.  You do _not_ have to install Cmgui to use Zinc.
-<ul class="arrow-2 dotted"><li><a href="/software/zincplugin/">Find out more about the  Zinc plugin</a></li></ul>
+<ul class="arrow-2 dotted"><li><a href="/software/zincplugin">Find out more about the  Zinc plugin</a></li></ul>
