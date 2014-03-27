@@ -16,7 +16,7 @@ intro:
 
 		<header class="page-header clearfix">
 			<h1 class="page-title align-left">PyZinc library tutorials</h1>		
-			<a href="/software/" class="button no-bg medium align-right">
+			<a href="/software" class="button no-bg medium align-right">
 				All software projects <img src="/img/icon-grid.png" alt="" class="icon">
 			</a>			
 		</header><!-- end .page-header --><!-- end .page-header -->

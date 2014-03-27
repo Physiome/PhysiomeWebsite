@@ -9,7 +9,7 @@ intro: >
 navtitle: OpenCMISS-Zinc Support
 ---
 
-If you cannot find the information you need from the [Zinc Documentation](..), or you encounter bugs or you wish to request new features, please use the following links.
+If you cannot find the information you need from the [Zinc Documentation](../documentation), or you encounter bugs or you wish to request new features, please use the following links.
 
 ### Mailing List
 
