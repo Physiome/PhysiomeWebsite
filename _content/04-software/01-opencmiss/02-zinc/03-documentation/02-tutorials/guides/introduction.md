@@ -15,11 +15,11 @@ intro:
 	<article class="single-project">
 
 		<header class="page-header clearfix">
-			<h1 class="page-title align-left"><a href=index.shtml>PyZinc library tutorials</a></h1>		
+			<h1 class="page-title align-left"><a href="../index">PyZinc library tutorials</a></h1>		
 			<a href="/software/" class="button no-bg medium align-right">
 				All software projects <img src="/img/icon-grid.png" alt="" class="icon">
 			</a>			
-		</header><!-- end .page-header --><!-- end .page-header -->
+		</header><!-- end .page-header -->
 
 		<div id="main">
 		
@@ -443,7 +443,7 @@ The Python bindings presents all API functions as methods on objects i.e. object
       <div class="botnav">
       
         <p>
-        <a class="uplink" href="../../">Contents</a>
+        <a class="uplink" href="../index">Contents</a>
         </p>
 
       </div>
@@ -453,7 +453,7 @@ The Python bindings presents all API functions as methods on objects i.e. object
 		<div id="sidebar">
 <!--#include virtual="/software/zinclibrary/utility-peer-nav.txt" -->    
          <div id="toc">
-          <h6><a href="../../"><span>PyZinc v3.0.0 tutorials</span></a></h6>
+          <h6><a href="../index"><span>PyZinc v3.0.0 tutorials</span></a></h6>
           <ul>
 <li><a class="reference internal" href="#">Introduction to the CMISS Zinc Library API v3.0</a><ul>
 <li><a class="reference internal" href="#the-cmiss-zinc-library">The CMISS Zinc Library</a></li>

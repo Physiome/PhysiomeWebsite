@@ -15,11 +15,11 @@ intro:
 	<article class="single-project">
 
 		<header class="page-header clearfix">
-			<h1 class="page-title align-left"><a href=index.shtml>PyZinc library tutorials</a></h1>		
+			<h1 class="page-title align-left"><a href="../index">PyZinc library tutorials</a></h1>		
 			<a href="/software/" class="button no-bg medium align-right">
 				All software projects <img src="/img/icon-grid.png" alt="" class="icon">
 			</a>			
-		</header><!-- end .page-header --><!-- end .page-header -->
+		</header><!-- end .page-header -->
 
 		<div id="main">
 		
@@ -40,11 +40,11 @@ intro:
 <p>This tutorial also discusses issues that are related to using PySide or PyQt4 with PyZinc.  The souce code used in this tutorial is available from the <a class="reference external" href="https://svn.physiomeproject.org/svn/cmiss/zinc/bindings/examples/trunk/python/simple_axis_viewer/">physiome
 project svn server</a>.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="../../_images/axis_viewer.png"><img alt="../../_images/axis_viewer.png" src="../../_images/axis_viewer.png" style="width: 636px; height: 471px;" /></a>
+<a class="reference internal image-reference" href="/assets/img/software/zinclibrary/tutorials/axis_viewer.png"><img alt="/assets/img/software/zinclibrary/tutorials/axis_viewer.png" src="/assets/img/software/zinclibrary/tutorials/axis_viewer.png" style="width: 636px; height: 471px;" /></a>
 </div>
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
-<p>The simple axis viewer uses PySide or PyQt4 to create a simple application that consists of an OpenGL enabled widget and a quit button.
+<p>The axis viewer uses PySide or PyQt4 to create a simple application that consists of an OpenGL enabled widget and a quit button.
 The OpenGL widget is used by the Zinc library to render a basic scene consisting of a single point graphic.
 The Zinc library has a standard input handling routine that is used to show how the scene viewport can be manipulated.
 In order to visualise the effects of mouse movement the point graphic is defined to use the inbuilt glyph type &#8216;axes_solid&#8217;.</p>
@@ -368,11 +368,11 @@ get the scene rendered again to reflect any changes.</p>
       <div class="botnav">
       
         <p>
-        «&#160;&#160;<a href="../../getting-setup/">Getting Started with PyZinc</a>
+        «&#160;&#160;<a href="../image_reader/tutorial">Tutorial 2 - Image Reader</a>
         &#160;&#160;::&#160;&#160;
-        <a class="uplink" href="../../">Contents</a>
+        <a class="uplink" href="../index">Contents</a>
         &#160;&#160;::&#160;&#160;
-        <a href="../../image_reader/tutorial/">Tutorial 2 - Image Reader</a>&#160;&#160;»
+        <a href="../finite_element_creation/tutorial">Tutorial 3 - Finite Element Creation</a>&#160;&#160;»
         </p>
 
       </div>
@@ -382,7 +382,7 @@ get the scene rendered again to reflect any changes.</p>
 		<div id="sidebar">
 <!--#include virtual="/software/zinclibrary/utility-peer-nav.txt" -->    
          <div id="toc">
-          <h6><a href="../../"><span>PyZinc v3.0.0 tutorials</span></a></h6>
+          <h6><a href="../index"><span>PyZinc v3.0.0 tutorials</span></a></h6>
           <ul>
 <li><a class="reference internal" href="#">Tutorial 1 - Axis Viewer</a><ul>
 <li><a class="reference internal" href="#overview">Overview</a></li>

@@ -15,11 +15,11 @@ intro:
 	<article class="single-project">
 
 		<header class="page-header clearfix">
-			<h1 class="page-title align-left"><a href=index.shtml>PyZinc library tutorials</a></h1>		
+			<h1 class="page-title align-left"><a href="../index">PyZinc library tutorials</a></h1>		
 			<a href="/software/" class="button no-bg medium align-right">
 				All software projects <img src="/img/icon-grid.png" alt="" class="icon">
 			</a>			
-		</header><!-- end .page-header --><!-- end .page-header -->
+		</header><!-- end .page-header -->
 
 		<div id="main">
 		
@@ -28,8 +28,8 @@ intro:
       <div class="documentwrapper">
           <div class="body">
             
-  <div class="section" id="tutorial-1-image-reader">
-<h1>Tutorial 1 - Image Reader<a class="headerlink" href="#tutorial-1-image-reader" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="tutorial-2-image-reader">
+<h1>Tutorial 2 - Image Reader<a class="headerlink" href="#tutorial-2-image-reader" title="Permalink to this headline">¶</a></h1>
 <p>The Image Reader application is designed to illustrate how to read an image into an image field.</p>
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
@@ -73,11 +73,11 @@ the read by comparing the return value with CMISS_OK, which currently has the li
       <div class="botnav">
       
         <p>
-        «&#160;&#160;<a href="../../guides/getting-started/">Getting Started with PyZinc</a>
+        «&#160;&#160;<a href="../guides/getting-started">Getting Started with PyZinc</a>
         &#160;&#160;::&#160;&#160;
-        <a class="uplink" href="../../">Contents</a>
+        <a class="uplink" href="../index">Contents</a>
         &#160;&#160;::&#160;&#160;
-        <a href="../../axis_viewer/tutorial/">Tutorial 1 - Axis Viewer</a>&#160;&#160;»
+        <a href="../axis_viewer/tutorial">Tutorial 1 - Axis Viewer</a>&#160;&#160;»
         </p>
 
       </div>
@@ -87,9 +87,9 @@ the read by comparing the return value with CMISS_OK, which currently has the li
 		<div id="sidebar">
 <!--#include virtual="/software/zinclibrary/utility-peer-nav.txt" -->    
          <div id="toc">
-          <h6><a href="../../"><span>PyZinc v3.0.0 tutorials</span></a></h6>
+          <h6><a href="../index"><span>PyZinc v3.0.0 tutorials</span></a></h6>
           <ul>
-<li><a class="reference internal" href="#">Tutorial 1 - Image Reader</a><ul>
+<li><a class="reference internal" href="#">Tutorial 2 - Image Reader</a><ul>
 <li><a class="reference internal" href="#overview">Overview</a></li>
 <li><a class="reference internal" href="#the-code">The Code</a></li>
 </ul>
