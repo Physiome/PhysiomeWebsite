@@ -15,11 +15,11 @@ intro:
 	<article class="single-project">
 
 		<header class="page-header clearfix">
-			<h1 class="page-title align-left"><a href=index.shtml>PyZinc library tutorials</a></h1>		
+			<h1 class="page-title align-left"><a href="../index">PyZinc library tutorials</a></h1>		
 			<a href="/software/" class="button no-bg medium align-right">
 				All software projects <img src="/img/icon-grid.png" alt="" class="icon">
 			</a>			
-		</header><!-- end .page-header --><!-- end .page-header -->
+		</header><!-- end .page-header -->
 
 		<div id="main">
 		
@@ -28,8 +28,8 @@ intro:
       <div class="documentwrapper">
           <div class="body">
             
-  <div class="section" id="tutorial-1-finite-element-creation">
-<h1>Tutorial 1 - Finite Element Creation<a class="headerlink" href="#tutorial-1-finite-element-creation" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="tutorial-3-finite-element-creation">
+<h1>Tutorial 3 - Finite Element Creation<a class="headerlink" href="#tutorial-3-finite-element-creation" title="Permalink to this headline">¶</a></h1>
 <p>The Finite Element Creator application is designed to illustrate how to create a 2D finite element
 and visualise it.</p>
 <p>This tutorial shows how to</p>
@@ -39,7 +39,7 @@ and visualise it.</p>
 </ul>
 <p>The souce code used in this tutorial is available from the <a class="reference external" href="https://svn.physiomeproject.org/svn/cmiss/zinc/bindings/examples/trunk/python/finite_element_creation/">physiome project svn server</a>.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="../../_images/finite_element_creation.png"><img alt="../../_images/finite_element_creation.png" src="../../_images/finite_element_creation.png" style="width: 636px; height: 471px;" /></a>
+<a class="reference internal image-reference" href="/assets/img/software/zinclibrary/tutorials/finite_element_creation.png"><img alt="/assets/img/software/zinclibrary/tutorials/finite_element_creation.png" src="/assets/img/software/zinclibrary/tutorials/finite_element_creation.png" style="width: 636px; height: 471px;" /></a>
 </div>
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
@@ -352,11 +352,11 @@ finite element, the domain is specified by the nodes we created.</p>
       <div class="botnav">
       
         <p>
-        «&#160;&#160;<a href="../../selection/tutorial/">Tutorial 2 - Selection</a>
+        «&#160;&#160;<a href="../axis_viewer/tutorial">Tutorial 1 - Axis Viewer</a>
         &#160;&#160;::&#160;&#160;
-        <a class="uplink" href="../../">Contents</a>
+        <a class="uplink" href="../index">Contents</a>
         &#160;&#160;::&#160;&#160;
-        <a href="../../read_mesh/tutorial/">Tutorial 2 - Read Mesh</a>&#160;&#160;»
+        <a href="../materials/tutorial">Tutorial 4 - Materials</a>&#160;&#160;»
         </p>
 
       </div>
@@ -366,9 +366,9 @@ finite element, the domain is specified by the nodes we created.</p>
 		<div id="sidebar">
 <!--#include virtual="/software/zinclibrary/utility-peer-nav.txt" -->    
          <div id="toc">
-          <h6><a href="../../"><span>PyZinc v3.0.0 tutorials</span></a></h6>
+          <h6><a href="../index"><span>PyZinc v3.0.0 tutorials</span></a></h6>
           <ul>
-<li><a class="reference internal" href="#">Tutorial 1 - Finite Element Creation</a><ul>
+<li><a class="reference internal" href="#">Tutorial 3 - Finite Element Creation</a><ul>
 <li><a class="reference internal" href="#overview">Overview</a></li>
 <li><a class="reference internal" href="#initialise">Initialise</a></li>
 <li><a class="reference internal" href="#create">Create</a></li>

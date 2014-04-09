@@ -15,11 +15,11 @@ intro:
 	<article class="single-project">
 
 		<header class="page-header clearfix">
-			<h1 class="page-title align-left"><a href=index.shtml>PyZinc library tutorials</a></h1>		
+			<h1 class="page-title align-left"><a href="../index">PyZinc library tutorials</a></h1>		
 			<a href="/software/" class="button no-bg medium align-right">
 				All software projects <img src="/img/icon-grid.png" alt="" class="icon">
 			</a>			
-		</header><!-- end .page-header --><!-- end .page-header -->
+		</header><!-- end .page-header -->
 
 		<div id="main">
 		
@@ -28,8 +28,8 @@ intro:
       <div class="documentwrapper">
           <div class="body">
             
-  <div class="section" id="tutorial-3-materials">
-<h1>Tutorial 3 - Materials<a class="headerlink" href="#tutorial-3-materials" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="tutorial-4-materials">
+<h1>Tutorial 4 - Materials<a class="headerlink" href="#tutorial-4-materials" title="Permalink to this headline">¶</a></h1>
 <p>The Materials application illustrates how graphic materials can be used to add a bit of colour to our mesh.</p>
 <p>This tutorial shows how to</p>
 <ul class="simple">
@@ -41,7 +41,7 @@ intro:
 </ul>
 <p>The souce code used in this tutorial is available from the <a class="reference external" href="https://svn.physiomeproject.org/svn/cmiss/zinc/bindings/examples/trunk/python/materials/">physiome project svn server</a>.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="../../_images/materials.png"><img alt="../../_images/materials.png" src="../../_images/materials.png" style="width: 636px; height: 471px;" /></a>
+<a class="reference internal image-reference" href="/assets/img/software/zinclibrary/tutorials/materials.png"><img alt="/assets/img/software/zinclibrary/tutorials/materials.png" src="/assets/img/software/zinclibrary/tutorials/materials.png" style="width: 636px; height: 471px;" /></a>
 </div>
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
@@ -139,9 +139,11 @@ Here we use the xi field which will map the image size to the finite element siz
       <div class="botnav">
       
         <p>
-        «&#160;&#160;<a href="../../read_mesh/tutorial/">Tutorial 2 - Read Mesh</a>
+        «&#160;&#160;<a href="../finite_element_creation/tutorial">Tutorial 3 - Finite Element Creation</a>
         &#160;&#160;::&#160;&#160;
-        <a class="uplink" href="../../">Contents</a>
+        <a class="uplink" href="../index">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="../view_mesh/tutorial">Tutorial 1 - View Mesh</a>&#160;&#160;»
         </p>
 
       </div>
@@ -151,9 +153,9 @@ Here we use the xi field which will map the image size to the finite element siz
 		<div id="sidebar">
 <!--#include virtual="/software/zinclibrary/utility-peer-nav.txt" -->    
          <div id="toc">
-          <h6><a href="../../"><span>PyZinc v3.0.0 tutorials</span></a></h6>
+          <h6><a href="../index"><span>PyZinc v3.0.0 tutorials</span></a></h6>
           <ul>
-<li><a class="reference internal" href="#">Tutorial 3 - Materials</a><ul>
+<li><a class="reference internal" href="#">Tutorial 4 - Materials</a><ul>
 <li><a class="reference internal" href="#overview">Overview</a></li>
 <li><a class="reference internal" href="#regions">Regions</a></li>
 <li><a class="reference internal" href="#standard-graphic-materials">Standard Graphic Materials</a></li>
