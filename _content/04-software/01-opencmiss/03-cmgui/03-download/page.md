@@ -7,7 +7,6 @@ description:
 intro: >
   Download Cmgui, the standalone application for 3-D visualisation and manipulation of mathematical field models.
 navtitle: Download Cmgui
-max_software_versions: "1"
 ---
 
 ## Developer Versions

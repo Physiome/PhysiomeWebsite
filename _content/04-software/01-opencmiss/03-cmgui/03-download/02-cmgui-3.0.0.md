@@ -3,7 +3,7 @@ _layout: software-download
 _template: software-project-download
 title: Cmgui 3.0.0
 intro: >
-  This is the download page for the pre-release of
+  This is the download page for the release of
   version 3.0.0 of Cmgui for Windows, Mac and Linux.
 description:
 navtitle: Cmgui 3.0.0
@@ -53,11 +53,11 @@ downloadlinks:
 releasestatus: latest
 ---
 
-#### Pre-release limitations
+#### Issues on Windows
 
-This is a fully functional pre-release of Cmgui v3.0, however for Windows it requires a separate installation of perl (and will sometimes be needed in Linux). Please contact the [Cmgui developers](support) to get details of how to install a working version of perl on Windows.
+This is a fully functional release of Cmgui v3.0, however on Windows it requires a particular installation of perl (and this will sometimes be needed in Linux). For Windows users without the correct version of perl already installed (meaning Cmgui fails to run), please contact the [Cmgui developers](support) to get support.
 
-This step will not be required in the final release version.
+We intend to eliminate this issue in a future release.
 
 ### Installation
 
