@@ -1,25 +1,20 @@
 ---
-_layout: support
-_template: page
+_layout: software-index
+_template: software-project-index
 _fieldset: page
-title: Get support for Cmgui
-description: >
-  The standalone application for building
-  interactive, graphical interfaces to
-  mathematical field models
+title: Cmgui
 intro: >
-  Find out tips on installing Cmgui on
-  your system and where you can find extra
-  help.
+  Support and Feedback.
 navtitle: Get support
 ---
-### About Cmgui
 
-Cmgui is a generic open-source modelling and visualisation package developed at the ABI with significant external contributions from industry. It is commonly used to enable researchers to visualise biomedical images alongside the dynamic geometry fields from computer models of cells, tissues and organs. Cmgui is coded in C/C++ and consists of data structures for describing hierarchical models built from mathematical fields.
+If you cannot find the information you need from the [Cmgui Documentation](documentation), or if you encounter bugs or you wish to request new features, please use the following links.
 
-### Browse the documentation
+### Tracker
 
-Most of the documentation on using Cmgui is contained either in the examples or on the [Cmgui wiki](http://www.cmiss.org/cmgui/wiki/UsingCmgui). Browsing the wiki for a few minutes is a good way of getting a feel for what information is available and where it is located. Users are encouraged to use the search function in the upper right hand corner to search the wiki pages for content relevant to their questions. If you can not find the answer to your question on the wiki and then receive an answer from an existing user, please add this answer to the wiki so that others can benefit. The wiki is a collaborative project!
+The [Cmgui tracker section](https://tracker.physiomeproject.org/buglist.cgi?query_format=advanced&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&product=cmgui) is where we track bugs, new features, design ideas and occasionally user queries. We only ever add code changes for items in the tracker. Users can post their own items on the tracker, or developers may create them in response to your queries. The [OpenCMISS-Zinc tracker section](https://tracker.physiomeproject.org/buglist.cgi?query_format=advanced&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&product=Zinc%20library) may also have issues relevant to Cmgui.
+
+We encourage users to post their own items on the tracker, which requires only to create an account. *Please try to search for your issue* in the tracker before posting. If you find a tracker item that matches your problem or feature, please indicate your interest on the item (in a post, and/or add yourself to the CC list) so we can prioritise it accordingly.
 
 ### Contacting another Cmgui user or a Cmgui developer
 
@@ -29,11 +24,3 @@ If you can not find the information you require then try contacting an existing 
 - [Alan Wu]( http://www.abi.auckland.ac.nz/en/about/our-people/researchers/alan-wu.html)
 - [Hugh Sorby]( http://www.abi.auckland.ac.nz/en/about/our-people/researchers/hugh-sorby.html)
 - [Randall Britten]( http://www.abi.auckland.ac.nz/en/about/our-people/researchers/randall-britten.html)
-
-### Browse the issue tracker
-
-If you really get stuck you can try searching for questions others have posted in the past from the tracker: 
-
-<ul class="arrow-2 dotted"> <li> <a href="https://tracker.physiomeproject.org/buglist.cgi?query_format=advanced&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&product=cmgui">tracker.physiomeproject.org</a></li> </ul>
-
-You can specify your search with the 'advanced search' on the left or the 'edit search' option at the bottom of the page, and if the problem you encounter has not been posted before please fill in the form and describe your problem after submitting your question about Cmgui.
