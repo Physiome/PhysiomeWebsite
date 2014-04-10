@@ -27,7 +27,7 @@ gallerylinks:
   -
     image_title: Cmgui
     image_loc: /assets/img/software/cmgui/cmgui_ui.jpg
-    image_link: /software/opencmiss/cmgui/
+    image_link: /software/opencmiss/cmgui
     image_caption: >
       A wxWidgets-based general purpose visualisation application.
     image_dimensions: width="260"

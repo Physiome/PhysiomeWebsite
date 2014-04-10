@@ -27,13 +27,49 @@ Its contents cover:
  *       A simple example in each language, and links to more examples.
  *       Plain language descriptions of the main Zinc object types.
 
-Documentation of the [EX file format](http://www.cmiss.org/cmgui/wiki/TheCmguiEXFormatGuideExnodeAndExelemFiles) and descriptions of graphics attributes relevent to Zinc can be found on the [Cmgui wiki](http://www.cmiss.org/cmgui/wiki/UsingCmgui).
+Documentation of the [EX file format](http://www.cmiss.org/cmgui/wiki/TheCmguiEXFormatGuideExnodeAndExelemFiles) and descriptions of graphics attributes relevent to Zinc can be found on the [Cmgui documentation](http://abi-software-book.readthedocs.org/en/latest/cmgui/index.html).
 
 ### C++ and Python API Documentation
 
-We will soon offer full C++ API documentation here, applicable also to Python (PyZinc) with the few differences noted in the above *Introduction to OpenCMISS-Zinc v3.0* document. (The biggest difference between the Python and C++ APIs is in how arrays are passed in and out of methods.)
+The [OpenCMISS-Zinc C++ API Documentation](http://cmiss.sourceforge.net/) can be used to look up classes and methods in C++, which are mostly applicable to Python (PyZinc).
 
-In the interim one may figure out the C++ API from either by the systematic differences to the C API (see below), or by inspecting the methods in the C++ classes in the .hpp headers in the installed zinc API folder, which can also be browsed in the [Zinc SVN repository](https://svn.physiomeproject.org/svn/cmiss/zinc/library/trunk/core/source/api/zinc/).
+Apart from syntactic and include/import differences, the main differences between using Zinc from C++ and Python are as follows:
+
+1.  Python automatically cleans up strings returned by API methods e.g. getName().
+2.  Python arrays/lists know their size so they are passed in 'as is', whereas variable-sized arrays in the C++ API are preceded by the array size argument:
+
+    *C++:*
+
+        const double xi[3] = { 0.5, 0.5, 0.5 };
+        fieldcache.setMeshLocation(element, 3, xi);
+
+    *Python:*
+
+        xi = [0.5, 0.5, 0.5]
+        fieldcache.setMeshLocation(element, xi)
+
+3. C++ methods which return arrays do so by filling 'out' array arguments, and variable sized arrays are preceded by the array size argument. Python does not permit arguments to be modified, so these are appended to the return value, however the array size to return must be specified if it is present in the C++ API:
+
+    *C++:*
+
+        double outValues[3];
+        int result = field.evaluateReal(fieldcache, 3, outValues);
+
+    *Python:*
+
+        result, outValues = field.evaluateReal(fieldcache, 3)
+
+4. Python enumerations are separated by '.' from the class name. This example also shows that fixed size arrays do not need the size passed to the C++ API:
+
+    *C++:*
+
+        const double orange[3] = { 1.0, 0.5, 0.0 };
+        material.setAttributeReal3(Material::ATTRIBUTE_DIFFUSE, orange);
+
+    *Python:*
+
+        orange = [ 1.0, 0.5, 0.0 ]
+        material.setAttributeReal3(Material.ATTRIBUTE_DIFFUSE, orange)
 
 ### C API Documentation
 
