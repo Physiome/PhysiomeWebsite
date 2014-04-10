@@ -56,3 +56,5 @@ These examples have very good comments throughout them, and some are structured 
 3. [a7 - geothermal field](http://cmiss.bioeng.auckland.ac.nz/development/examples/a/a7/index.html). Cmgui is just as usable for use outside biomedicine. This example from geophysics has some nice solution fields and shows how to create isosurfaces, and how to colour fields over graphics using a spectrum.
 4. [ao - heart fibre streamlines](http://cmiss.bioeng.auckland.ac.nz/development/examples/a/ao/index.html). Use streamlines to visualise heart muscle fibres.
 5. [segmentation 3d](http://cmiss.bioeng.auckland.ac.nz/development/examples/a/segmentation_3d/index.html). Segment a vessel out of a 3-D image block using image processing filters.
+
+<img src="/assets/img/software/cmgui/680x280/arbitrary-shaders.jpg" alt="Arbitrary shaders: using GLSL shaders to create reflective effect on material." title="Arbitrary shaders: using GLSL shaders to create reflective effect on material." width="680" height="280" />
