@@ -37,7 +37,7 @@ intro:
 <li>Visualise some graphics</li>
 <li>Handle mouse input.</li>
 </ul>
-<p>This tutorial also discusses issues that are related to using PySide or PyQt4 with PyZinc.  The souce code used in this tutorial is available from the <a class="reference external" href="https://svn.physiomeproject.org/svn/cmiss/zinc/bindings/examples/trunk/python/simple_axis_viewer/">physiome
+<p>This tutorial also discusses issues that are related to using PySide or PyQt4 with PyZinc.  The souce code used in this tutorial is available from the <a class="reference external" href="https://svn.physiomeproject.org/svn/cmiss/zinc/bindings/examples/trunk/python/axis_viewer/">physiome
 project svn server</a>.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="/assets/img/software/zinclibrary/tutorials/axis_viewer.png"><img alt="/assets/img/software/zinclibrary/tutorials/axis_viewer.png" src="/assets/img/software/zinclibrary/tutorials/axis_viewer.png" style="width: 636px; height: 471px;" /></a>
@@ -313,6 +313,24 @@ with the Zinc scene.  The resizeGL() and paintGL() are very simple functions and
 </pre></div>
 </td></tr></table></div>
 <p>Line 5 shows how a resize event is passed through to the scene viewer, here we tell the scene viewer the new viewport size.</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre>    <span class="k">def</span> <span class="nf">_zincCallback</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        Receive callbacks from zinc about changes that effect this scene view.</span>
+<span class="sd">        For changes that require a repaint we call the updateGL method to redraw</span>
+<span class="sd">        the scene.</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">getChangeFlags</span><span class="p">()</span> <span class="o">&amp;</span> <span class="n">Sceneviewerevent</span><span class="o">.</span><span class="n">CHANGE_FLAG_REPAINT_REQUIRED</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">updateGL</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></div>
+<p>The above code snippet shows the callback received by the ZincWidget from Zinc when the scene viewer has changed. If the change affects the view, redraw.</p>
 </div>
 <div class="section" id="handling-interaction">
 <h2>Handling Interaction<a class="headerlink" href="#handling-interaction" title="Permalink to this headline">¶</a></h2>
@@ -353,11 +371,9 @@ modifiers to the scene viewer input modifiers.  For PySide and PyQt4 we can use 
 </pre></div>
 </td></tr></table></div>
 <p>For the default input handler the left mouse button will rotate the scene, the middle mouse button will translate the scene, the
-right mouse button will magnify and miniaturise the scene (much like a camera zoom lens) and the shift key plus the right mouse button
-will move towards or away from the current interest point in the scene.</p>
+right mouse button moves the viewer towards or away from the current interest point in the scene (which looks best in perspective mode, and clips when you get too close). Holding down the shift key with the right mouse button drag magnifies or miniaturises the scene, much like a camera zoom lens.</p>
 <p>The mousePressEvent(), mouseReleaseEvent(), and mouseMoveEvent() functions utilise the default input handler by calling the scene viewer
-processInput() API function.  Because the mouseMoveEvent() function has possibly triggered a change in the scene viewer we must call updateGL() to
-get the scene rendered again to reflect any changes.</p>
+processSceneviewerinput() API function.  Note that we don&#8217;t need to manually redraw the graphics here; the changes to the view made by processSceneviewerinput() trigger a callback to _zincCallback(), described earlier.</p>
 </div>
 </div>
 
