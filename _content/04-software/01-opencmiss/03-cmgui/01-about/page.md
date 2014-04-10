@@ -7,7 +7,7 @@ intro: >
   Standalone application for visualising and interacting with mathematical field models.
 ---
 
-<img src="/assets/img/software/cmgui/680x280/arbitrary-shaders.jpg" alt="Arbitrary shaders: using GLSL shaders to create reflective effect on material." width="680" height="280" />
+<img src="/assets/img/software/cmgui/cmgui_ui.jpg" alt="Cmgui application windows" title="Cmgui application windows" height="480" />
 
 ### Overview
 
