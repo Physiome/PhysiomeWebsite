@@ -44,7 +44,7 @@ that may for instances be used for batch processing purposes.</p>
 <li class="toctree-l2"><a class="reference internal" href="guides/getting-started#executing-the-script">Executing the Script</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="image_reader/tutorial">Tutorial 2 - Image Reader</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="image_reader/tutorial">Tutorial: Image Reader</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="image_reader/tutorial#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="image_reader/tutorial#the-code">The Code</a></li>
 </ul>
@@ -58,7 +58,7 @@ that may for instances be used for batch processing purposes.</p>
 and respond to user events that show basic Zinc visualisations.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="axis_viewer/tutorial">Tutorial 1 - Axis Viewer</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="axis_viewer/tutorial">Tutorial: Axis Viewer</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="axis_viewer/tutorial#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="axis_viewer/tutorial#the-entry-point">The Entry Point</a></li>
 <li class="toctree-l2"><a class="reference internal" href="axis_viewer/tutorial#something-to-look-at">Something to Look At</a></li>
@@ -75,34 +75,31 @@ and respond to user events that show basic Zinc visualisations.</p>
 explore the features of Zinc.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="finite_element_creation/tutorial">Tutorial 3 - Finite Element Creation</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="read_mesh/tutorial">Tutorial: Read and View a Mesh</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="read_mesh/tutorial#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="read_mesh/tutorial#initialising-your-application">Initialising your application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="read_mesh/tutorial#reading-a-time-varying-model">Reading a time-varying model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="read_mesh/tutorial#creating-surface-graphics">Creating surface graphics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="read_mesh/tutorial#updating-time">Updating time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="read_mesh/tutorial#the-custom-button">The Custom button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="read_mesh/tutorial#creating-node-points-graphics">Creating node points graphics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="read_mesh/tutorial#id1">Creating node points graphics</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="finite_element_creation/tutorial">Tutorial: Finite Element Creation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="finite_element_creation/tutorial#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="finite_element_creation/tutorial#initialise">Initialise</a></li>
 <li class="toctree-l2"><a class="reference internal" href="finite_element_creation/tutorial#create">Create</a></li>
 <li class="toctree-l2"><a class="reference internal" href="finite_element_creation/tutorial#visualise">Visualise</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="materials/tutorial">Tutorial 4 - Materials</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="materials/tutorial">Tutorial: Materials</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="materials/tutorial#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="materials/tutorial#regions">Regions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="materials/tutorial#standard-graphic-materials">Standard Graphic Materials</a></li>
 <li class="toctree-l2"><a class="reference internal" href="materials/tutorial#creating-graphic-materials">Creating Graphic Materials</a></li>
 <li class="toctree-l2"><a class="reference internal" href="materials/tutorial#creating-graphic-material-using-an-image-field">Creating Graphic Material Using an Image Field</a></li>
 <li class="toctree-l2"><a class="reference internal" href="materials/tutorial#applying-graphic-material-to-graphic">Applying Graphic Material to Graphic</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<div class="section" id="interaction-utilising-zlab">
-<h1>Interaction Utilising zlab<a class="headerlink" href="#interaction-utilising-zlab" title="Permalink to this headline">¶</a></h1>
-<p>These examples show how to use zlab to create visualisations.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="view_mesh/tutorial">Tutorial 1 - View Mesh</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="view_mesh/tutorial#overview">Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="view_mesh/tutorial#mesh-definition">Mesh Definition</a></li>
-<li class="toctree-l2"><a class="reference internal" href="view_mesh/tutorial#visualise">Visualise</a></li>
 </ul>
 </li>
 </ul>
@@ -140,8 +137,7 @@ explore the features of Zinc.</p>
           <ul>
 <li><a class="reference internal" href="#">Introduction</a></li>
 <li><a class="reference internal" href="#user-events">User Events</a></li>
-<li><a class="reference internal" href="#interaction-utilising-the-zincwidget">Interaction Utilising the ZincWidget</a></li>
-<li><a class="reference internal" href="#interaction-utilising-zlab">Interaction Utilising zlab</a><ul>
+<li><a class="reference internal" href="#interaction-utilising-the-zincwidget">Interaction Utilising the ZincWidget</a><ul>
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
 </ul>
 </li>

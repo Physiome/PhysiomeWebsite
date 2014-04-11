@@ -28,8 +28,8 @@ intro:
       <div class="documentwrapper">
           <div class="body">
             
-  <div class="section" id="tutorial-1-axis-viewer">
-<h1>Tutorial 1 - Axis Viewer<a class="headerlink" href="#tutorial-1-axis-viewer" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="tutorial-axis-viewer">
+<h1>Tutorial: Axis Viewer<a class="headerlink" href="#tutorial-axis-viewer" title="Permalink to this headline">¶</a></h1>
 <p>The Axis Viewer is a very simple application designed to illustrate the fundamentals of using PyZinc.  The application illustrates how to</p>
 <ul class="simple">
 <li>Set up a Context</li>
@@ -384,11 +384,11 @@ processSceneviewerinput() API function.  Note that we don&#8217;t need to manual
       <div class="botnav">
       
         <p>
-        «&#160;&#160;<a href="../image_reader/tutorial">Tutorial 2 - Image Reader</a>
+        «&#160;&#160;<a href="../image_reader/tutorial">Tutorial: Image Reader</a>
         &#160;&#160;::&#160;&#160;
         <a class="uplink" href="../index">Contents</a>
         &#160;&#160;::&#160;&#160;
-        <a href="../finite_element_creation/tutorial">Tutorial 3 - Finite Element Creation</a>&#160;&#160;»
+        <a href="../read_mesh/tutorial">Tutorial: Read and View a Mesh</a>&#160;&#160;»
         </p>
 
       </div>
@@ -400,7 +400,7 @@ processSceneviewerinput() API function.  Note that we don&#8217;t need to manual
          <div id="toc">
           <h6><a href="../index"><span>PyZinc v3.0.0 tutorials</span></a></h6>
           <ul>
-<li><a class="reference internal" href="#">Tutorial 1 - Axis Viewer</a><ul>
+<li><a class="reference internal" href="#">Tutorial: Axis Viewer</a><ul>
 <li><a class="reference internal" href="#overview">Overview</a></li>
 <li><a class="reference internal" href="#the-entry-point">The Entry Point</a></li>
 <li><a class="reference internal" href="#something-to-look-at">Something to Look At</a></li>

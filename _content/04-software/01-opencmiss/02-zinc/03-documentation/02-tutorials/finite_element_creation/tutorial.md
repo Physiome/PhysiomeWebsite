@@ -28,8 +28,8 @@ intro:
       <div class="documentwrapper">
           <div class="body">
             
-  <div class="section" id="tutorial-3-finite-element-creation">
-<h1>Tutorial 3 - Finite Element Creation<a class="headerlink" href="#tutorial-3-finite-element-creation" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="tutorial-finite-element-creation">
+<h1>Tutorial: Finite Element Creation<a class="headerlink" href="#tutorial-finite-element-creation" title="Permalink to this headline">¶</a></h1>
 <p>The Finite Element Creator application is designed to illustrate how to create a 2D finite element
 and visualise it.</p>
 <p>This tutorial shows how to</p>
@@ -352,11 +352,11 @@ finite element, the domain is specified by the nodes we created.</p>
       <div class="botnav">
       
         <p>
-        «&#160;&#160;<a href="../axis_viewer/tutorial">Tutorial 1 - Axis Viewer</a>
+        «&#160;&#160;<a href="../read_mesh/tutorial">Tutorial Read and View a Mesh</a>
         &#160;&#160;::&#160;&#160;
         <a class="uplink" href="../index">Contents</a>
         &#160;&#160;::&#160;&#160;
-        <a href="../materials/tutorial">Tutorial 4 - Materials</a>&#160;&#160;»
+        <a href="../materials/tutorial">Tutorial: Materials</a>&#160;&#160;»
         </p>
 
       </div>
@@ -368,7 +368,7 @@ finite element, the domain is specified by the nodes we created.</p>
          <div id="toc">
           <h6><a href="../index"><span>PyZinc v3.0.0 tutorials</span></a></h6>
           <ul>
-<li><a class="reference internal" href="#">Tutorial 3 - Finite Element Creation</a><ul>
+<li><a class="reference internal" href="#">Tutorial: Finite Element Creation</a><ul>
 <li><a class="reference internal" href="#overview">Overview</a></li>
 <li><a class="reference internal" href="#initialise">Initialise</a></li>
 <li><a class="reference internal" href="#create">Create</a></li>
