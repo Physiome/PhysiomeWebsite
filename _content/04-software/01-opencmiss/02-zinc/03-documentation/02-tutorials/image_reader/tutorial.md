@@ -28,8 +28,8 @@ intro:
       <div class="documentwrapper">
           <div class="body">
             
-  <div class="section" id="tutorial-2-image-reader">
-<h1>Tutorial 2 - Image Reader<a class="headerlink" href="#tutorial-2-image-reader" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="tutorial-image-reader">
+<h1>Tutorial: Image Reader<a class="headerlink" href="#tutorial-image-reader" title="Permalink to this headline">¶</a></h1>
 <p>The Image Reader application is designed to illustrate how to read an image into an image field.</p>
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
@@ -89,7 +89,7 @@ the read by comparing the return value with CMISS_OK, which currently has the li
          <div id="toc">
           <h6><a href="../index"><span>PyZinc v3.0.0 tutorials</span></a></h6>
           <ul>
-<li><a class="reference internal" href="#">Tutorial 2 - Image Reader</a><ul>
+<li><a class="reference internal" href="#">Tutorial: Image Reader</a><ul>
 <li><a class="reference internal" href="#overview">Overview</a></li>
 <li><a class="reference internal" href="#the-code">The Code</a></li>
 </ul>

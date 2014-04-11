@@ -28,8 +28,8 @@ intro:
       <div class="documentwrapper">
           <div class="body">
             
-  <div class="section" id="tutorial-4-materials">
-<h1>Tutorial 4 - Materials<a class="headerlink" href="#tutorial-4-materials" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="tutorial-materials">
+<h1>Tutorial: Materials<a class="headerlink" href="#tutorial-materials" title="Permalink to this headline">¶</a></h1>
 <p>The Materials application illustrates how graphic materials can be used to add a bit of colour to our mesh.</p>
 <p>This tutorial shows how to</p>
 <ul class="simple">
@@ -139,11 +139,9 @@ Here we use the xi field which will map the image size to the finite element siz
       <div class="botnav">
       
         <p>
-        «&#160;&#160;<a href="../finite_element_creation/tutorial">Tutorial 3 - Finite Element Creation</a>
+        «&#160;&#160;<a href="../finite_element_creation/tutorial">Tutorial: Finite Element Creation</a>
         &#160;&#160;::&#160;&#160;
         <a class="uplink" href="../index">Contents</a>
-        &#160;&#160;::&#160;&#160;
-        <a href="../view_mesh/tutorial">Tutorial 1 - View Mesh</a>&#160;&#160;»
         </p>
 
       </div>
@@ -155,7 +153,7 @@ Here we use the xi field which will map the image size to the finite element siz
          <div id="toc">
           <h6><a href="../index"><span>PyZinc v3.0.0 tutorials</span></a></h6>
           <ul>
-<li><a class="reference internal" href="#">Tutorial 4 - Materials</a><ul>
+<li><a class="reference internal" href="#">Tutorial: Materials</a><ul>
 <li><a class="reference internal" href="#overview">Overview</a></li>
 <li><a class="reference internal" href="#regions">Regions</a></li>
 <li><a class="reference internal" href="#standard-graphic-materials">Standard Graphic Materials</a></li>
