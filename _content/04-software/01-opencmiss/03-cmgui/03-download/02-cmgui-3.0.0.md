@@ -53,13 +53,15 @@ downloadlinks:
 releasestatus: latest
 ---
 
-#### Issues on Windows
-
-This is a fully functional release of Cmgui v3.0, however on Windows it requires a particular installation of perl (and this will sometimes be needed in Linux). For Windows users without the correct version of perl already installed (meaning Cmgui fails to run), please contact the [Cmgui developers](support) to get support.
-
-We intend to eliminate this issue in a future release.
-
 ### Installation
 
 1. Download the installer package for your platform (preferred) or the zip/tar.gz archive.
 2. In Windows, run the .exe and follow the installer wizard. On the Mac the dmg package should be automatically installed. In Linux, install the debian package with the following command line: `sudo dpkg -i cmgui-3*.deb`. The zip/tar.gz archives merely need to be uncompressed into the desired installation location and for paths and/or shortcuts to the cmgui application binary to be set up.
+
+#### Getting Perl on Windows and Linux
+
+Windows users need to install one of a few specific versions of perl up to v5.16 in order to run this release, for example [ActivePerl 5.16 for Windows 64-bit](http://www.activestate.com/activeperl/downloads).
+
+Linux users may get errors about their version of Perl not being supported by Cmgui. If you get this problem, please mail the errors reported by Cmgui in the console and/or the version of the OS and Perl (type 'perl --version') to one of the [Cmgui developers](support). In the interim, please install and use cmgui v2.9.
+
+We intend to eliminate these issues with Perl in a future release.
