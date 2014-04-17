@@ -83,7 +83,7 @@ explore the features of Zinc.</p>
 <li class="toctree-l2"><a class="reference internal" href="read_mesh/tutorial#updating-time">Updating time</a></li>
 <li class="toctree-l2"><a class="reference internal" href="read_mesh/tutorial#the-custom-button">The Custom button</a></li>
 <li class="toctree-l2"><a class="reference internal" href="read_mesh/tutorial#creating-node-points-graphics">Creating node points graphics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="read_mesh/tutorial#id1">Creating node points graphics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="read_mesh/tutorial#extending-this-example">Extending this example</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="finite_element_creation/tutorial">Tutorial: Finite Element Creation</a><ul>
