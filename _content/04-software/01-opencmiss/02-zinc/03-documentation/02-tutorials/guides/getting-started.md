@@ -84,6 +84,7 @@ python getting_started.py
 <span class="o">...</span>
 </pre></div>
 </div>
+<p>This simple script has loaded the 60-element prolate heart model and evaluated and printed the value of the coordinate field at the centre of each element. Have a read of it and as needed look up the API documentation to learn how each API function works.</p>
 <p>Congratulations, you now have a functioning Zinc and PyZinc installation.  You can now move onto understanding some of the more advanced features that are offered.</p>
 </div>
 </div>
@@ -96,11 +97,11 @@ python getting_started.py
       <div class="botnav">
       
         <p>
-        «&#160;&#160;<a href="installation">Installation Guide:</a>
+        «&#160;&#160;<a href="../index">Introduction</a>
         &#160;&#160;::&#160;&#160;
         <a class="uplink" href="../index">Contents</a>
         &#160;&#160;::&#160;&#160;
-        <a href="../image_reader/tutorial">Tutorial 2 - Image Reader</a>&#160;&#160;»
+        <a href="../image_reader/tutorial">Tutorial: Image Reader</a>&#160;&#160;»
         </p>
 
       </div>

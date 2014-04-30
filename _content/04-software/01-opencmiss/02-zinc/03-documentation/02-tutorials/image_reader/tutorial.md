@@ -41,6 +41,83 @@ reading an image in from memory, the only difference is the stream resource type
 <div class="section" id="the-code">
 <h2>The Code<a class="headerlink" href="#the-code" title="Permalink to this headline">¶</a></h2>
 <p>Here is the code for reading in an image from disk:</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38</pre></div></td><td class="code"><div class="highlight"><pre><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    The entry point for the application, handle application arguments.</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="c"># Create the context</span>
+    <span class="n">context</span> <span class="o">=</span> <span class="n">Context</span><span class="p">(</span><span class="s">&quot;image&quot;</span><span class="p">)</span>
+    
+    <span class="c"># Name of the file we intend to read in.</span>
+    <span class="n">image_name</span> <span class="o">=</span> <span class="s">&#39;drawing.png&#39;</span>
+    
+    <span class="c"># Get a handle to the root region</span>
+    <span class="n">default_region</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">getDefaultRegion</span><span class="p">()</span>
+    
+    <span class="c"># The field module allows us to create a field image to </span>
+    <span class="c"># store the image data into.</span>
+    <span class="n">field_module</span> <span class="o">=</span> <span class="n">default_region</span><span class="o">.</span><span class="n">getFieldmodule</span><span class="p">()</span>
+    
+    <span class="c"># Create an image field, we don&#39;t specify the domain here for this</span>
+    <span class="c"># field even though it is a source field.  A temporary xi source field</span>
+    <span class="c"># is created for us.</span>
+    <span class="n">image_field</span> <span class="o">=</span> <span class="n">field_module</span><span class="o">.</span><span class="n">createFieldImage</span><span class="p">()</span>
+    <span class="n">image_field</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s">&#39;texture&#39;</span><span class="p">)</span>
+    
+    <span class="c"># Create a stream information object that we can use to read the </span>
+    <span class="c"># image file from the disk</span>
+    <span class="n">stream_information</span> <span class="o">=</span> <span class="n">image_field</span><span class="o">.</span><span class="n">createStreaminformationImage</span><span class="p">()</span>
+    <span class="c"># Set the format for the image we want to read</span>
+    <span class="n">stream_information</span><span class="o">.</span><span class="n">setFileFormat</span><span class="p">(</span><span class="n">stream_information</span><span class="o">.</span><span class="n">FILE_FORMAT_PNG</span><span class="p">)</span>
+    <span class="c"># We are reading in a file from the local disk so our resource is a file.</span>
+    <span class="n">stream_information</span><span class="o">.</span><span class="n">createStreamresourceFile</span><span class="p">(</span><span class="n">image_name</span><span class="p">)</span>
+    
+    <span class="c"># Actually read in the image file into the image field.</span>
+    <span class="n">ret</span> <span class="o">=</span> <span class="n">image_field</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">stream_information</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">ret</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span> <span class="c"># CMISS_OK has  the literal value 1</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">&#39;Image successfully read into image field.&#39;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">&#39;Error: failed to read image into image field.&#39;</span><span class="p">)</span>
+        
+</pre></div>
+</td></tr></table></div>
 <p><strong>Line 6</strong> creates the Zinc context we must create one of these to get any other objects from this context.</p>
 <p>To create an image field we first must get the default region from the context (<strong>Line 12</strong>) and then
 we can get the field module for that region (<strong>Line 16</strong>).  From the field module we can create any fields required, in our
@@ -77,7 +154,7 @@ the read by comparing the return value with CMISS_OK, which currently has the li
         &#160;&#160;::&#160;&#160;
         <a class="uplink" href="../index">Contents</a>
         &#160;&#160;::&#160;&#160;
-        <a href="../axis_viewer/tutorial">Tutorial 1 - Axis Viewer</a>&#160;&#160;»
+        <a href="../axis_viewer/tutorial">Tutorial: Axis Viewer</a>&#160;&#160;»
         </p>
 
       </div>

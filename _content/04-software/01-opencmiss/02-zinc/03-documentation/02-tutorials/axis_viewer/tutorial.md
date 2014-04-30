@@ -30,36 +30,53 @@ intro:
             
   <div class="section" id="tutorial-axis-viewer">
 <h1>Tutorial: Axis Viewer<a class="headerlink" href="#tutorial-axis-viewer" title="Permalink to this headline">¶</a></h1>
-<p>The Axis Viewer is a very simple application designed to illustrate the fundamentals of using PyZinc.  The application illustrates how to</p>
-<ul class="simple">
-<li>Set up a Context</li>
-<li>Create a scene</li>
-<li>Visualise some graphics</li>
-<li>Handle mouse input.</li>
-</ul>
-<p>This tutorial also discusses issues that are related to using PySide or PyQt4 with PyZinc.  The souce code used in this tutorial is available from the <a class="reference external" href="https://svn.physiomeproject.org/svn/cmiss/zinc/bindings/examples/trunk/python/axis_viewer/">physiome
-project svn server</a>.</p>
+<p>The Axis Viewer is a very simple Zinc application written in Python with a Qt user interface. It sets up a Zinc scene containing only graphics showing 3-D axes, and renders them in the window using a simplified version of the Zinc Widget which allows interactive rotation, panning and zooming of the scene.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="/assets/img/software/zinclibrary/tutorials/axis_viewer.png"><img alt="/assets/img/software/zinclibrary/tutorials/axis_viewer.png" src="/assets/img/software/zinclibrary/tutorials/axis_viewer.png" style="width: 636px; height: 471px;" /></a>
 </div>
-<div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
-<p>The axis viewer uses PySide or PyQt4 to create a simple application that consists of an OpenGL enabled widget and a quit button.
-The OpenGL widget is used by the Zinc library to render a basic scene consisting of a single point graphic.
-The Zinc library has a standard input handling routine that is used to show how the scene viewport can be manipulated.
-In order to visualise the effects of mouse movement the point graphic is defined to use the inbuilt glyph type &#8216;axes_solid&#8217;.</p>
+<p>This tutorial has two goals:</p>
+<ol class="arabic simple">
+<li>Set up a minimal graphical application using the Zinc in Python with a Qt user interface.</li>
+<li>For those interested, explain how the Zinc Widget works, including set up, drawing graphics and handling mouse input.</li>
+</ol>
+<p>In addition, it also discussions differences between using the two different Python bindings to Qt: PySide and PyQt4.</p>
+<p>The souce code used in this tutorial is available from the <a class="reference external" href="https://svn.physiomeproject.org/svn/cmiss/zinc/bindings/examples/trunk/python/axis_viewer/">physiome
+project svn server</a>.</p>
+<div class="section" id="creating-the-user-interface-with-qt">
+<h2>Creating the User Interface with Qt<a class="headerlink" href="#creating-the-user-interface-with-qt" title="Permalink to this headline">¶</a></h2>
+<p>The user interface for this example consists of a window with a graphical rendering area with a Quit button below, as shown in the above figure. It is defined in the axis_viewer.ui file, created in Qt Designer as shown below.</p>
+<div class="figure align-center">
+<img alt="/assets/img/software/zinclibrary/tutorials/axis_viewer_qtdesigner.png" src="/assets/img/software/zinclibrary/tutorials/axis_viewer_qtdesigner.png" />
+</div>
+<p>The AxisViewerDlg is the class for this application, and is based on a QWidget. It includes three other widgets, a ZincWidget for the graphical display area, a spacer and the Quit button. We can see in this example that the clicked() signal (event) from the Quit button triggers the close() slot (function) on the AxisViewerDlg class; in this case close() is handled by the base QWidget class, but as your user interface grows you will connect signals from other widgets to new slots on your classes, which you must implement as class methods.</p>
+<p>The ZincWidget is a custom Qt widget made specifically for use with PyZinc. Qt Designer allows the use of custom widgets by &#8216;promoting&#8217; them from a specified Qt base class (here QWidget) to a derived class name. It requires the &#8216;header file&#8217; declaring the derived widget class to be specified, here &#8216;zincwidget.h&#8217; as appropriate to C++, however Qt on Python will look for the definition of the derived widget class in &#8216;zincwidget.py&#8217;. For more information on promoting widgets in Qt Designer read the document at this location <a class="reference external" href="http://qt-project.org/doc/qt-4.8/designer-using-custom-widgets.html">http://qt-project.org/doc/qt-4.8/designer-using-custom-widgets.html</a>.</p>
+<p>The UI description is converted to a python module using a Python Qt UI compiler.:</p>
+<div class="highlight-python"><div class="highlight"><pre># PySide
+pyside-uic -o axis_viewer_ui_pyside.py axis_viewer.ui
+# PyQt4
+pyuic4 -o axis_viewer_ui_pyqt4.py axis_viewer.ui
+</pre></div>
+</div>
+<p>add &#8216;&#8211;from-imports&#8217; if targeting Python 3.0 or later in the above command.</p>
 <p><strong>Note:</strong></p>
 <blockquote>
-<div>This example uses either PySide or PyQt4 depending on which one it successfully imports.  These two different Python bindings for the Qt libraries are,
-for this simple example, interchangeable.  However this is not always the case for more complicated applications.  This web page shows the differences
-between the two <a class="reference external" href="http://qt-project.org/wiki/Differences_Between_PySide_and_PyQt">http://qt-project.org/wiki/Differences_Between_PySide_and_PyQt</a></div></blockquote>
+<div>This example uses either PySide or PyQt4 depending on which one it successfully imports.  These two different Python bindings for the Qt libraries are, for this simple example, interchangeable.  However this is not always the case for more complicated applications.  This web page shows the differences
+between the two <a class="reference external" href="http://qt-project.org/wiki/Differences_Between_PySide_and_PyQt">http://qt-project.org/wiki/Differences_Between_PySide_and_PyQt</a>. The two bindings differ in license: PySide (LGPL) vs. PyQt4 (GPL/commercial).</div></blockquote>
+<p>We also set an application icon here which is defined in a resource file
+using qt-designer and compiled into a python resource using a Python Qt resource compiler.:</p>
+<div class="highlight-python"><div class="highlight"><pre># PySide
+pyside-rcc -py3 -o icons_rc.py icons.qrc
+# PyQt4
+pyrcc4 -py3 -o icons_rc.py icons.qrc
+</pre></div>
 </div>
+<p>The implementation of the Zinc Widget in file zincwidget.py is explained later.</p>
+</div>
+<div class="section" id="creating-the-application">
+<h2>Creating the Application<a class="headerlink" href="#creating-the-application" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="the-entry-point">
-<h2>The Entry Point<a class="headerlink" href="#the-entry-point" title="Permalink to this headline">¶</a></h2>
-<p>In this first tutorial we start at the entry point to the application which is in the axis_viewer.py file.  When we
-call this file directly (and not imported as a module) the __name__ variable is set to __main__ and we can setup and
-initialise the application.  We do this so that we can mimic C/C++ and call our &#8216;main()&#8217; function as the entry point of the
-application.  In the &#8216;main&#8217; function the program initialises the application-wide resources and starts the event loop.  Here is the code.</p>
+<h3>The Entry Point<a class="headerlink" href="#the-entry-point" title="Permalink to this headline">¶</a></h3>
+<p>When executing axis_viewer.py directly (i.e. not imported as a module) the __name__ variable is set to &#8216;__main__&#8217;. The axis viewer detects this and invokes the function main(sys.argv), which mimics the entry point for C/C++ programs. The main() function initialises the application-wide resources and starts the event loop:</p>
 <div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -92,64 +109,17 @@ window of the application.  Next we show the main window (line 10) and then star
 The event loop handles the events that are generated when the program is running.  Examples of events are mouse presses and
 key strokes.</p>
 </div>
-<div class="section" id="something-to-look-at">
-<h2>Something to Look At<a class="headerlink" href="#something-to-look-at" title="Permalink to this headline">¶</a></h2>
-<p>The AxisViewerDlg class subclasses QWidget and uses composition to include
-the ui part of the application.  The ui part is created using qt-designer and
-converted to a python module using a Python Qt ui compiler.:</p>
-<div class="highlight-python"><div class="highlight"><pre># PySide
-pyside-uic -o axis_viewer_ui_pyside.py axis_viewer.ui
-# PyQt4
-pyuic4 -o axis_viewer_ui_pyqt4.py axis_viewer.ui
-</pre></div>
-</div>
-<p>add &#8216;&#8211;from-imports&#8217; if targeting Python 3.0 or later in the above command.</p>
-<p>We also set an application icon here which is defined in a resource file
-using qt-designer and compiled into a python resource using a Python Qt resource compiler.:</p>
-<div class="highlight-python"><div class="highlight"><pre># PySide
-pyside-rcc -py3 -o icons_rc.py icons.qrc
-# PyQt4
-pyrcc4 -py3 -o icons_rc.py icons.qrc
-</pre></div>
-</div>
-<p>The AxisViewerDlg uses qt-designer to promote a widget to a ZincWidget which we define in
-zincwidget.py.  For more information on promoting widgets in qt-designer read the document
-at this location <a class="reference external" href="http://qt-project.org/doc/qt-4.8/designer-using-custom-widgets.html">http://qt-project.org/doc/qt-4.8/designer-using-custom-widgets.html</a>.</p>
-</div>
-<div class="section" id="setting-the-scene">
-<h2>Setting the Scene<a class="headerlink" href="#setting-the-scene" title="Permalink to this headline">¶</a></h2>
-<p>The ZincWidget class is sub-classed from QGLWidget.  QGLWidget is a widget for rendering OpenGL graphics.
-The QGLWidget sets up the OpenGL context that is required for the Zinc library to draw into.  The ZincWidget
-will be the view widget into our Zinc library scene.</p>
-<p>In the initialisation of the class we call __init__ of the super class QGLWidget.  Then we create a Zinc context,
-we keep a handle to this context until we are no longer using objects obtained from it (either directly or indirectly).
-If we don&#8217;t all the resources associated with the context will be released and any new actions performed on objects from
-the context will be invalid resulting in undefined behaviour.  This means that the Zinc context handle should be the last
-handle we let go of.</p>
-<p>note:</p>
-<div class="highlight-python"><div class="highlight"><pre>We use the context to create all other Zinc objects either directly or indirectly.
-</pre></div>
-</div>
-<p>In the initialisation of the class we also create a class member for a handle to the scene viewer.  It is advisable
-to keep a handle to the scene viewer, from this handle we can (obviously) access all the objects required to render (view) our scene.</p>
+<div class="section" id="the-axis-viewer-dialog-class">
+<h3>The Axis Viewer Dialog class<a class="headerlink" href="#the-axis-viewer-dialog-class" title="Permalink to this headline">¶</a></h3>
+<p>The AxisViewerDlg class, derived from QWidget is where your application-specific code goes. Since we wish to use Zinc, we first need to import OpenCMISS-Zinc modules:</p>
 <div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7
-8</pre></div></td><td class="code"><div class="highlight"><pre>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span> <span class="o">=</span> <span class="bp">None</span><span class="p">):</span>
-        <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">        Call the super class init functions, create a Zinc context and set the scene viewer handle to None.</span>
-<span class="sd">        &#39;&#39;&#39;</span>
-        <span class="n">QtOpenGL</span><span class="o">.</span><span class="n">QGLWidget</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span>
-        <span class="c"># Create a Zinc context from which all other objects can be derived either directly or indirectly.</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_context</span> <span class="o">=</span> <span class="n">Context</span><span class="p">(</span><span class="s">&quot;axisviewer&quot;</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_scene_viewer</span> <span class="o">=</span> <span class="bp">None</span>
+2</pre></div></td><td class="code"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">opencmiss.zinc.context</span> <span class="kn">import</span> <span class="n">Context</span> <span class="k">as</span> <span class="n">ZincContext</span>
+<span class="kn">from</span> <span class="nn">opencmiss.zinc.glyph</span> <span class="kn">import</span> <span class="n">Glyph</span>
 </pre></div>
 </td></tr></table></div>
-<p>We implement the initializeGL() function to set up the scene we want to show.  Here is the code:</p>
+<p>Each application using Zinc must create a Zinc &#8216;Context&#8217; object so that module must always be imported. You don&#8217;t need to import modules for objects created from the Context, but enumerations such as the
+glyph shape type are only defined in their module, hence they must be imported as above.</p>
+<p>The AxisViewerDlg class defines the code that is special to your application, and this includes setting up a few things specific to Zinc:</p>
 <div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -183,43 +153,141 @@ to keep a handle to the scene viewer, from this handle we can (obviously) access
 31
 32
 33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64</pre></div></td><td class="code"><div class="highlight"><pre>    <span class="k">def</span> <span class="nf">initializeGL</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+34</pre></div></td><td class="code"><div class="highlight"><pre><span class="k">class</span> <span class="nc">AxisViewerDlg</span><span class="p">(</span><span class="n">QtGui</span><span class="o">.</span><span class="n">QWidget</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Create a subclass of QWidget for our application.  We could also have derived this </span>
+<span class="sd">    application from QMainWindow to give us a menu bar among other things, but a</span>
+<span class="sd">    QWidget is sufficient for our purposes.</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">        Initialise the Zinc scene for drawing the axis glyph at a point.  </span>
+<span class="sd">        Initiaise the AxisViewerDlg first calling the QWidget __init__ function.</span>
 <span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">QtGui</span><span class="o">.</span><span class="n">QWidget</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span>
+ 
+        <span class="c"># create instance of Zinc Context from which all other objects are obtained</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_context</span> <span class="o">=</span> <span class="n">ZincContext</span><span class="p">(</span><span class="s">&quot;Axis Viewer&quot;</span><span class="p">);</span>
+
+        <span class="c"># set up standard materials and glyphs so we can use them elsewhere</span>
+        <span class="c"># define standard materials first as some coloured glyphs use them</span>
+        <span class="n">materialmodule</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_context</span><span class="o">.</span><span class="n">getMaterialmodule</span><span class="p">()</span>
+        <span class="n">materialmodule</span><span class="o">.</span><span class="n">defineStandardMaterials</span><span class="p">()</span>
+        <span class="c"># this example uses a standard axes glyph hence need the following:</span>
+        <span class="n">glyphmodule</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_context</span><span class="o">.</span><span class="n">getGlyphmodule</span><span class="p">()</span>
+        <span class="n">glyphmodule</span><span class="o">.</span><span class="n">defineStandardGlyphs</span><span class="p">()</span>
+
+        <span class="c"># Using composition to include the visual element of the GUI.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span> <span class="o">=</span> <span class="n">Ui_AxisViewerDlg</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">setupUi</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="c"># Must pass the context to the ZincWidget to set it up</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">_zincwidget</span><span class="o">.</span><span class="n">setContext</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_context</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setWindowIcon</span><span class="p">(</span><span class="n">QtGui</span><span class="o">.</span><span class="n">QIcon</span><span class="p">(</span><span class="s">&quot;:/cmiss_icon.ico&quot;</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="mi">620</span><span class="p">,</span> <span class="mi">440</span><span class="p">)</span>
+
+        <span class="c"># set up content for this application</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setupAxes</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></div>
+<p>After initialising the base class the first thing we do is create a Zinc Context object and store it in a member variable.</p>
+<p>note:</p>
+<div class="highlight-python"><div class="highlight"><pre>We use the context to create all other Zinc objects either directly or indirectly.
+</pre></div>
+</div>
+<p>We keep a handle to this context until we are no longer using objects obtained from it (either directly or indirectly).
+If we don&#8217;t all the resources associated with the context will be released and any new actions performed on objects from
+the context will be invalid resulting in undefined behaviour.  This means that the Zinc context handle should be the last
+handle we let go of. Most users will want to define standard materials and glyphs for their later visualisations, as is done here.</p>
+<p>Following creation of the Zinc context we create the UI from the python module created from the Qt UI compiler. This creates a Zinc Widget, however we must immediately pass it the Zinc Context so it can complete its initialisation when its initializeGL() method is called as the window is shown.</p>
+<p>The setupAxes() method of the AxisViewerDlg class sets up the simple graphics specific to this Zinc application, namely a visualisation of the origin point with unit-sized 3-D axes:</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20</pre></div></td><td class="code"><div class="highlight"><pre>    <span class="k">def</span> <span class="nf">setupAxes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">region</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_context</span><span class="o">.</span><span class="n">getDefaultRegion</span><span class="p">()</span>
+        <span class="c"># Graphics for visualising a region belong to its scene      </span>
+        <span class="n">scene</span> <span class="o">=</span> <span class="n">region</span><span class="o">.</span><span class="n">getScene</span><span class="p">()</span>
         
-        <span class="c"># Get the default region to create a point in.</span>
-        <span class="n">default_region</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_context</span><span class="o">.</span><span class="n">getDefaultRegion</span><span class="p">()</span>
+        <span class="c"># Call beginChange() to stop scene change messages being sent while</span>
+        <span class="c"># making multiple changes to scene or its graphics.</span>
+        <span class="c"># It&#39;s very important to call endChange() at the end!</span>
+        <span class="n">scene</span><span class="o">.</span><span class="n">beginChange</span><span class="p">()</span>
+        
+        <span class="c"># Create Points graphics in scene and visualise with unit-sized solid 3-D axes</span>
+        <span class="n">graphics</span> <span class="o">=</span> <span class="n">scene</span><span class="o">.</span><span class="n">createGraphicsPoints</span><span class="p">()</span>
+        <span class="n">attributes</span> <span class="o">=</span> <span class="n">graphics</span><span class="o">.</span><span class="n">getGraphicspointattributes</span><span class="p">()</span>
+        <span class="n">attributes</span><span class="o">.</span><span class="n">setGlyphShapeType</span><span class="p">(</span><span class="n">Glyph</span><span class="o">.</span><span class="n">SHAPE_TYPE_AXES_SOLID</span><span class="p">)</span>
+        <span class="c"># Note: default base size of 0.0 would make axes invisible!</span>
+        <span class="n">attributes</span><span class="o">.</span><span class="n">setBaseSize</span><span class="p">([</span><span class="mf">1.0</span><span class="p">])</span>
+
+        <span class="c"># Restart scene messaging and inform clients of changes.</span>
+        <span class="c"># This ultimately triggers a redraw in the Zinc Widget.</span>
+        <span class="n">scene</span><span class="o">.</span><span class="n">endChange</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></div>
+<p>New &#8216;Points&#8217; Graphics default to the special single &#8216;point&#8217; domain. To create points for any other domains you need to call graphics.setFieldDomainType(Field.DOMAIN_TYPE_NODES) or similar, which requires the OpenCMISS-Zinc &#8216;Field&#8217; module to be imported.</p>
+<p>The single point domain with Points graphics is unique in that it doesn&#8217;t require a coordinate field to be specified, since it defaults to the origin (0,0,0). All other graphics require a coordinate field defined over the relevant domain to be set via graphics.setCoordinateField(coordinate_field).</p>
+<p>In some cases you&#8217;ll want to show a subset of the domain. Do this by setting the subgroup field to a
+Group or any other Boolean-valued field (where non-zero == True == show) with graphics.setSubgroupField(subgroup_field).</p>
+<p>The glyph specifies a 3-D graphical object to draw at every point in the points graphics, here just the origin of the coordinate system. The default glyph is a single point/pixel, but we wish to show solid axes so rotating and zooming the window has a more visible effect. The glyph is set in the &#8216;graphics point attributes&#8217;, and can be set by &#8216;glyph shape type&#8217; or by object, e.g. found by name in the Glyphmodule.</p>
+</div>
+</div>
+<div class="section" id="implementation-of-the-zinc-widget">
+<h2>Implementation of the Zinc Widget<a class="headerlink" href="#implementation-of-the-zinc-widget" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="rendering">
+<h3>Rendering<a class="headerlink" href="#rendering" title="Permalink to this headline">¶</a></h3>
+<p>The ZincWidget class is derived from the QGLWidget. QGLWidget is a widget for rendering OpenGL graphics, and is responsible for setting up the OpenGL context that the Zinc library draws into. The Zinc Widget creates a Zinc Sceneviewer which manages the viewing parameters for the scene and can render it into the current OpenGL context.</p>
+<p>This example includes a simplified Zinc Widget which only handles rotating, panning and zooming the scene,
+and the following explains how it works. For your own code we recommend you take the more powerful version from <a class="reference external" href="https://github.com/OpenCMISS-Zinc/ZincPythonUtilities/">here</a>.</p>
+<p>In the initialisation of the ZincWidget class we call __init__ of the super class QGLWidget. In order to use the
+Zinc Widget, the application must pass the Context to it using the setContext() method; see the
+AxisViewerDlg class __init__ method above.</p>
+<p>In the initializeGL() method we create a Zinc scene viewer which keeps track of the current scene and view direction, angle and other parameters for viewing it.</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26</pre></div></td><td class="code"><div class="highlight"><pre>    <span class="k">def</span> <span class="nf">initializeGL</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        Set up the Zinc Sceneviewer.  </span>
+<span class="sd">        &#39;&#39;&#39;</span>
 
         <span class="c"># From the graphics module get the scene viewer module.</span>
         <span class="n">scene_viewer_module</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_context</span><span class="o">.</span><span class="n">getSceneviewermodule</span><span class="p">()</span>
@@ -227,62 +295,25 @@ to keep a handle to the scene viewer, from this handle we can (obviously) access
         <span class="c"># From the scene viewer module we can create a scene viewer, we set up the </span>
         <span class="c"># scene viewer to have the same OpenGL properties as the QGLWidget.</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_scene_viewer</span> <span class="o">=</span> <span class="n">scene_viewer_module</span><span class="o">.</span><span class="n">createSceneviewer</span><span class="p">(</span><span class="n">Sceneviewer</span><span class="o">.</span><span class="n">BUFFERING_MODE_DOUBLE</span><span class="p">,</span> <span class="n">Sceneviewer</span><span class="o">.</span><span class="n">STEREO_MODE_DEFAULT</span><span class="p">)</span>
-        
-        <span class="c"># Get the glyph module from the graphics module and define the standard glyphs</span>
-        <span class="n">glyph_module</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_context</span><span class="o">.</span><span class="n">getGlyphmodule</span><span class="p">()</span>
-        <span class="n">glyph_module</span><span class="o">.</span><span class="n">defineStandardGlyphs</span><span class="p">()</span>
-        
-        <span class="c"># Once the scenes have been enabled for a region tree you can get a valid </span>
-        <span class="c"># handle for a scene and then populate the scene with graphics.</span>
-        <span class="n">scene</span> <span class="o">=</span> <span class="n">default_region</span><span class="o">.</span><span class="n">getScene</span><span class="p">()</span>
-        
-        <span class="c"># We use the beginChange and endChange to wrap any immediate changes and will</span>
-        <span class="c"># streamline the rendering of the scene.</span>
-        <span class="n">scene</span><span class="o">.</span><span class="n">beginChange</span><span class="p">()</span>
-        
-        <span class="c"># Create a filter for visibility flags which will allow us to see our graphic.  By default graphics</span>
-        <span class="n">filter_module</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_context</span><span class="o">.</span><span class="n">getScenefiltermodule</span><span class="p">()</span>
-        <span class="c"># are created with their visibility flags set to on (or true).</span>
-        <span class="n">graphics_filter</span> <span class="o">=</span> <span class="n">filter_module</span><span class="o">.</span><span class="n">createScenefilterVisibilityFlags</span><span class="p">()</span>
-        
-        <span class="c"># Set the graphics filter for the scene viewer otherwise nothing will be visible.</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_scene_viewer</span><span class="o">.</span><span class="n">setScenefilter</span><span class="p">(</span><span class="n">graphics_filter</span><span class="p">)</span>
-        
-        <span class="c"># Create a graphic point in our scene and set it&#39;s glyph type to axes.</span>
-        <span class="n">graphic</span> <span class="o">=</span> <span class="n">scene</span><span class="o">.</span><span class="n">createGraphicsPoints</span><span class="p">()</span>
-        <span class="c"># When creating a generic point graphic as we are here we don&#39;t need to </span>
-        <span class="c"># specify the domain, but usually you would for example.</span>
-        <span class="c">#graphic.setDomainType(Field.DOMAIN_TYPE_POINT)</span>
-        
-        <span class="c"># Also we would normally be required to set the coordinate field for the graphic</span>
-        <span class="c"># but for the special case of the graphic point the location is evaluated as</span>
-        <span class="c"># (0, 0, 0) which is acceptable for this simple case.  Note that in this simple example we</span>
-        <span class="c"># haven&#39;t even created a coordinate field to set.</span>
-        <span class="c">#graphic.setCoordinateField(coordinate_field)</span>
-        
-        <span class="c"># The glyph type is an attribute of any point graphic type so to set it we </span>
-        <span class="c"># must first get the point attributes</span>
-        <span class="n">attributes</span> <span class="o">=</span> <span class="n">graphic</span><span class="o">.</span><span class="n">getGraphicspointattributes</span><span class="p">()</span>
-        <span class="n">attributes</span><span class="o">.</span><span class="n">setGlyphShapeType</span><span class="p">(</span><span class="n">Glyph</span><span class="o">.</span><span class="n">SHAPE_TYPE_AXES_SOLID</span><span class="p">)</span>
-        <span class="c"># We must set the base size of the graphic, if you comment out this line</span>
-        <span class="c"># then nothing will be visible as the default base size is 0.</span>
-        <span class="n">attributes</span><span class="o">.</span><span class="n">setBaseSize</span><span class="p">([</span><span class="mi">1</span><span class="p">])</span>
-        <span class="c"># Set the scene to our scene viewer.</span>
+
+        <span class="c"># default to showing the root region scene</span>
+        <span class="n">root_region</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_context</span><span class="o">.</span><span class="n">getDefaultRegion</span><span class="p">()</span>
+        <span class="n">scene</span> <span class="o">=</span> <span class="n">root_region</span><span class="o">.</span><span class="n">getScene</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_scene_viewer</span><span class="o">.</span><span class="n">setScene</span><span class="p">(</span><span class="n">scene</span><span class="p">)</span>
 
-        <span class="c"># Let the rendition render the scene.</span>
-        <span class="n">scene</span><span class="o">.</span><span class="n">endChange</span><span class="p">()</span>
+        <span class="c"># New scene viewers use the default scene filter which is initially</span>
+        <span class="c"># by scene and graphics visibility flags. Can set a different filter</span>
+        <span class="c"># with the following, or set no filter to show all graphics:</span>
+        <span class="c">#self._scene_viewer.setScenefilter(scene_filter)</span>
         
         <span class="c"># Set the zinc callback so that we are informed of changes to the scene</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_scene_viewer_notifier</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_scene_viewer</span><span class="o">.</span><span class="n">createSceneviewernotifier</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_scene_viewer_notifier</span><span class="o">.</span><span class="n">setCallback</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_zincCallback</span><span class="p">)</span>
-        
+       
 </pre></div>
 </td></tr></table></div>
-<p>This function is called once before resizeGL() or paintGL() is called.  At this point the scene consisting of a single point
-shown using the axes solid glyph has been created.  There are other default glyphs that exist and can be used for representing graphic
-points and these can be found in the Glyph class.  For this tutorial though we use the axes solid glyph to show the effect of mouse interaction
-with the Zinc scene.  The resizeGL() and paintGL() are very simple functions and are given here:</p>
+<p>This function is called once before resizeGL() or paintGL() is called.</p>
+<p>The resizeGL() and paintGL() are very simple functions and are given here:</p>
 <div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -332,13 +363,13 @@ with the Zinc scene.  The resizeGL() and paintGL() are very simple functions and
 </td></tr></table></div>
 <p>The above code snippet shows the callback received by the ZincWidget from Zinc when the scene viewer has changed. If the change affects the view, redraw.</p>
 </div>
-<div class="section" id="handling-interaction">
-<h2>Handling Interaction<a class="headerlink" href="#handling-interaction" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="handling-mouse-interaction">
+<h3>Handling Mouse Interaction<a class="headerlink" href="#handling-mouse-interaction" title="Permalink to this headline">¶</a></h3>
 <p>In visualising a 3D scene it is helpful to be able to change the view point to see objects that are hidden or occluded.  It is also
 helpful to be able to change the view point to understand how objects relate to each other in the scene.  The Zinc library scene viewer
 has a default handler for manipulating the view point of the scene which we can utilise. The default input handler allows the user to
 rotate, translate, magnify, and miniaturise the scene.</p>
-<p>To use the built-in handler we must create a scene viewer input object and set the event position,
+<p>To use the built-in handler we must create a &#8216;Sceneviewerinput&#8217; object and set the event position,
 input type, mouse button and event modifiers.  We need to convert the widget specific mouse button identifier to
 the scene viewer input mouse button identifier.  An efficient way of doing this is to create a map from the widget
 set mouse buttons to the scene viewer input mouse buttons.  We also need to create a map from the widget set event
@@ -370,10 +401,11 @@ modifiers to the scene viewer input modifiers.  For PySide and PyQt4 we can use 
     <span class="k">return</span> <span class="n">modifiers</span>
 </pre></div>
 </td></tr></table></div>
-<p>For the default input handler the left mouse button will rotate the scene, the middle mouse button will translate the scene, the
-right mouse button moves the viewer towards or away from the current interest point in the scene (which looks best in perspective mode, and clips when you get too close). Holding down the shift key with the right mouse button drag magnifies or miniaturises the scene, much like a camera zoom lens.</p>
+<p>For the default input handler the left mouse button will rotate the scene, the middle mouse button will translate/pan the scene, the
+right mouse button moves the viewer towards or away from the current interest point in the scene (which looks best in perspective mode, and clips when you get too close). Holding down the shift key with the right mouse button drag magnifies or miniaturises the scene, just like a camera zoom lens.</p>
 <p>The mousePressEvent(), mouseReleaseEvent(), and mouseMoveEvent() functions utilise the default input handler by calling the scene viewer
 processSceneviewerinput() API function.  Note that we don&#8217;t need to manually redraw the graphics here; the changes to the view made by processSceneviewerinput() trigger a callback to _zincCallback(), described earlier.</p>
+</div>
 </div>
 </div>
 
@@ -401,11 +433,17 @@ processSceneviewerinput() API function.  Note that we don&#8217;t need to manual
           <h6><a href="../index"><span>PyZinc v3.0.0 tutorials</span></a></h6>
           <ul>
 <li><a class="reference internal" href="#">Tutorial: Axis Viewer</a><ul>
-<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#creating-the-user-interface-with-qt">Creating the User Interface with Qt</a></li>
+<li><a class="reference internal" href="#creating-the-application">Creating the Application</a><ul>
 <li><a class="reference internal" href="#the-entry-point">The Entry Point</a></li>
-<li><a class="reference internal" href="#something-to-look-at">Something to Look At</a></li>
-<li><a class="reference internal" href="#setting-the-scene">Setting the Scene</a></li>
-<li><a class="reference internal" href="#handling-interaction">Handling Interaction</a></li>
+<li><a class="reference internal" href="#the-axis-viewer-dialog-class">The Axis Viewer Dialog class</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#implementation-of-the-zinc-widget">Implementation of the Zinc Widget</a><ul>
+<li><a class="reference internal" href="#rendering">Rendering</a></li>
+<li><a class="reference internal" href="#handling-mouse-interaction">Handling Mouse Interaction</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
