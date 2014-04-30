@@ -28,15 +28,11 @@ intro:
       <div class="documentwrapper">
           <div class="body">
             
-  <p>The PyZinc tutorials are arranged so that you can get know the Zinc library on a number of different levels.  First and foremost are the installation and
-getting started documents.  Once you have installed Zinc and have seen it working you can move on to the interaction tutorials.  The interaction tutorials
-are split into three levels with the first level on understanding how the Zinc library can respond to user events.  The second level covers a particular feature
-or module of the Zinc library and utilises the helper ZincWidget class and the third level is based around zlab a collection of high level classes and functions
-that can quickly produce visualisations in Zinc.</p>
-<div class="section" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
-<p>These examples cover the installation and a first look at using Zinc that are non-graphical
-that may for instances be used for batch processing purposes.</p>
+  <p>The Zinc Python (PyZinc) tutorials are arranged so that you can get know the Zinc library on a number of different levels, from simple UI-less scripts to interactive applications.</p>
+<p>Later tutorials generally build on what has been explained in earlier tutorials.</p>
+<div class="section" id="simple-non-ui-examples">
+<h1>Simple non-UI examples<a class="headerlink" href="#simple-non-ui-examples" title="Permalink to this headline">¶</a></h1>
+<p>These simplest of examples are non-graphical scripts which run from start to end, such as would be suitable for batch processing purposes.</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="guides/getting-started">Getting Started with PyZinc</a><ul>
@@ -52,25 +48,30 @@ that may for instances be used for batch processing purposes.</p>
 </ul>
 </div>
 </div>
-<div class="section" id="user-events">
-<h1>User Events<a class="headerlink" href="#user-events" title="Permalink to this headline">¶</a></h1>
-<p>These examples contain all the basic code to interact with the Qt GUI toolkit
-and respond to user events that show basic Zinc visualisations.</p>
+<div class="section" id="first-interactive-example">
+<h1>First Interactive Example<a class="headerlink" href="#first-interactive-example" title="Permalink to this headline">¶</a></h1>
+<p>Interactive graphical applications require a user interface library and &#8216;event driven&#8217; programming. The Axis Viewer tutorial shows how to build a very simple graphical visualisation with PyZinc, using the Qt GUI toolkit, and a simple reusable &#8216;ZincWidget&#8217; module which takes care of drawing and manipulating graphics. It includes an explanation of how the ZincWidget works, for those interested or wanting to implement it using another language or GUI toolkit.</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="axis_viewer/tutorial">Tutorial: Axis Viewer</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="axis_viewer/tutorial#overview">Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="axis_viewer/tutorial#the-entry-point">The Entry Point</a></li>
-<li class="toctree-l2"><a class="reference internal" href="axis_viewer/tutorial#something-to-look-at">Something to Look At</a></li>
-<li class="toctree-l2"><a class="reference internal" href="axis_viewer/tutorial#setting-the-scene">Setting the Scene</a></li>
-<li class="toctree-l2"><a class="reference internal" href="axis_viewer/tutorial#handling-interaction">Handling Interaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="axis_viewer/tutorial#creating-the-user-interface-with-qt">Creating the User Interface with Qt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="axis_viewer/tutorial#creating-the-application">Creating the Application</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="axis_viewer/tutorial#the-entry-point">The Entry Point</a></li>
+<li class="toctree-l3"><a class="reference internal" href="axis_viewer/tutorial#the-axis-viewer-dialog-class">The Axis Viewer Dialog class</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="axis_viewer/tutorial#implementation-of-the-zinc-widget">Implementation of the Zinc Widget</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="axis_viewer/tutorial#rendering">Rendering</a></li>
+<li class="toctree-l3"><a class="reference internal" href="axis_viewer/tutorial#handling-mouse-interaction">Handling Mouse Interaction</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div class="section" id="interaction-utilising-the-zincwidget">
-<h1>Interaction Utilising the ZincWidget<a class="headerlink" href="#interaction-utilising-the-zincwidget" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="interactive-examples-built-on-the-zincwidget">
+<h1>Interactive Examples built on the ZincWidget<a class="headerlink" href="#interactive-examples-built-on-the-zincwidget" title="Permalink to this headline">¶</a></h1>
 <p>These examples make use of the ZincWidget to handle common user interactions with the Sceneviewer and
 explore the features of Zinc.</p>
 <div class="toctree-wrapper compound">
@@ -135,9 +136,9 @@ explore the features of Zinc.</p>
          <div id="toc">
           <h6><a href="#"><span>PyZinc v3.0.0 tutorials</span></a></h6>
           <ul>
-<li><a class="reference internal" href="#">Introduction</a></li>
-<li><a class="reference internal" href="#user-events">User Events</a></li>
-<li><a class="reference internal" href="#interaction-utilising-the-zincwidget">Interaction Utilising the ZincWidget</a><ul>
+<li><a class="reference internal" href="#">Simple non-UI examples</a></li>
+<li><a class="reference internal" href="#first-interactive-example">First Interactive Example</a></li>
+<li><a class="reference internal" href="#interactive-examples-built-on-the-zincwidget">Interactive Examples built on the ZincWidget</a><ul>
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
 </ul>
 </li>
