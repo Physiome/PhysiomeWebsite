@@ -24,3 +24,7 @@ If you can not find the information you require then try contacting an existing 
 - [Alan Wu]( http://www.abi.auckland.ac.nz/en/about/our-people/researchers/alan-wu.html)
 - [Hugh Sorby]( http://www.abi.auckland.ac.nz/en/about/our-people/researchers/hugh-sorby.html)
 - [Randall Britten]( http://www.abi.auckland.ac.nz/en/about/our-people/researchers/randall-britten.html)
+
+### Building Cmgui
+
+Follow the [Zinc, PyZinc and Cmgui Build Instructions](/software/opencmiss/zinc/documentation/support/build).

@@ -29,3 +29,6 @@ If you cannot find the information you require from the documentation, tracker a
 - [Alan Wu]( http://www.abi.auckland.ac.nz/en/about/our-people/researchers/alan-wu.html)
 - [Hugh Sorby]( http://www.abi.auckland.ac.nz/en/about/our-people/researchers/hugh-sorby.html)
 
+### Building Zinc
+
+Follow the [Zinc, PyZinc and Cmgui Build Instructions](support/build).

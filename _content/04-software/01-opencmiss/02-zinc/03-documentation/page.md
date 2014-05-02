@@ -24,5 +24,5 @@ navtitle:
 </div><!-- end .one-fourth -->
 <div class="one-fourth last">
 <h5><a href="documentation/support">Support</a></h5>
-<p>Where to get additional support, provide feedback and request features.</p>
+<p>Where to get additional support, provide feedback and request features. Also links to developer information for building Zinc.</p>
 </div><!-- end .one-fourth last -->
