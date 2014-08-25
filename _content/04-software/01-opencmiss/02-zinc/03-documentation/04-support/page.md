@@ -11,15 +11,17 @@ navtitle: OpenCMISS-Zinc Support
 
 If you cannot find the information you need from the [Zinc Documentation](../documentation), or you encounter bugs or you wish to request new features, please use the following links.
 
-### Mailing List
+### Mailing Lists
 
-We are establishing a mailing list for users of OpenCMISS software to be the first place to request help from the OpenCMISS user and development community. Until this is set up please use one of the following avenues for support.
+For user support please e-mail the 'users' list (with 'Zinc' in the subject line) described in:
+
+[OpenCMISS Mailing Lists](/software/opencmiss/mailinglists)
 
 ### Tracker
 
-The Zinc Library section of the [Physiome Project Tracker](https://tracker.physiomeproject.org/buglist.cgi?query_format=advanced&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&product=Zinc%20library) is where we track bugs, new features, design ideas and occasionally user queries. We only ever add code changes for items in the tracker. Users can post their own items on the tracker, or developers may create them in response to your queries.
+The [Zinc Library tracker section](https://tracker.physiomeproject.org/buglist.cgi?query_format=advanced&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&product=Zinc%20library) is where we track bugs, new features, design ideas and occasionally user queries. We only ever add code changes for items in the tracker.
 
-We encourage users to post their own items on the tracker, which requires only to create an account. *Please try to search for your issue* in the tracker before posting. If you find a tracker item that matches your problem or feature, please indicate your interest on the item (in a post, and/or add yourself to the CC list) so we can prioritise it accordingly.
+Typically we ask users to first send issues and feature requests to the Users mailing list (see above) from which the developers will raise tracker items. However, feel free to search the tracker for issues and features that might be relevant to you. By creating an account on the tracker you can add your feedback to an existing issue. We stongly encourage users to add their interest in getting a feature or bug fix completed by posting to and CCing to the item: this helps us to increase the priority with which they are looked into.
 
 ### Contact the Developers
  
