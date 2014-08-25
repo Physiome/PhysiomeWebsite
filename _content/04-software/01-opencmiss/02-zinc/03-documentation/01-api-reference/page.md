@@ -27,11 +27,13 @@ Its contents cover:
  *       A simple example in each language, and links to more examples.
  *       Plain language descriptions of the main Zinc object types.
 
-Documentation of the [EX file format](http://www.cmiss.org/cmgui/wiki/TheCmguiEXFormatGuideExnodeAndExelemFiles) and descriptions of graphics attributes relevent to Zinc can be found on the [Cmgui documentation](http://abi-software-book.readthedocs.org/en/latest/cmgui/index.html).
+Documentation of the [EX file format](http://abi-software-book.readthedocs.org/en/latest/Cmgui/CMGUI-ex-file-format-guide.html) and descriptions of graphics attributes relevent to Zinc can be found on the [Cmgui documentation](http://abi-software-book.readthedocs.org/en/latest/Cmgui/index.html).
 
 ### C++ and Python API Documentation
 
-The [OpenCMISS-Zinc C++ API Documentation](http://cmiss.sourceforge.net/) can be used to look up classes and methods in C++, which are mostly applicable to Python (PyZinc).
+Documentation for the Zinc classes and methods in C++, mostly also applicable to Python (PyZinc) are available here:
+
+[OpenCMISS-Zinc C++ API Documentation](http://cmiss.sourceforge.net/)
 
 Apart from syntactic and include/import differences, the main differences between using Zinc from C++ and Python are as follows:
 
