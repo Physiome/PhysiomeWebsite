@@ -8,13 +8,13 @@ title: Get support for OpenCMISS
 
 The [OpenCMISS Wiki](http://sourceforge.net/apps/mediawiki/opencmiss/index.php?title=Main_Page) is collaboratively edited by the project participants, with lot of useful detailed information about the project.
 
-### Mailing list for users and developers
+### Mailing lists for users and developers
 
-General questions and requests for help should be directed to: 
+For user support please e-mail the new 'users' list (with 'Iron' in the subject line) linked at:
 
-- [opencmiss-developers@lists.sourceforge.net](mailto:opencmiss-developers@lists.sourceforge.net)
+[OpenCMISS Mailing Lists](/software/opencmiss/mailinglists)
 
-[Subscribe to the mailing list](https://lists.sourceforge.net/lists/listinfo/opencmiss-developers) to join the dsicussion or to view the archives.
+The above link also describes a new 'developers' mailing list which we are transitioning to. The original developers mailing list <opencmiss-developers@lists.sourceforge.net> is still open for subscription, general questions and requests for help and for searching archives at [this link](https://lists.sourceforge.net/lists/listinfo/opencmiss-developers).
 
 ### Documentation and source code
 
