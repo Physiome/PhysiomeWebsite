@@ -16,7 +16,7 @@ Notes:
 
 1. The build instructions given here are written for a console application with commands entered at the command line.  These instructions are therefore most suitable for Linux and Mac OS X. They can be re-interpreted and adjusted for use on Windows; you may prefer to run cmake-gui and enter the paths and options interactively.
 
-2. These instructions are for the default configuration (Release or Debug, depending on toolchain). For multi-configuration tools such as Visual Studio, other configurations can be built by invoking e.g. '<code>cmake --build --config Release .</code>'. Note that you need Debug Utilities and Dependencies for Debug Zinc and Cmgui, and similar for Release. In Windows you **must first** build the Release configuration of the Dependencies otherwise CMake will not be able to find any dependency libraries, including dependencies of dependencies!
+2. These instructions are for the default configuration (Release or Debug, depending on toolchain). For multi-configuration tools such as Visual Studio, other configurations can be built by invoking e.g. '<code>cmake --build . --config Debug</code>'. Note that you need Debug Utilities and Dependencies for Debug Zinc and Cmgui, and similar for Release. In Windows you **must first** build the Release configuration of the Dependencies otherwise CMake will not be able to find any dependency libraries, including dependencies of dependencies!
 
 3. If you intend to build Cmgui, follow the additional notes for adding its extra dependencies and building a static version of Zinc.
 
