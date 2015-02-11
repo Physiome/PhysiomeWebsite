@@ -18,17 +18,31 @@ The following links are to development versions of OpenCMISS-Zinc and PyZinc for
 
 ### Windows 64-bit
 
-{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="OpenCMISS-Zinc" osfilter="windows" limit="6" }}
+{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="OpenCMISS-Zinc" osfilter="64-windows" limit="6" }}
 
-### OS X
+### Windows 32-bit
 
-{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="OpenCMISS-Zinc" osfilter="mac" limit="6" }}
+{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="OpenCMISS-Zinc" osfilter="86-windows" limit="6" }}
 
-### Linux 64-bit
+### Mac OS X 10.9
+
+{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="OpenCMISS-Zinc" osfilter="mac-os-x-10.9" limit="6" }}
+
+### Mac OS X 10.8
+
+{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="OpenCMISS-Zinc" osfilter="mac-os-x-10.8" limit="6" }}
+
+### Linux 64-bit Ubuntu 14.04
 
 After installing the Zinc library you must run 'ldconfig' to update the ld library database.
 
-{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="OpenCMISS-Zinc" osfilter="ubuntu" limit="6" }}
+{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="OpenCMISS-Zinc" osfilter="ubuntu-14.04" limit="6" }}
+
+### Linux 64-bit Ubuntu 12.04
+
+After installing the Zinc library you must run 'ldconfig' to update the ld library database.
+
+{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="OpenCMISS-Zinc" osfilter="ubuntu-12.04" limit="6" }}
 
 ### Source code
 
@@ -43,16 +57,32 @@ The Python bindings of the Zinc library are available for a number of platforms 
 
 ### Windows 64-bit
 
-{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="pyzinc" osfilter="windows" limit="10" }}
+{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="pyzinc" osfilter="64-windows" limit="6" }}
 
-### OS X
+### Windows 32-bit
 
-{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="pyzinc" osfilter="mac" limit="10" }}
+{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="pyzinc" osfilter="86-Windows" limit="6" }}
 
-### Linux 64-bit
+### Mac OS X 10.9
 
-{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="pyzinc" osfilter="ubuntu" limit="10" }}
+{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="pyzinc" osfilter="mac-os-x-10.9" limit="6" }}
+
+### Mac OS X 10.8
+
+{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="pyzinc" osfilter="mac-os-x-10.8" limit="6" }}
+
+### Linux 64-bit Ubuntu 14.04
+
+{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="pyzinc" osfilter="ubuntu-14.04" limit="6" }}
+
+### Linux 64-bit Ubuntu 12.04
+
+{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="pyzinc" osfilter="ubuntu-12.04" limit="6" }}
 
 ### Source code
 
 The PyZinc source code may be downloaded from the [SVN repository](https://svn.physiomeproject.org/svn/cmiss/zinc/bindings/).
+
+## Other variants
+
+[List of downloads on ftp server.](ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest)
