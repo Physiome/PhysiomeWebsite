@@ -12,17 +12,19 @@ navtitle: Download
 
 The following links are to development versions of Cmgui for Windows, Mac and Linux, plus source code. Be aware that development versions may have errors or incomplete features, and new features are subject to change. The latest official releases are available [here](/software/opencmiss/cmgui/download/) and include installation instructions relevant to these developer versions.
 
+Pre-built developer snapshots may be downloaded directly from the [listing of snapshots](https://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/)
+
 ### Windows 64-bit
 
-{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="cmgui" osfilter="windows" limit="4" }}
+<!-- filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="cmgui" osfilter="windows" limit="4" -->
 
 ### Mac OS X
 
-{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="cmgui" osfilter="mac" limit="4" }}
+<!-- filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="cmgui" osfilter="mac" limit="4" -->
 
 ### Ubuntu Linux 64-bit
 
-{{ filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="cmgui" osfilter="ubuntu" limit="4" }}
+<!-- filelist url="ftp://ftp.bioeng.auckland.ac.nz/cmiss/zinclibrary/latest/" releasefilter="cmgui" osfilter="ubuntu" limit="4" -->
 
 ### Source code
 
